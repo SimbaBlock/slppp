@@ -106,7 +106,7 @@ Subsequent minting transactions of `additional_token_quantity` can be performed 
 
 As with GENESIS, the MINT allows to end the baton, or further pass on the baton to future mint operations: if `mint_baton_vout` is empty or refers to a nonexistent vout, the transaction is valid but the baton is lost. This makes it possible to prove end-of-minting capabilities for a token even after several minting events (it is impossible to duplicate this baton as that would require double-spending the transaction output associated with the baton).
 
-**Transaction inputs**: Any number of inputs or content of inputs, in any order, but with required presence of a 'baton' input (see Consensus Rules).
+**Transaction inputs**: Any number of inputs or content of inputs, in any order, but with required presence of a 'baton' input.
 
 **Transaction outputs**:
 <table>
@@ -152,7 +152,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 #### (Send / Transfer)
 The following transaction format is used to transfer tokens from one or more token holding UTXO(s) to new token holding UTXO(s). The UTXOs associated with unspent tokens will be used within the transaction input and, just like the BSV attached to these UTXOs, will be considered totally spent after this transaction is accepted by the blockchain. Tokens will be assigned to new UTXOs .  Any number of additional BSV outputs will be allowed. the BSV outputs is freeorder .
 
-**Transaction inputs**: Any number of inputs or content of inputs, in any order, but must include sufficient tokens coming from valid token transactions of matching `token_id`, `token_type` (see Consensus Rules).
+**Transaction inputs**: Any number of inputs or content of inputs, in any order, but must include sufficient tokens coming from valid token transactions of matching `token_id`, `token_type` .
 
 **Transaction outputs**:
 <table>
