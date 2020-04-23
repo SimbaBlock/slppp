@@ -161,8 +161,8 @@ lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUAL
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;lokad id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
-&lt;token_id&gt; (32 bytes)<BR/>
 &lt;transaction_type: SEND&gt; (4 bytes, ascii)<BR/>   
+&lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
   <td>any</td>
   <td>0</td>
