@@ -397,7 +397,7 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
   </tr>
 </table>
 
-### FROZEN - FROZEN UTXO Transaction
+### FROZEN - Frozen UTXO Transaction
 
 
 **Transaction outputs**:
