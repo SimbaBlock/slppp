@@ -1,2 +1,2 @@
 # SLP++
-SLP++ layer 2 protocol for bsv, base on original  SLP
+SLP++ Layer 2 protocol, base on original  SLP
