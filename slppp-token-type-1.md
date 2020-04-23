@@ -1,11 +1,9 @@
-![Simple Ledger Protocol](images/SLP-logo-solid-200.png)
-
-# SLP Token Type 1 Protocol Specification
-### Specification version: 0.3
-### Date published: August 21, 2018
+# SLPPP Token Type 1 Protocol Specification
+### Specification version: 0.1
+### Date published: April 23, 2020
 
 ## Authors
-Jonald Fyookball, James Cramer, Unwriter, Mark B. Lundeberg, Calin Culianu, Ryan X. Charles
+Jonald Fyookball, James Cramer, Unwriter, Mark B. Lundeberg, Calin Culianu, Ryan X. Charles, Pisa
 
 ## Acknowledgements
 Amaury Sechet, for suggesting merklix based hash committments
