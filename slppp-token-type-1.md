@@ -2,10 +2,6 @@
 ### Specification version: 0.1
 ### Date published: April 23, 2020
 
-### Authors
-Jonald Fyookball, James Cramer, Unwriter, Mark B. Lundeberg, Calin Culianu, Ryan X. Charles, Pisa
-
-
 ### Requirements
 
 We believe that a good solution for implementing tokens should have the following properties:
@@ -415,8 +411,6 @@ A good token wallet should always perform some kind of full validation.  This be
 
 Additionally, although an attack is not necessarily costly in fees, it may be costly in coordination efforts, because long chains of transactions need to be dispersed across the span of time to avoid being blatantly suspicious.
 
-
-# Appendix A: Regulated Security Tokens
 
 # Copyright
 
