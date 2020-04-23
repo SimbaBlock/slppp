@@ -1,6 +1,6 @@
 # SLP++
 SLP++ Layer 2 protocol, Safety & Simple base on original  SLP  
-compared to original SLP, SLP++ has below advantage:
+compared to original SLP, SLP++ has below advantages:
 ```
 1. Safety：avoid the chance of spent utxo which contains tokens.
 2. Simple: one Transaction outputs attached one or more op_return, no addidtional rules for old op_return style.
