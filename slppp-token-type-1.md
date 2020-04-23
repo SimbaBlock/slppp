@@ -35,8 +35,10 @@ This document specifies the rules and operation of the Permissionless Token Type
 
 `mint_baton_vout`: Future token supply increases are made possible if the genesis endows a specific transaction output with a "minting baton" that can be passed along and used for future minting (using 'MINT' transactions, see below). If `mint_baton_vout` is not present or refers to a nonexistent output, then the baton does not exist and the token provably has a one-time issuance.
 
-`decimals`: indicates that 1 token is divisible into 10^`decimals` base units. SLP++ messages store whole numbers indicating token amounts as measured in the base unit, analogous to how bitcoin transactions store BSV amounts measured in the base unit 'satoshis'. With a token FOO having `decimals` of 6 indicated in the genesis, for example, the quantity 12.53 FOO (as displayed in wallet software) would be represented by 12530000 base units (as 8 bytes, hex 0000000000bf3150). A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would give indivisible tokens.
-
+`decimals`: indicates that 1 token is divisible into 10^`decimals` base units. SLP++ messages store whole numbers indicating token amounts as measured in the base unit, analogous to how bitcoin transactions store BSV amounts measured in the base unit 'satoshis'. 
+```
+With a token FOO having `decimals` of 6 indicated in the genesis, for example, the quantity 12.53 FOO (as displayed in wallet software) would be represented by 12530000 base units (as 8 bytes, hex 0000000000bf3150). A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would give indivisible tokens.
+```
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
