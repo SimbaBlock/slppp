@@ -13,7 +13,7 @@ We believe that a good solution for implementing tokens should have the followin
 **5. SPV friendly.** Users of light wallets should be able to validate their own transactions.\
 **6. Extensible.** The system should allow future versions of tokens including tokens with issuer controlled whitelists for regulated securities ([Appendix A](#appendix-a-regulated-security-tokens)), and other needs.\
 **7. Supported.** There should be an implementation plan for rapid ecosystem support.\
-**8. Need BSV genesis upgrade
+**8. Need BSV** genesis upgrade
 
 # PROTOCOL DESCRIPTION
 
