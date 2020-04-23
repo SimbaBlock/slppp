@@ -397,7 +397,40 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
   </tr>
 </table>
 
+### FROZEN - FROZEN UTXO Transaction
+
+
+**Transaction outputs**:
+<table>
+  <tr>
+    <td><b>v<sub>out</sub></b></td>
+    <td><b>ScriptPubKey ("Address")</b></td>
+    <td><b>BSV<br/>amount</b></td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>
+    OP_RETURN: '\x6a' (1 bytes, ascii)><br/>
+    &lt;lokad_id: 'SLP++\x00'&gt; (4 bytes, ascii)<br/>
+    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
+    &lt;admin_type: 'FROZEN'&gt; (6 bytes, ascii) <br/>
+    &lt;token_id&gt; (32 bytes)<br/>
+    &lt;frozen utxo's txid&gt; (32 bytes)<br/>
+    &lt;frozen utxo's vout&gt; (1 byte integer)<br/>
+  </td>
+    <td>any</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+
+</table>
+
+
 ### COMMIT - Checksum Commitment Transaction
+
 
 As previously discussed, a token issuer should make regular commitments of the SHA-256 hash of previous transactions made for this token. Although this is not part of the consensus rules (commitments may occur outside of the token transaction graph, and commitment data is never used in consensus rules), it allows a user to verify that the issuer is accurately honoring the token's consensus rules. This increases confidence that tokens will be judged as expected at the time of redemption.
 
