@@ -296,7 +296,7 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
    &lt;token_document_url&gt; (0 to ∞ bytes, suggested ascii)<br/>
    &lt;token_document_hash&gt; (0 bytes or 32 bytes)<br/>
    &lt;decimals&gt; (1 byte in range 0x00-0x09)<br/>
-   &lt;mint_baton_vout&gt; (0 bytes, or 1 byte in range 0x02-0xff)<br/>
+   &lt;mint_baton_vout&gt; (0 bytes, or 1 byte in range 0x00-0xff)<br/>
    &lt;initial_token_mint_quantity&gt; (8 byte integer)
    </td>
     <td>any<sup>2</sup></td>
@@ -349,7 +349,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
 &lt;admin_type: 'MINT'&gt; (4 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR>
-&lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x02-0xff)<BR>
+&lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
 &lt;additional_token_quantity&gt; (8 byte integer)
   </td>
     <td>any</td>
