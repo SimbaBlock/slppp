@@ -52,9 +52,9 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
   <tr>
     <td>...</td>
    <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'<br/>   
+   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>1</sup><br/>
+   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
    &lt;admin_type: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
@@ -80,15 +80,17 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any<sup>2</sup></td>
+    <td>any<sup>3</sup></td>
     <td>0</td>
   </tr>
  
 </table>
 
-<sup>1. The Lokad identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Lokad IDs, gives the ascii string 'SLP++\x00'). Inquiries and additional information about the Lokad system of OP_RETURN protocol identifiers can be found at https://github.com/Lokad/Terab maintained by Joannes Vermorel.</sup>
+<sup>1. The lockscript can be any valid script combination.  MINT & SEND lockscript are the same means</sup>   
 
-<sup>2. SLP does not impose any restrictions on BSV output amounts. Typically however the OP_RETURN output would have 0 BSV (as any BSV sent would be burned), and outputs receiving tokens / mint batons would be sent only the minimal 'dust' amount of 0.00000546 BSV.</sup>
+<sup>2. The Lokad identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Lokad IDs, gives the ascii string 'SLP++\x00'). Inquiries and additional information about the Lokad system of OP_RETURN protocol identifiers can be found at https://github.com/Lokad/Terab maintained by Joannes Vermorel.</sup>
+
+<sup>3. SLP does not impose any restrictions on BSV output amounts. Typically however the OP_RETURN output would have 0 BSV (as any BSV sent would be burned), and outputs receiving tokens / mint batons would be sent only the minimal 'dust' amount of 0.00000546 BSV.</sup>
 
 ### MINT - Extended Minting Transaction Outputs
 #### (used with "baton" to increase supply)
