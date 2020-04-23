@@ -37,7 +37,9 @@ This document specifies the rules and operation of the Permissionless Token Type
 
 `decimals`: indicates that 1 token is divisible into 10^`decimals` base units. SLP++ messages store whole numbers indicating token amounts as measured in the base unit, analogous to how bitcoin transactions store BSV amounts measured in the base unit 'satoshis'. 
 ```
-With a token FOO having `decimals` of 6 indicated in the genesis, for example, the quantity 12.53 FOO (as displayed in wallet software) would be represented by 12530000 base units (as 8 bytes, hex 0000000000bf3150). A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would give indivisible tokens.
+With a token FOO having `decimals` of 6 indicated in the genesis, for example, the quantity 12.53 FOO (as displayed in wallet software) 
+would be represented by 12530000 base units (as 8 bytes, hex 0000000000bf3150). A `decimals` of 8 would give the same divisibility as 
+bitcoin, whereas 0 would give indivisible tokens.
 ```
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
