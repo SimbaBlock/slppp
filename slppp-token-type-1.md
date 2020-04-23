@@ -14,7 +14,7 @@ We believe that a good solution for implementing tokens should have the followin
 **6. Extensible.** The system should allow future versions of tokens including tokens with issuer controlled whitelists for regulated securities ([Appendix A](#appendix-a-regulated-security-tokens)), and other needs.\
 **7. Supported.** There should be an implementation plan for rapid ecosystem support.
 
-# SECTION I: PROTOCOL DESCRIPTION
+# PROTOCOL DESCRIPTION
 
 ## Transaction Detail
 
