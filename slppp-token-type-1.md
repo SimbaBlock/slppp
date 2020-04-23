@@ -44,7 +44,7 @@ This document specifies the rules and operation of the Permissionless Token Type
 <table>
 <tr>
   <td><b>v<sub>out</sub></b></td>
-  <td><b>ScriptPubKey ("Address")</b></td>
+  <td><b>Lockingscript </b></td>
   <td><b>BSV<br/>amount</b></td>
   <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
@@ -104,7 +104,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 <table>
 <tr>
   <td><b>v<sub>out</sub></b></td>
-  <td><b>ScriptPubKey ("Address")</b></td>
+  <td><b>LockingScript </b></td>
   <td><b>BSV<br/>amount</b></td>
   <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
@@ -150,7 +150,7 @@ The following transaction format is used to transfer tokens from one or more tok
 <table>
   <tr>
     <td><b>v<sub>out</sub></b></td>
-    <td><b>ScriptPubKey ("Address")</b></td>
+    <td><b>LockingScript</b></td>
     <td><b>BSV<br/>amount</b></td>
     <td><b>Implied token amount<br/>(base units)</b></td>
   </tr>
