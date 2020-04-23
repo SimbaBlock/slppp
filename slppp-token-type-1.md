@@ -51,7 +51,7 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
   <tr>
     <td>...</td>
    <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
+   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>1</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
@@ -109,7 +109,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
   <tr>
   <td>...</td>
 <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
+   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
@@ -155,7 +155,7 @@ The following transaction format is used to transfer tokens from one or more tok
   <tr>
     <td>...</td>
     <td>
-lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
+lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'   
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;lokad id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
