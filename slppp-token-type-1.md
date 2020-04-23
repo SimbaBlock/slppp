@@ -1,5 +1,3 @@
-![Simple Ledger Protocol](images/SLP-logo-solid-200.png)
-
 # SLPPP Token Type 1 Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 23, 2020
