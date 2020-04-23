@@ -18,11 +18,11 @@ We believe that a good solution for implementing tokens should have the followin
 
 ## Transaction Detail
 
-### GENESIS - Token Genesis Transaction
+### GENESIS - Token Genesis Transaction Outputs
 
-This is the first transaction which defines the properties, metadata and initial mint quantity of the token. The token is thereafter uniquely identified by the token genesis transaction hash which is referred to as `token_id`.
+This is the first transaction which defines the properties, metadata and initial mint quantity of the token. The token is thereafter uniquely identified by hash the token genesis transaction OutputScript by sha256 which is referred to as `token_id`.
 
-`token_type` indicates the SLP sub-protocol:
+`token_type` indicates the SLP++ sub-protocol:
 
 * 1 - Permissionless Token Type
 * 2 - Reserved for Security Token Type 
@@ -51,6 +51,7 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
   <tr>
     <td>...</td>
    <td>
+   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>1</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
@@ -88,7 +89,7 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
 
 <sup>2. SLP does not impose any restrictions on BCH output amounts. Typically however the OP_RETURN output would have 0 BCH (as any BCH sent would be burned), and outputs receiving tokens / mint batons would be sent only the minimal 'dust' amount of 0.00000546 BCH.</sup>
 
-### MINT - Extended Minting Transaction
+### MINT - Extended Minting Transaction Outputs
 #### (used with "baton" to increase supply)
 
 Subsequent minting transactions of `additional_token_quantity` can be performed by spending the "minting baton" UTXO in a special MINT transaction, described here. Note that this could be done by someone other than the GENESIS issuer, if the baton minting authority had been passed to another address.
@@ -108,6 +109,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
   <tr>
   <td>...</td>
 <td>
+   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
@@ -136,7 +138,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 </table>
 
 
-### SEND - Spend Transaction
+### SEND - Spend Transaction Outputs
 #### (Send / Transfer)
 The following transaction format is used to transfer tokens from one or more token holding UTXO(s) to new token holding UTXO(s). The UTXOs associated with unspent tokens will be used within the transaction input and, just like the BCH attached to these UTXOs, will be considered totally spent after this transaction is accepted by the blockchain. Tokens will be assigned to new UTXOs vout=1 up to vout=19 as indicated within the OP_RETURN statement.  Any number of additional BCH-only outputs will be allowed. A BCH-only output can come before token outputs, but a token quantity of 0 must be specified for this output.
 
@@ -153,6 +155,7 @@ The following transaction format is used to transfer tokens from one or more tok
   <tr>
     <td>...</td>
     <td>
+lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;lokad id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
@@ -163,36 +166,9 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
   </tr>
 </table>
 
-### FROZEN - Frozen UTXO Transaction
+### FROZEN - Frozen UTXO Transaction Outputs
 
-
-**Transaction outputs**:
-<table>
-  <tr>
-    <td><b>v<sub>out</sub></b></td>
-    <td><b>ScriptPubKey ("Address")</b></td>
-    <td><b>BSV<br/>amount</b></td>
-  </tr>
-  <tr>
-    <td>...</td>
-    <td>
-    OP_RETURN: '\x6a' (1 bytes, ascii)><br/>
-    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
-    &lt;admin_type: 'FROZEN'&gt; (6 bytes, ascii) <br/>
-    &lt;token_id&gt; (32 bytes)<br/>
-    &lt;frozen utxo's txid&gt; (32 bytes)<br/>
-    &lt;frozen utxo's vout&gt; (1 byte integer)<br/>
-  </td>
-    <td>any</td>
-  </tr>
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
-
-</table>
+TODO
 
 
 ### Examples
