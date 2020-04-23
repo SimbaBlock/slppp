@@ -1,5 +1,5 @@
 # SLP++
-SLP++ Layer 2 protocol, Safety & Simple base on original  [SLP](https://github.com/simpleledger/slp-specifications)  
+SLP++ Layer 2 protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
 [slppp-token-type-1](./slppp-token-type-1.md) compared to original SLP, SLP++ has below advantages:
 ```
 1. Safety：avoid the chance of spent utxo which contains tokens.
