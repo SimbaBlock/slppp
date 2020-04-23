@@ -25,7 +25,7 @@ This is the first transaction which defines the properties, metadata and initial
 `token_type` indicates the SLP sub-protocol:
 
 * 1 - Permissionless Token Type
-* 2 - Reserved for Security Token Type (see [Appendix A](#appendix-a-regulated-security-tokens))
+* 2 - Reserved for Security Token Type 
 * 3 - Reserved for Voting Token Type
 * 4 - Reserved for Ticketing Token Type
 * ...
