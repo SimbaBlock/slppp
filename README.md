@@ -1,5 +1,5 @@
 # SLP++
-SLP++ Layer 2 protocol, base on original  SLP
+SLP++ Layer 2 protocol, base on original  SLP  
 compare to original SLP, SLP++ has below advantage:
 ```
 1. Safety：Reduce chances of spent utxos which contains token.
