@@ -35,7 +35,7 @@ Dexx7, for code review and ideas
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GENESIS - Token Genesis Transaction](#genesis---token-genesis-transaction)<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MINT - Extended Minting Transaction](#mint---extended-minting-transaction)<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SEND - Spend Transaction](#send---spend-transaction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FROZEN - Frozen Transaction](#fronzen---fronzen-transaction)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FROZEN - Frozen Transaction](#frozen---fronzen-transaction)<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Examples](#examples)<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;[Transaction Validation Security Model](#transaction-validation-security-model)<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;[Token Address Format](#token-address-format)<BR>
