@@ -285,7 +285,7 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
   <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
-    <td>0</td>
+    <td>...</td>
    <td>
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>1</sup><br/>
@@ -302,17 +302,10 @@ The genesis transaction includes an initial minting of `initial_token_mint_quant
     <td>any<sup>2</sup></td>
     <td>0</td>
   </tr>
-
-  <tr>
-    <td>1</td>
-    <td>Initial mint receiver</td>
-    <td>any<sup>2</sup></td>
-    <td>initial_token_mint_quantity</td>
-  </tr>
   
   <tr>
-    <td>2</td>
-    <td>(2=mint_baton_vout)  
+    <td>...</td>
+    <td>(n=mint_baton_vout)  
      Mint baton receiver</td>
     <td>any<sup>2</sup></td>
     <td>0 <br/> + 'baton'</td>
@@ -349,7 +342,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
   <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
-  <td>0</td>
+  <td>...</td>
 <td>
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
@@ -362,16 +355,10 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
     <td>any</td>
     <td>0</td>
   </tr>
-  <tr>
-    <td>1</td>
-    <td>Token mint receiver</td>
-    <td>any</td>
-    <td>additional_token_quantity</td>
-  </tr>
 
   <tr>
-    <td>2</td>
-    <td>Mint baton receiver<br/>(2=mint_baton_vout)</td>
+    <td>...</td>
+    <td>Mint baton receiver<br/>(n=mint_baton_vout)</td>
     <td>any</td>
     <td>0<br/> + 'baton'</td>
   </tr>
@@ -400,7 +387,7 @@ The following transaction format is used to transfer tokens from one or more tok
     <td><b>Implied token amount<br/>(base units)</b></td>
   </tr>
   <tr>
-    <td>0</td>
+    <td>...</td>
     <td>
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;lokad id: 'SLP++\x00'&gt; (4 bytes, ascii)<BR/>
@@ -409,12 +396,6 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
   <td>any</td>
   <td>0</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Receiver 1</td>
-    <td>any</td>
-    <td>token_output_quantity</td>
   </tr>
 </table>
 
