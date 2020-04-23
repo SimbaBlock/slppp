@@ -21,7 +21,7 @@ We believe that a good solution for implementing tokens should have the followin
 
 ### GENESIS - Token Genesis Transaction Outputs
 
-This is the first transaction which defines the properties, metadata and initial mint quantity of the token. The token is thereafter uniquely identified by hash the token genesis transaction OutputScript by sha256 which is referred to as `token_id`.
+This is the first transaction which defines the properties, metadata and initial mint quantity of the token. The token is thereafter uniquely identified by sha256 the token genesis transaction OutputScript  which is referred to as `token_id`.
 
 `token_type` indicates the SLP++ sub-protocol:
 
