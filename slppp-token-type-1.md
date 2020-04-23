@@ -154,7 +154,7 @@ The following transaction format is used to transfer tokens from one or more tok
     <td>...</td>
     <td>
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
-&lt;lokad id: 'SLP++\x00'&gt; (4 bytes, ascii)<BR/>
+&lt;lokad id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
 &lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
@@ -177,7 +177,7 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
     <td>...</td>
     <td>
     OP_RETURN: '\x6a' (1 bytes, ascii)><br/>
-    &lt;lokad_id: 'SLP++\x00'&gt; (4 bytes, ascii)<br/>
+    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
     &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
     &lt;admin_type: 'FROZEN'&gt; (6 bytes, ascii) <br/>
     &lt;token_id&gt; (32 bytes)<br/>
