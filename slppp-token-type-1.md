@@ -52,6 +52,8 @@ This document specifies the rules and operation of the Permissionless Token Type
     <td>...</td>
    <td>
    lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   </td>
+   <td>
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
