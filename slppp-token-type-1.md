@@ -4,7 +4,7 @@
 
 ### Requirements
 
-We believe that a good solution for implementing tokens should have the following properties:
+A good solution for implementing tokens may have the following properties:
 
 **1. Permissionless**. Its tokens should not require permission to issue or transfer.\
 **2. Simple**. The system should be easily understandable and straightforward.\
