@@ -6,80 +6,21 @@
 Jonald Fyookball, James Cramer, Unwriter, Mark B. Lundeberg, Calin Culianu, Ryan X. Charles, Pisa
 
 ## Acknowledgements
-Amaury Sechet, for suggesting merklix based hash committments
 
-Andrew Stone, for the token descriptor and baton ideas
-
-Dexx7, for code review and ideas
 
 # Table of Contents
-[SECTION I: BACKGROUND](#section-i-background)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Introduction](#introduction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Summary](#summary)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Use Cases](#use-cases)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Requirements](#requirements)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Comparison to other token schemes](#comparison-to-other-token-schemes)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Design Philosophy and Challenges ](#design-philosophy-and-challenges)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Simplicity and Consensus](#simplicity-and-consensus)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Why SPV-friendly permissionless tokens are difficult](#why-spv-friendly-permissionless-tokens-are-difficult)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Hybrid Security Model](#hybrid-security-model)<BR>
-
-[SECTION II: PROTOCOL DESCRIPTION](#section-ii-protocol-description)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Protocol Overview](#protocol-overview)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Consensus Model](#consensus-model)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Checksum commitments](#checksum-commitments)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Consensus Rules](#consensus-rules)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Considerations](#considerations)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Transaction Detail](#transaction-detail)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Formatting](#formatting)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GENESIS - Token Genesis Transaction](#genesis---token-genesis-transaction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MINT - Extended Minting Transaction](#mint---extended-minting-transaction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SEND - Spend Transaction](#send---spend-transaction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FROZEN - Frozen Transaction](#frozen---fronzen-transaction)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Examples](#examples)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Transaction Validation Security Model](#transaction-validation-security-model)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Token Address Format](#token-address-format)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SLP Addr](#slp-addr)<BR>
-
-[SECTION III: FURTHER ANALYSIS](#section-iii-further-analysis)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Wallet Implementation](#wallet-implementation)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Balance and History](#balance-and-history)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Token Safety](#token-safety)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Funding Transaction Fees](#funding-transaction-fees)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Sending and Receiving](#sending-and-receiving)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Handling multiple token types](#handling-multiple-token-types)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Token names](#token-names)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Validation in light wallets](#validation-in-light-wallets)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Proxies](#proxies)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Tokengraph](#tokengraph)<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;[Economic Implications](#economic-implications)
-
-[Appendix A: Regulated Security Tokens](#appendix-a-regulated-security-tokens)<BR>
-[Copyright](#copyright)
 
 
 # SECTION I: BACKGROUND
 
 ## Introduction
 
-We begin with the premise that Bitcoin Cash needs a system for handling tradable or redeemable tokens.  We base this premise on the myriad of possible use cases and the billions of dollars of market capitalization that currently exist on platforms such as Ethereum.
-
-Despite the demand, enhancement proposals such as GROUP or OP_GROUP have not achieved enough consensus to meet the high bar required for changing the Bitcoin Cash base protocol layer.  Nor have there been any non-protocol proposals with sufficient traction.
-
-Therefore, we are motivated to present our own solution.  The key to its potential success lies in its simplicity, but will also depend on our taking action to foster the support of the ecosystem.
 
 ## Summary
 
 
-Simple Ledger Protocol (SLP) uses the meta data in OP_RETURN for the issuance and transfer of tokens in conjunction with standard transaction outputs that each represent a number of token units specified by the sender. Consensus on the interpretation of the OP_RETURN outputs is achieved by token users and market participants adhering to a prescribed set of simple rules.
-
-
-Because SLP builds on the transaction chain of the existing Bitcoin framework, users can easily verify transactions with SPV/light wallets within practical boundaries.  Full validation of a transaction back to its token genesis is possible by supplementing existing transaction-retrieval infrastructure with integration of SLP consensus rules.
-
-
 ## Use Cases
 
-A plethora of use cases for tokens has been detailed by others and does not require a long discussion here.   Uses include stocks, securities, registries, smart properties, utility tokens, contracts, coupons, bonds, demand deposits, local currencies, representation of physical assets, and many more.
 
 ## Requirements
 
@@ -95,30 +36,6 @@ We believe that a good solution for implementing tokens should have the followin
 
 ## Comparison to other token schemes
 
-Before presenting the details of our proposal, it may be helpful to review previous and competing proposals.
-
-
-In a perfect world, miners would validate tokens transactions, bringing the full Bitcoin security model to tokens.  However, this would require a protocol change like with the GROUP proposal.    Alternatively, a different kind of protocol change would allow a trustless linkage to flexible side-chains (such as RSK) upon which tokens may be built.
-
-Absent miner-validation of tokens, it is necessary to add extra data onto ordinary  transactions that indicates coloring, transferred value, etc. The standard way to do this is with [OP_RETURN](https://en.bitcoin.it/wiki/Script#Provably_Unspendable.2FPrunable_Outputs) which allows cleanly holding arbitrary data. Unfortunately, any bitcoin user can post an apparent token-transfer transaction and have it confirmed by miners without actually owning tokens. Token conservation and any other desired rules must instead be enforced with user consensus alone, by examining the history behind each transaction and marking as ‘invalid’ those that do not follow the rules of its protocol.
-
-Many implementations (including this proposal) fall under the category of "colored coins".   [Most of these designs actually supplement the transaction output (UTXO) with extra colored values](https://github.com/Colored-Coins/Colored-Coins-Protocol-Specification/wiki/Faq#coloring-satoshis): Surprisingly, only EPOBC (one of the earliest proposals) actually took bitcoins and applied color to them.
-
-The advantage of these "colored coin" tokens is that the miners prevent double-spending. One disadvantage is that these UTXOs can be accidentally spent without the special color metadata, which is equivalent to discarding the tokens. This easily occurs if tokens are sent to someone with a regular (non-token-aware) bitcoin wallet. [Color addresses](https://github.com/chromaway/ngcccbase/wiki/Addresses) have been proposed to reduce these accidents.
-
-Finally, some token schemes (Omni, Counterparty) discard the UTXO concept for tokens and instead associate an overall balance to an address. Transactions then serve only as a signed and irreversibly published order of balance transfer, and miners do not prevent double-spending of tokens. Users’ checking of transaction validity requires examining all prior transactions associated with the addresses involved, and this is sensitive to blockchain re-ordering. The [Tether](https://en.wikipedia.org/wiki/Tether_(cryptocurrency)) USD-pegged token was issued on Omni.
-
-Since colored coins cannot be double spent, [one can prove](https://www.reddit.com/r/Bitcoin/comments/26mzbb/chromawallet_colored_coins_v007_beta_it/chsm1na/) the validity of a token transaction by examining only the input ancestor transactions tracing back to when the tokens were first minted. This set of transactions forms a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG). These proofs are significantly more weighty than SPV, yet still simple enough to implement in a lite client. In contrast, balance-based tokens in principle require a full node to achieve a high level of security: only after an examination of all transactions (to ensure inclusion of all at a given address), can valid transactions be proven.
-
-Token implementations also vary in their scriptability, ranging from none at all (tokens can only be sent and received), to bitcoin-level (multisig, atomic swaps, payment channels possible), up to highly complex scripting languages like those implemented on the Ethereum cryptocurrency.
-
-Here is a chart comparing primary token properties:
- ![Table 1](images/table1.png)
-
-
-Other aspects are noted below: how multiple tokens can interact (e.g., can they appear in the same transaction, allowing token-token direct swaps?); how much customization is available to token properties at issuance; and any other notable extras / unusual features.
-
-![Table 2](images/table2.png)
 
 ## Design Philosophy and Challenges
 
@@ -126,132 +43,19 @@ Understanding the thinking behind the SLP protocol may assist in its evaluation.
 
 ### Simplicity and Consensus
 
-Our most formative principle is that of simplicity.  We found most of the previous attempts to introduce Bitcoin token proposals to be overcomplicated, which hinders both community support as well as implementation efforts and integration.
-
-But there is an even more important reason to keep things as simple as possible, and that is to facilitate consensus.  The base layer of Bitcoin can accommodate a complex set of consensus rules because Proof-of-Work ensures high byzantine fault tolerance.  In other words, if miners’ implementations do not agree, the incompatibility is revealed quickly and the non-integrous data is expunged.
-
-By contrast, meta data is not miner validated and there is no clear separation between valid and invalid data.  This creates an environment of low fault tolerance.  For token schemes that rely on central authorities or signers, this is not necessarily an issue.  However, for permissionless systems like SLP, the only apparent way to mitigate this problem is to keep the rules simple and clear.
 
 ### Why SPV-friendly permissionless tokens are difficult
 
-Without modifying the base Bitcoin protocol, supporting SPV wallets is challenging.  This is because invalid Bitcoin transactions are excluded from the blockchain, but invalid second-layer transactions are not.  Thus, you cannot use the SPV security technique of checking the merkle branch to ensure the transaction is included in a block.
-
-To prove a token transfer is valid, it is necessary to validate all prior transfers starting with the token genesis.  It would be advantageous to validate a token transaction with a high degree of certainty using only a subset of prior transactions.  Unfortunately, this does not appear possible because an attacker can cheaply create a chain of transactions to fool a recipient into believing an incoming transaction is valid when it is not.
-
-We considered the possibility of attempting to prevent this attack with various commitment schemes, requiring transactions to point back to prior transactions.  However, this idea is ineffective because all links can be spoofed, regardless of whether they pointed to fake transactions on the false chain or real transactions on the valid chain. Thus, foul play would only be detectable at the exact place of divergence, which could be anywhere.
 
 ### Hybrid Security Model
 
-Other various commitment schemes were considered and discarded.  Finally, we concluded that the simplest solution is best:  Users can validate the transfer of token ownership as far back as they choose, with the understanding that if they do not verify completely then it is theoretically possible for an attacker to create a longer attack chain.
-
-It is an acceptable limitation to have partial SPV-compatible validation, IF it is supplemented with an infrastructure-based solution providing full validation.  We will discuss the security model in detail in a subsequent section.
 
 
 # SECTION II: PROTOCOL DESCRIPTION
 
-## Protocol Overview
-
-The protocol defines 4 types of token transactions, which are contained within the OP_RETURN meta data of standard Bitcoin Cash transactions.
-
-The first 2 token transaction types (genesis and extended minting) define and issue the token.  The third transaction type is the most common (send); it allows users to transfer tokens.
-The final transaction type (checksum commitment) is a supplement to the basic consensus model.
-
-Like most "colored coins" protocols, SLP associates token amounts with real BCH transaction outputs, but with a token amount that is independent from the BCH amount.  Since Bitcoin transactions usually have multiple outputs, the OP_RETURN message specifies how many tokens are being assigned to which outputs.
-
-Besides defining a format for the OP_RETURN message, the protocol also defines consensus rules that determine the validity of a token send transaction or extended minting transaction  (see Consensus Rules section below).
-
-SLP transactions may contain multiple inputs and outputs which correspond to those in the Bitcoin transaction they are carried in (although it is possible to have additional *non*-SLP inputs and outputs in the same transaction).  Note that you cannot send multiple *types* of SLP tokens in the same transaction.  Also, it is possible to lose tokens if a token-containing output is improperly spent.
-
-## Consensus Model
-
-SLP utilizes a model that could be described as **Proof-of-Work/Proof-of-Trust**.
-
-Meta data, while prunable, is still part of Bitcoin blocks -- time-stamped and ordered in the immutable ledger via Proof-of-Work. However, like most OP_RETURN based approaches, what SLP sees as valid data is not segregated from what it considers invalid.  Although unambiguously ordered to prevent double-spending, the data must be filtered according to a set of rules that all participants agree on.
-
-In many ways, this is not different than how Bitcoin itself operates.  Users must stay together on the same set of consensus rules to maintain their network effect.  The possibility to diverge is always present, with the market being the ultimate judge of how much value each ruleset holds.
-
-In a pure Proof-of-Work model, byzantine fault tolerance is achieved via economic incentives combined with incompatible-by-design sets of data.  By contrast, SLP relies on a minimalistic set of rules overlayed onto the support of the PoW backbone.
-
-With transaction ordering taken care of by the underlying Bitcoin Cash blockchain, users simply have to use the same rules as a matter of convention. Those rules will be defined by the concordance of:
-
-a) this specification
-
-b) a reference implementation (Electron Cash SLP wallet)
-
-c) token issuers
-
-## Checksum commitments
-
-Token issuers and/or other trusted ecosystem participants should publish periodic hash commitments of valid transactions in accordance with this specification, which provides a "Proof of Trust".
-
-It is important to understand that the checksums are part of the overall consensus model but are **NOT** part of the consensus *rules* per se.  If this sounds paradoxical, understand that the blockchain data and protocol rules are paramount.  The issuer is usually (but not always) just the most important economic actor.
-
-Commitments by the issuer or trusted validators serve as a "proof of responsibility".  If the economic stakeholders are not capable of producing an accurate summary of transactions under the rules of the protocol, it will be readily apparent, and market forces will react appropriately.  As a side benefit, checksum commitments create a modest barrier to entry, delineating low-effort actors from more professional operations.
-
-## Consensus Rules
-
-In all cases of SLP transactions:
-
-* There must be an OP_RETURN output script in the first output (vout=0). An OP_RETURN output script is defined as a ScriptPubKey beginning with opcode 0x6a.
-
-* This OP_RETURN first-output script holds an SLP message, whose contents must conform precisely to this specification (see "transaction detail" section).
-
-### Rules for transfer transactions (SEND)
-
-* The sum of token outputs specified OP_RETURN may not exceed the sum of valid token inputs.
-A 'valid token input' is a transaction input (i.e., a spent TXO) where the previous transaction is already known to conform to SLP consensus rules. The value of a valid token input is simply the token amount listed in the OP_RETURN SLP message of the transaction that created the TXO.
-
-* Inputs of a differing `token_type` or `token_id` are to be ignored in this calculation, i.e., treated as if they contributed 0 tokens.
-
-### Rules for issuance transactions (GENESIS/MINT)
-
-* GENESIS transactions are self-evidently valid or invalid, not relying on inputs' validity or content.
-
-* MINTs require a special 'baton' input, either directly from the GENESIS that created it, or indirectly via a previous MINT. Inputs of a differing `token_type` or `token_id` are to be ignored in this calculation, i.e., treated as if they contributed no baton. Token inputs should also be ignored -- only the baton is relevant.
-
-### Considerations
-
-A. It is in principle possible for a transaction to include multiple OP_RETURN output scripts (currently these are non-standard in bitcoin, but this may change). We emphasize that all other output scripts after vout=0 are irrelevant to SLP. Thus the secondary OP_RETURN scripts could, for example, be used to hold notes, or data for other protocols.
-
-B. It is possible for the number of token outputs not to match the number of transaction outputs, but this does not invalidate the transaction:
-
-  * If the number of transaction outputs is greater than the number of token amounts specified in OP_RETURN, then the extra transaction outputs implicitly recieve 0 tokens.
-  * If the number of transactions outputs is less than the number of token amounts specified in OP_RETURN, the extra token amounts are simply burned. (note that these burned amounts are regardless included in the token output sum check)
-
-C. It is possible for one or more inputs of a transaction to come from invalid or bogus SLP transactions; this does not invalidate the transaction, as those inputs are just ignored. As long as the consensus rules are met on the basis of valid inputs alone, then the transaction is valid.
-
-D. A token's genesis defines the protocol type (`token_type`) it is using.  This is less flexible than allowing "soft forks" of new rules, but prevents future problems. Although immutable, we still pass the version in each transaction to facilitate parsing and give unlimited flexibility in future SLP protocol types.
-
-E. In a send, the input-sum or output-sum may exceed 2<sup>64</sup>−1 (64-bit integer limit) even though all summands are 64-bit integers. Such excessive sums are valid and so validators should avoid using accumulators that overflow in these conditions.
-
-F. SENDs that output 0 tokens are a strange corner case that have self-evident validity, like genesis transactions. In the case of a 0-output SEND, it doesn't matter whether any of the inputs are valid. Also, the token_id may refer to a nonexistent transaction, or a real genesis but of a different token_type.
-
 ## Transaction Detail
 
 ### Formatting
-
-SLP uses a restricted form of bitcoin script after the OP_RETURN to encode variable length data chunks (byte arrays) as bitcoin script PUSH operations.  Each separately pushed chunk inside the OP_RETURN payload is denoted in the subsequent sections using angle brackets (e.g., &lt;xyz&gt;). Messages violating these rules shall be judged entirely invalid under SLP consensus:
-
-1. The script must be valid bitcoin script. Each field must be preceded by a valid Bitcoin script data push opcode. Truncated scripts (ending mid-push) are disallowed.
-
-2. Each field presented inside the OP_RETURN payload must match the byte size and/or value indicated in parentheses.
-
-3. Bitcoin script allows a given byte array to be pushed in various ways, and we allow this in SLP as well. For example, it is valid to push a 4-byte chunk (like the Lokad ID) in four different ways: 0x04 [chunk], 0x4c 0x04 [chunk], 0x4d 0x04 0x00 [chunk], or 0x4e 0x04 0x00 0x00 0x00 [chunk].
-
-4. Only opcodes 0x01 to 0x4e are permitted (after OP_RETURN). Note this means that not all push opcodes are allowed -- it is forbidden to use the empty-push opcode 0x00 (OP_0) or 1-byte literal push opcodes 0x4f-0x60 (OP_1 through OP_16 and OP_1NEGATE) anywhere in the OP_RETURN. For example, it is invalid to use 0x58 to push the number '8' in the 1-byte decimals field of the GENESIS transaction, even though in normal bitcoin script the opcode 0x58 is effectively equivalent to 0x01 0x08  (push [0x08]). For this reason some standard bitcoin script decompilers, that treat all push opcodes on equal footing, must not be used for parsing SLP transactions.
-
-5. Some fields permit an empty push (length-0 chunk) however you cannot use opcode 0x00 for this purpose. Rather, you may use 0x4c 0x00, or 0x4d 0x00 0x00, or 0x4e 0x00 0x00 0x00 0x00.
-
-6. All integer fields are unsigned and use big-endian encoding, and must conform to the specified byte size range. For example, an amount of 1000 in an indicated 8-byte field shall be pushed as the byte array [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xE8].
-
-7. Optional fields are omitted by simply leaving out the push. If an optional field is included, all preceding optional fields must be included as well.
-
-8. Extraneous appendages are prohibited.  Any unexpected data coming after an otherwise-valid payload will invalidate the transaction.
-
-9. String fields within the GENESIS OP_RETURN payload have a recommended character encoding, however it is *not* required for validity that these byte arrays can be successfully decoded. String fields of (in principle) unlimited length are listed with an upper limit of "∞", however in practice they are limited by the ScriptPubKey length restriction (223 bytes at the time of this writing).
-
-We emphasize the point, again, that the message has to be perfect in its entirety. For example, if a transaction has 5 outputs, and the fifth output has only 7 bytes instead of 8, then the previous 4 outputs effectively burn the tokens because the entire transaction is invalid.
-
 ### GENESIS - Token Genesis Transaction
 
 This is the first transaction which defines the properties, metadata and initial mint quantity of the token. The token is thereafter uniquely identified by the token genesis transaction hash which is referred to as `token_id`.
@@ -614,7 +418,7 @@ xsv blockchain transaction:  424d6948f7e6311816c27ea4a95418467f2e3f3185fcfba765c
 
 SCRIPT: ``006a04534c500001010453454e4420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d25026826470800005af3107a40000800232bff5f46c000``
 
-**COMMIT Transaction**
+**FROZEN Transaction**
 
 [to be determined]
 
@@ -644,23 +448,6 @@ The validation methods listed above can be used together in various combinations
 A good token wallet should always perform some kind of full validation.  This best practice creates a low probability of success for an attack, which discourages attackers --  further increasing the effectiveness of partial validation.  Verifying the information from proxies is possible to any chosen degree, and a client can check with multiple proxies or nodes until he’s convinced the SLP chain is valid.
 
 Additionally, although an attack is not necessarily costly in fees, it may be costly in coordination efforts, because long chains of transactions need to be dispersed across the span of time to avoid being blatantly suspicious.
-
-# Token Address Format
-
-The protocol’s consensus rules, security model, and operation are independent of any particular address encoding; it could be used in theory with legacy addresses or CashAddr addresses.
-
-However, using a new address format makes sense because it will greatly mitigate usability problems.  Specifically, it will help prevent users from accidentally spending a UTXO that has a token balance, which is likely to happen if users send tokens to a non token-aware wallet.
-
-## SLP Addr
-
-Following the design and nomenclature of [CashAddr](https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/cashaddr.md), SLP Addr will use the same encoding scheme except for its prefix -- substituting “simpleledger:” in place of “bitcoincash:”. The URI prefix “simpleledger” [has been taken for this project](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). Since the prefix is part of the checksum (even if omitted in display), an SLP Addr will be an invalid encoding for an application expecting a Cash Addr address, and vice-versa.
-The temporary incompatibility between a normal Bitcoin Cash wallet and an SLP wallet can be handled by the SLP wallet providing an address converter.  This is an acceptable trade-off to create the desired separation.
-
-**Bip39 and Electrum Seeds**
-
-Hierarchical deterministic wallets can be used for tokens.  To keep addresses separate from those that might have been generated using the same mnemonic seed, SLP wallets could use a different derivation path, a new BIP39 coin_type integer… or for a non-BIP39 wallet such as Electron Cash, a different salt value for bip32 based PBKDF2 key stretching.
-
-However, wallets can also choose to simply expect users to have a different wallet file for tokens vs regular BCH funds.
 
 # SECTION III: FURTHER ANALYSIS
 
@@ -768,24 +555,6 @@ There are several economic-related questions regarding different aspects of the 
 5. The Bitcoin Cash UTXO set will grow as a result of token usage.  However, this is not fundamentally different from UTXO set growth from non-token usage, and is a necessary effect that comes from more blockchain usage in general, which is desired.
 
 # Appendix A: Regulated Security Tokens
-
-Tokenization presents a huge opportunity to bring more liquidity to the secondary trading marketplace for regulated securities which has traditionally suffered from long investor hold times and thus low liquidity for private placement securities.
-
-The preceding SLP Token specification focused on purely permissionless tokens because they offer the most liberty to a token holder, meaning absolute control of the digital token is given to the token holder.
-
-However, many private companies are not legally permitted to trade their company’s equity so freely due to a number of regulatory restrictions where the investor must be accredited and their identity must be known to the company.
-
-To solve this problem, several existing security token trading platforms have built their protocol and implementations to associate one or more whitelists of accredited investors with the security token.  These platforms then limit whom is allowed to buy and trade shares of company stock to the whitelist.
-
-The true power of these platforms lies in the buyer and seller market that is created by these curated whitelists which comply with a given private company’s regulatory jurisdiction.  This may offer a dramatic increase in liquidity for a company’s stock.  There is an entire ecosystem dedicated towards security tokens with whitelists.  Leading companies within the regulated security token ecosystem include [BlockTrade](https://blocktrade.com/), [PolyMath](https://polymath.network/), [Harbor](https://harbor.com/), [tzero](https://www.tzero.com/), and [0x protocol](https://0xproject.com/).
-
-We have not created a specification for a securities token using whitelists at this time, but we believe it is certainly possible using SLP Token protocol. Here is a sketch of one possible whitelist mechanism:
-
-* The initial whitelist of allowed addresses (P2PKH or P2SH) is coded into the document referenced in the genesis. A new consensus validity rule is added for this token type: only tokens from Tx inputs with whitelisted addresses will contribute to the input sum. In other words, tokens sent to a non-whitelisted address are worthless (unless they are used in a transaction with new whitelist rules that add this address, see below).
-
-* It is desirable to allow issuers to update the whitelist at a later date, however it would be disastrous for consensus if this were to retroactively change the validity of past transactions. Rather, we suggest that the ‘minting baton’ authority have the added power to declare a new whitelist that overrides the whitelists of its ancestors, but only applies to the tokens that descend from it. Tokens with the new whitelist will ‘infect’ old-whitelist tokens whenever they are mixed in a transaction. This allows the DAG-proving mechanism to function correctly, i.e., each transaction has a unique and permanent validity that depends only on its UTXO ancestors.
-
-* It will probably be necessary every once in a while for the issuer to make an [airdrop](https://hackernoon.com/wtf-is-an-airdrop-a-detailed-guide-to-free-cryptocurrency-e70e8777dd83) of a new token with a new <token_id> onto current owners, to deal with: 1) recovering lost keys / burnt tokens with some securities since there is no legal notion of a ‘lost security’ for non-bearer instruments, or 2) a change in whitelist that must be enforced promptly. The old token_id will continue to be a valid SLP token, just without its prior social meaning. Such airdrops have the nice side-effect of simplifying DAG histories.
 
 # Copyright
 
