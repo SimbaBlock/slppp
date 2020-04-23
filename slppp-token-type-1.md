@@ -2,18 +2,11 @@
 ### Specification version: 0.1
 ### Date published: April 23, 2020
 
-## Authors
+### Authors
 Jonald Fyookball, James Cramer, Unwriter, Mark B. Lundeberg, Calin Culianu, Ryan X. Charles, Pisa
 
-## Acknowledgements
 
-
-# Table of Contents
-
-
-# SECTION I: BACKGROUND
-
-## Requirements
+### Requirements
 
 We believe that a good solution for implementing tokens should have the following properties:
 
