@@ -1,4 +1,4 @@
-# SLP++ Onchain Message  Protocol Specification
+# SLP++ onchain Message  Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 25, 2020
 
@@ -9,7 +9,7 @@
 
 ## Transaction Detail
 
-### Create - peer to peer Message Transaction Outputs
+### Create - Peer to Peer Message Transaction Outputs
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
