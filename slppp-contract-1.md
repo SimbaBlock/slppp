@@ -39,10 +39,10 @@ The contract is identified by sha256 the create contract transaction outputscrip
    &lt;exp_date&gt; (0 bytes or 256 bytes)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
-   &lt;encrypt: '0' / '1'&gt; (1 byte integer)
-   &lt;aes_pwd: (32 bytes ascii)
-   &lt;pubkey1: &gt; (32 bytes ascii)
-   &lt;pubkey2: &gt; (32 bytes ascii)
+   &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
+   &lt;aes_pwd: (32 bytes ascii)<br/>
+   &lt;pubkey1: &gt; (32 bytes ascii)<br/>
+   &lt;pubkey2: &gt; (32 bytes ascii)<br/>
    </td>
     <td>any<sup>2</sup></td>
   </tr>
