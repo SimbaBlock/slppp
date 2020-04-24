@@ -27,13 +27,13 @@ The token is identified by sha256 the token genesis transaction outputscript whi
 ```
 
 `token_type` indicates the SLP++ sub-protocol:
-
-* 1 - Permissionless Token Type
+```
+* 1 - Permissionless Token Type(this spec)
 * 2 - Reserved for Security Token Type 
 * 3 - Reserved for Voting Token Type
 * 4 - Reserved for Ticketing Token Type
 * ...
-
+```
 This document specifies the rules and operation of the Permissionless Token Type (1) only. Tokens of different types cannot be mixed, and so future specifications of other token types will not affect the consensus validity of type <sup>2</sup>.
 
 `mint_baton_vout`: Future token supply increases are made possible if the genesis endows a specific transaction output with a "minting baton" that can be passed along and used for future minting (using 'MINT' transactions, see below). If `mint_baton_vout` is not present or refers to a nonexistent output, then the baton does not exist and the token provably has a one-time issuance.
