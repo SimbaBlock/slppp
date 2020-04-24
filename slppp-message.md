@@ -32,7 +32,7 @@
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
    </td>
-    <td>any<sup>2</sup></td>
+    <td>any</td>
   </tr>
   
   <tr>
@@ -43,7 +43,7 @@
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  GROUP lockscript are the same means</sup>   
+<sup>1. The lockscript can be any valid script combination.  GROUP Message's lockscript is the same means</sup>   
 
 ### GROUP - Group Message Transaction Outputs
 
