@@ -83,6 +83,12 @@
   </tr>
 
   <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+
+  <tr>
   <td>...</td>
   <td>
    OP_PUSH: (0 to ∞ bytes, ascii)<br/>
@@ -90,24 +96,6 @@
     <td>any</td>
   </tr>
 
-
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
-
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
-
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
 
 
 </table>
