@@ -407,8 +407,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>
-   ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5
-   634f523f4f910a3<br/>
+   ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5634f523f4f910a3<br/>
   </td>
   <td>token_id</td>
  </tr>
