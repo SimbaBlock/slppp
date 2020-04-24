@@ -119,7 +119,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
   <tr>
   <td>...</td>
 <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockscript:'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
@@ -194,7 +194,7 @@ OUTPUTSCRIPT BROKEN DOWN:
 <table>
 <tr>
 <td>76a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac</td>
-<td>lockscript: (OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG)</td>
+<td>OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG</td>
 </tr>
  <tr>
   <td>6a</td>
@@ -302,7 +302,7 @@ OUTPUTSCRIPT BROKEN DOWN:
 <table>
 <tr>
 <td>76a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac</td>
-<td>lockscript: OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG</td>
+<td>OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG</td>
 </tr>
  <tr>
   <td>6a</td>
@@ -371,7 +371,7 @@ OUTPUTSCRIPT BROKEN DOWN:
 <table>
 <tr>
 <td>76a9140e406c10d0315942e442946661a0931ce7181fab88ac</td>
-<td>lockscript: OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG</td>
+<td>OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG</td>
 </tr>
  <tr>
   <td>6a</td>
