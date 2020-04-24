@@ -40,7 +40,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii)<br/>
+   &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
    &lt;pubkey1: &gt; (32 bytes ascii)<br/>
    &lt;pubkey2: &gt; (32 bytes ascii)<br/>
    </td>
