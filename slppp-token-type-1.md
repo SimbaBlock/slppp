@@ -23,7 +23,7 @@ A good solution for implementing tokens may have the following properties:
 
 This is the first transaction which defines the properties, metadata and initial mint quantity of the token. 
 ```
-The token is identified by sha256 the token genesis transaction outputscript which is referred to as `token_id`.
+The token is identified by sha256 the token genesis transaction outputscript which is referred as `token_id`.
 ```
 
 `token_type` indicates the SLP++ sub-protocol:
