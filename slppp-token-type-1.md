@@ -330,8 +330,8 @@ SCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>
-   a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d8<br/>
-   7b20d2502682647
+   ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5<br/>
+   634f523f4f910a3
   </td>
   <td>token_id</td>
  </tr>
@@ -358,6 +358,57 @@ SCRIPT BROKEN DOWN:
 bsv blockchain transaction: a9265f9139c28a76fe561a783e881f38673ce12aaaa7b3d7a39dedb0305867c2
 
 SCRIPT: ``6a06534c502b2b0001010453454e4420ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5634f523f4f910a30800005af3107a4000``
+
+SCRIPT BROKEN DOWN:
+<table>
+ <tr>
+  <td>6a</td>
+  <td>OP_RETURN</td>
+ </tr>
+ <tr>
+  <td>06</td>
+  <td>Length of lokad_id field (6 bytes)</td>
+ </tr>
+ <tr>
+  <td>534c502b2b00</td>
+  <td>SLP++\x00</td>
+ </tr>
+ <tr>
+  <td>01</td>
+  <td>length of token_type (1 byte)</td>
+ </tr>
+ <tr>
+  <td>01</td>
+  <td>token_type (1)</td>
+ </tr>
+ <tr>
+  <td>04</td>
+  <td>length of transaction_type field (4 bytes)</td>
+ </tr>
+ <tr>
+  <td>53454e44</td>
+  <td>'SEND'</td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>length of token_id (32 bytes)</td>
+ </tr>
+ <tr>
+  <td>
+   ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5<br/>
+   634f523f4f910a3
+  </td>
+  <td>token_id</td>
+ </tr>
+ <tr>
+  <td>08</td>
+  <td>length of token_output_quantity (8 bytes)</td>
+ </tr>
+ <tr>
+  <td>00005af3107a4000</td>
+  <td>token_output_quantity (100,000,000,000,000)</td>
+ </tr>
+</table>
 
 **FROZEN Transaction**
 
