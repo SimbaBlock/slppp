@@ -28,10 +28,10 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
     <td>...</td>
    <td>
-   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
-   &lt;type: 'contract/sotrage/vouchcher/source'&gt; (3 to 16 byte integer)<br/>
+   &lt;type: 'contract/sotrage/vouchcher/source'&gt; (5 to 16 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;sign_date:&gt; (0 to 256 bytes, suggested utf-8)<br/>
@@ -73,26 +73,22 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
-&lt;thransaction_type: 'MINT'&gt; (4 bytes, ascii)<BR>
-&lt;token_id&gt; (32 bytes)<BR>
-&lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
-&lt;additional_token_quantity&gt; (8 byte integer)
+&lt;type: 'contract/sotrage/vouchcher/source'&gt; (3 to 16 bytes ascii)<br/>
+&lt;thransaction_type: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
+&lt;contract_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
 
   <tr>
     <td>...</td>
-    <td>Mint baton receiver<br/>(n=mint_baton_vout)</td>
     <td>any</td>
   </tr>
   <tr>
     <td>...</td>
-    <td>Any</td>
     <td>any</td>
   </tr>
 
