@@ -1,6 +1,10 @@
 # SLP++
 SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
 
+
+### SLP++ onchain message protocol
+[slp++-message](./slppp-message.md)
+
 ### SLP++ electronic contract protocol
 [slp++-contract](./slppp-contract.md)
 
