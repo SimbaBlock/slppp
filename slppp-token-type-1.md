@@ -4,7 +4,7 @@
 
 ### Requirements
 
-A good solution for implementing tokens may have the following properties:
+A good solution for implementing utility tokens may have the following properties:
 
 **1. Permissionless**. Its tokens should not require permission to issue or transfer.\
 **2. Simple**. The system should be easily understandable and straightforward.\
@@ -28,7 +28,7 @@ The token is identified by sha256 the token genesis transaction outputscript whi
 
 `token_type` indicates the SLP++ sub-protocol:
 ```
-* 1 - Permissionless Token Type(this spec)
+* 1 - Utility Token Type(this spec)
 * 2 - Reserved for Security Token Type 
 * 3 - Reserved for Voting Token Type
 * 4 - Reserved for Ticketing Token Type
@@ -176,10 +176,6 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
   <td>0</td>
   </tr>
 </table>
-
-### FROZEN - Frozen Token Transaction Outputs
-
-TODO
 
 
 ### Examples
@@ -420,10 +416,6 @@ OUTPUTSCRIPT BROKEN DOWN:
   <td>token_output_quantity (100,000,000,000,000)</td>
  </tr>
 </table>
-
-**FROZEN Transaction**
-
-[to be determined]
 
 
 # Transaction Validation Security Model
