@@ -7,7 +7,7 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
 ### SLP++ onchain message protocol
 [slp++-message](./slppp-message.md)
 
-### SLP++-token protocol
+### SLP++ utility token protocol
 [slp++-token-type-1](./slppp-token-type-1.md) compared to original SLP, SLP++ has below advantages:
 ```
 1. Safety：avoid the chance of spent utxo which contains tokens.
