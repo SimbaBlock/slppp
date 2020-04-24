@@ -86,7 +86,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any<sup>3</sup></td>
+    <td>any</td>
   </tr>
 
 </table>
