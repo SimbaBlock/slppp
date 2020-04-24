@@ -25,7 +25,7 @@
    <td>
    lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
+   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
    &lt;action: 'PEER' &gt; (4 to 5  bytes ascii)<br/>
    &lt;data:&gt; (0 to ∞ bytes)<br/>
