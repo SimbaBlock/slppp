@@ -186,27 +186,23 @@ TODO
 
 **GENESIS Transaction**
 
-bsv blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
+bsv blockchain transaction: ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5634f523f4f910a3
 
-SCRIPT: ``006a04534c500001010747454e45534953045553445423546574686572204c74642e20555320646f6c6c6172206261636b656420746f6b656e734168747470733a2f2f7465746865722e746f2f77702d636f6e74656e742f75706c6f6164732f323031362f30362f546574686572576869746550617065722e70646620db4451f11eda33950670aaf59e704da90117ff7057283b032cfaec77793139160108010208002386f26fc10000``
+SCRIPT: ``6a06534c502b2b0001010747454e45534953045553445423546574686572204c74642e20555320646f6c6c6172206261636b656420746f6b656e734168747470733a2f2f7465746865722e746f2f77702d636f6e74656e742f75706c6f6164732f323031362f30362f546574686572576869746550617065722e70646620db4451f11eda33950670aaf59e704da90117ff7057283b032cfaec77793139160108010108002386f26fc10000``
 
 SCRIPT BROKEN DOWN:
 <table>
- <tr>
-  <td>00</td>
-  <td>OP_FALSE</td>
- <tr>
  <tr>
   <td>6a</td>
   <td>OP_RETURN</td>
  <tr>  
  <tr>
-  <td>04</td>
-  <td>length of lokad_id field (4 bytes)</td>
+  <td>06</td>
+  <td>length of lokad_id field (6 bytes)</td>
  <tr>
  <tr>
-  <td>534c5000</td>
-  <td>SLP\x00</td>
+  <td>534c502b2b00</td>
+  <td>SLP++\x00</td>
  <tr>
  <tr>
   <td>01</td>
@@ -279,8 +275,8 @@ SCRIPT BROKEN DOWN:
   <td>length for mint_baton_vout (1 byte)</td>
  <tr>
  <tr>
-  <td>02</td>
-  <td>mint_baton_vout (2)</td>
+  <td>01</td>
+  <td>mint_baton_vout (1)</td>
  <tr>
  <tr>
   <td>08</td>
@@ -294,27 +290,23 @@ SCRIPT BROKEN DOWN:
 
 **MINT Transaction**
 
-bsv blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
+bsv blockchain transaction: fad0bc88e399cd35c8003a01236f72a5271206851283cea00ab18893fcb7f1c2
 
-SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
+SCRIPT: ``6a06534c502b2b000101044d494e5420ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5634f523f4f910a3010108002386f26fc10000``
 
 SCRIPT BROKEN DOWN:
 <table>
- <tr>
-  <td>00</td>
-  <td>OP_FALSE</td>
- </tr>
  <tr>
   <td>6a</td>
   <td>OP_RETURN</td>
  </tr>
  <tr>
-  <td>04</td>
-  <td>Length of lokad_id field (4 bytes)</td>
+  <td>06</td>
+  <td>Length of lokad_id field (6 bytes)</td>
  </tr>
  <tr>
-  <td>534c5000</td>
-  <td>SLP\x00</td>
+  <td>534c502b2b00</td>
+  <td>SLP++\x00</td>
  </tr>
  <tr>
   <td>01</td>
@@ -348,8 +340,8 @@ SCRIPT BROKEN DOWN:
   <td>length of mint_baton_vout (1 byte)</td>
  </tr>
  <tr>
-  <td>02</td>
-  <td>mint_baton_vout (2)</td>
+  <td>01</td>
+  <td>mint_baton_vout (1)</td>
  </tr>
  <tr>
   <td>08</td>
@@ -363,9 +355,9 @@ SCRIPT BROKEN DOWN:
 
 **SEND Transaction**
 
-bsv blockchain transaction:  424d6948f7e6311816c27ea4a95418467f2e3f3185fcfba765c273d3aca5fde7
+bsv blockchain transaction: a9265f9139c28a76fe561a783e881f38673ce12aaaa7b3d7a39dedb0305867c2
 
-SCRIPT: ``006a04534c500001010453454e4420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d25026826470800005af3107a40000800232bff5f46c000``
+SCRIPT: ``6a06534c502b2b0001010453454e4420ad5781d22ca3d1d21efe23d6856392dfaf7aec17f64e852b5634f523f4f910a30800005af3107a4000``
 
 **FROZEN Transaction**
 
