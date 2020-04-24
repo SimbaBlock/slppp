@@ -28,7 +28,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
     <td>...</td>
    <td>
-   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;type: 'contract/sotrage/vouchcher/source'&gt; (5 to 16 bytes ascii)<br/>
@@ -73,7 +73,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'contract/sotrage/vouchcher/source'&gt; (3 to 16 bytes ascii)<br/>
