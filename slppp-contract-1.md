@@ -61,7 +61,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
 
 <sup>3. SLP does not impose any restrictions on BSV output amounts. Typically however the OP_RETURN output would have 0 BSV (as any BSV sent would be burned), and outputs receiving tokens / mint batons would be sent only the minimal 'dust' amount of 0.00000546 BSV.</sup>
 
-### UPdate - Update Contract Transaction Outputs
+### Update - Update Contract Transaction Outputs
 
 **Transaction outputs**:
 <table>
