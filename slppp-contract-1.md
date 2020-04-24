@@ -24,7 +24,6 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
   <td><b>BSV<br/>amount</b></td>
-  <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -46,14 +45,12 @@ The contract is identified by sha256 the create contract transaction outputscrip
    &lt;pubkey2: &gt; (32 bytes ascii)
    </td>
     <td>any<sup>2</sup></td>
-    <td>0</td>
   </tr>
   
   <tr>
     <td>...</td>
     <td>Any</td>
     <td>any<sup>3</sup></td>
-    <td>0</td>
   </tr>
  
 </table>
@@ -72,11 +69,10 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
   <td><b>BSV<br/>amount</b></td>
-  <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
   <td>...</td>
-<td>
+  <td>
    lockscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
@@ -87,20 +83,17 @@ The contract is identified by sha256 the create contract transaction outputscrip
 &lt;additional_token_quantity&gt; (8 byte integer)
   </td>
     <td>any</td>
-    <td>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Mint baton receiver<br/>(n=mint_baton_vout)</td>
     <td>any</td>
-    <td>0<br/> + 'baton'</td>
   </tr>
   <tr>
     <td>...</td>
     <td>Any</td>
     <td>any</td>
-    <td>0</td>
   </tr>
 
 </table>
