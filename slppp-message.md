@@ -9,7 +9,7 @@
 
 ## Transaction Detail
 
-### Create - Peer to Peer Message Transaction Outputs
+### PEER - Peer to Peer Message Transaction Outputs
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
@@ -45,7 +45,7 @@
 
 <sup>1. The lockscript can be any valid script combination.  GROUP lockscript are the same means</sup>   
 
-### GROUP - GROUP Message Transaction Outputs
+### GROUP - Group Message Transaction Outputs
 
 **Transaction outputs**:
 <table>
