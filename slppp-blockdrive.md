@@ -79,6 +79,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (3 to 16 bytes ascii)<br/>
 &lt;thransaction_type: 'UPDATE'&gt; (5 to 16 byte ascii)<BR>
+&lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
