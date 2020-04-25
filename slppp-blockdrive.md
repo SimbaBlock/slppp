@@ -30,7 +30,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
    <td>
    lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
+   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
@@ -58,7 +58,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  UPDATE lockscript are the same means</sup>   
+<sup>1. The lockscript can be any valid script combination.  UPDATE & DELETE's lockscript are the same means</sup>   
 
 ### UPDATE - Update Blockdrive Transaction Outputs
 
