@@ -97,7 +97,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 </table>
 
 
-### DELETE - DELETE Blockdrive Transaction Outputs
+### DELETE - Delete Blockdrive Transaction Outputs
 
 **Transaction outputs**:
 <table>
