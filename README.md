@@ -31,7 +31,9 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
   
   <tr>
     <td>...</td>
-    <td>OP_FALSE OP_RETURN <sup>3</sup>: data (0 to  ∞ bytes)</td>
+    <td>
+    OP_FALSE <br>
+    OP_RETURN <sup>3</sup>: data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
  
