@@ -93,7 +93,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE
+    OP_FALSE<br>
     OP_RETURN: modified data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
