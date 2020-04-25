@@ -3,7 +3,7 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
 
 ## Transaction struture
 
-**Transaction inputs**: Any number of inputs or content of inputs, in any order.
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
 <table>
 <tr>
@@ -31,11 +31,14 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
   
   <tr>
     <td>...</td>
-    <td>OP_PUSH: data (0 to  ∞ bytes)</td>
+    <td>OP_PUSH<sup>2</sup>: data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
  
 </table>
+
+<sup>1. The lockscript can be any valid script combination. </sup>   
+<sup>2. The OP_PUSH vout should be common data for  specific business. </sup>   
 
 
 ## Protocol
