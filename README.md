@@ -14,8 +14,8 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
   <tr>
     <td>...</td>
    <td>
-   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   Lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   OP_RETURN<sup>2</sup>: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;metadata: &gt; (0 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
@@ -31,14 +31,15 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
   
   <tr>
     <td>...</td>
-    <td>OP_PUSH<sup>2</sup>: data (0 to  ∞ bytes)</td>
+    <td>OP_PUSH<sup>3</sup>: data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination. </sup>   
-<sup>2. The OP_PUSH vout should be common data for  specific business. </sup>   
+<sup>1. The Lockscript can be any valid script combination. </sup>   
+<sup>2. The OP_RETURN should be metadata & key managment for  specific business. </sup>   
+<sup>3. The OP_PUSH vout should be common data for  specific business. </sup>   
 
 
 ## Protocol
