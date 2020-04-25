@@ -98,7 +98,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 
 <sup>1. The lockscript can be any valid script combination.  MINT & SEND lockscript are the same means</sup>   
 
-<sup>2. The Lokad identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Lokad IDs, gives the ascii string 'SLP++\x00'). Inquiries and additional information about the Lokad system of OP_RETURN protocol identifiers can be found at https://github.com/Lokad/Terab maintained by Joannes Vermorel.</sup>
+<sup>2. The Lokad identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Lokad IDs, gives the ascii string 'SLP++\x00'). 
 
 <sup>3. SLP does not impose any restrictions on BSV output amounts. Typically however the OP_RETURN output would have 0 BSV (as any BSV sent would be burned), and outputs receiving tokens / mint batons would be sent only the minimal 'dust' amount of 0.00000546 BSV.</sup>
 
