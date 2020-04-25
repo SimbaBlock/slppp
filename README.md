@@ -20,7 +20,7 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
    &lt;metadata: &gt; (0 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
-    <td>any<sup>2</sup></td>
+    <td>any</td>
   </tr>
   
   <tr>
