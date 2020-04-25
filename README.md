@@ -1,6 +1,44 @@
 # SLP++
 SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
 
+## Transaction struture
+
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.
+**Transaction outputs**:
+<table>
+<tr>
+  <td><b>v<sub>out</sub></b></td>
+  <td><b>OutputScript </b></td>
+  <td><b>BSV<br/>amount</b></td>
+</tr>
+  <tr>
+    <td>...</td>
+   <td>
+   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
+   &lt;metadata: &gt; (0 to ∞ bytes)<br/>
+   &lt;key: &gt; (0 to ∞ bytes)<br/>
+   </td>
+    <td>any<sup>2</sup></td>
+  </tr>
+  
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+  
+  <tr>
+    <td>...</td>
+    <td>OP_PUSH: data (0 to  ∞ bytes)</td>
+    <td>any</td>
+  </tr>
+ 
+</table>
+
+
+## Protocol
 
 ### SLP++ Blockdrive Storage  Protocol
 [slp++ blockdrive](./slppp-blockdrive.md)
