@@ -91,7 +91,8 @@
   <tr>
   <td>...</td>
   <td>
-   OP_PUSH: (0 to ∞ bytes, ascii, encrypt by aes)<br/>
+   OP_FALSE <br>
+   OP_RETURN: (0 to ∞ bytes, ascii, encrypt by aes)<br/>
   </td>
     <td>any</td>
   </tr>
