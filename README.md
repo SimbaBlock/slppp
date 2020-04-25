@@ -1,6 +1,6 @@
 # SLP++
 SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
-SLP++ operate on non-stand UTXO,which can includes any state of your busines.      
+SLP++ operate on non-stand UTXO,which can includes any state of your business.      
 ## Transaction struture
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
