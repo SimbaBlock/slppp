@@ -31,7 +31,7 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
   
   <tr>
     <td>...</td>
-    <td>OP_PUSH<sup>3</sup>: data (0 to  ∞ bytes)</td>
+    <td>OP_FALSE OP_RETURN <sup>3</sup>: data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
  
@@ -39,7 +39,7 @@ SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github
 
 <sup>1. The Lockscript can be any valid script combination (more [spec](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md)). </sup>   
 <sup>2. The OP_RETURN should be metadata & key managment for  specific business. </sup>   
-<sup>3. The OP_PUSH vout should be common data for  specific business. </sup>   
+<sup>3. The OP_FALSE OP_RETURN vout should be common data for  specific business. </sup>   
 
 
 ## Protocol

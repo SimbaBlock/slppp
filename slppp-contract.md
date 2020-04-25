@@ -55,7 +55,9 @@ The contract is identified by sha256 the create contract transaction outputscrip
   
   <tr>
     <td>...</td>
-    <td>OP_PUSH: data (0 to  ∞ bytes)</td>
+    <td>
+    OP_FALSE <br>
+    OP_RETURN: data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
  
