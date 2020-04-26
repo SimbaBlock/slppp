@@ -39,8 +39,8 @@ The contract is identified by sha256 the transaction outputscript which is refer
    &lt;exp_date&gt; (4 bytes or ∞ bytes)<br/>
    &lt;mark:&gt; (0 to ∞ bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
-   &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
+   &lt;encrypt: 'FALSE(0)' / 'TRUE(1)'&gt; (1 byte integer)<br/>
+   &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
    &lt;pubkey1: &gt; (32 bytes ascii)<br/>
    &lt;pubkey2: &gt; (32 bytes ascii)<br/>
    </td>
