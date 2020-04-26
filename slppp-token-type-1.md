@@ -57,7 +57,6 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
   <td><b>BSV<br/>amount</b></td>
-  <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -76,7 +75,6 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    &lt;initial_token_mint_quantity&gt; (8 byte integer)
    </td>
     <td>any<sup>2</sup></td>
-    <td>0</td>
   </tr>
   
   <tr>
@@ -84,14 +82,12 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
     <td>(n=mint_baton_vout)  
      Mint baton receiver</td>
     <td>any<sup>2</sup></td>
-    <td>0 <br/> + 'baton'</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
     <td>any<sup>3</sup></td>
-    <td>0</td>
   </tr>
  
 </table>
@@ -117,7 +113,6 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
   <td><b>BSV<br/>amount</b></td>
-  <td><b>Implied token amount<br/>(base units)</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -132,20 +127,17 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 &lt;additional_token_quantity&gt; (8 byte integer)
   </td>
     <td>any</td>
-    <td>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Mint baton receiver<br/>(n=mint_baton_vout)</td>
     <td>any</td>
-    <td>0<br/> + 'baton'</td>
   </tr>
   <tr>
     <td>...</td>
     <td>Any</td>
     <td>any</td>
-    <td>0</td>
   </tr>
 
 </table>
@@ -163,7 +155,6 @@ The following transaction format is used to transfer tokens from one or more tok
     <td><b>v<sub>out</sub></b></td>
     <td><b>OutputScript</b></td>
     <td><b>BSV<br/>amount</b></td>
-    <td><b>Implied token amount<br/>(base units)</b></td>
   </tr>
   <tr>
     <td>...</td>
@@ -176,7 +167,6 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
   <td>any</td>
-  <td>0</td>
   </tr>
 </table>
 
