@@ -60,7 +60,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  UPDATE & DELETE's lockscript are the same means</sup>   
+<sup>1. The lockscript can be any valid script combination.  UPDATE & REMOVE's lockscript are the same means</sup>   
 
 ### UPDATE - Update Blockdrive Transaction Outputs
 
@@ -102,7 +102,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 </table>
 
 
-### DELETE - Delete Blockdrive Transaction Outputs
+### REMOVE - Remove Blockdrive Transaction Outputs
 
 **Transaction outputs**:
 <table>
@@ -118,7 +118,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (3 to 16 bytes ascii)<br/>
-&lt;thransaction_type: 'DELETE'&gt; (5 to 16 byte ascii)<BR>
+&lt;thransaction_type: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
@@ -131,6 +131,36 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
   </tr>
 </table>
 
+
+
+### PRUNE - Prune Blockdrive Transaction Outputs
+
+**Transaction outputs**:
+<table>
+<tr>
+  <td><b>v<sub>out</sub></b></td>
+  <td><b>OutputScript </b></td>
+  <td><b>BSV<br/>amount</b></td>
+</tr>
+  <tr>
+  <td>...</td>
+  <td>
+   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;type: 'drive'&gt; (3 to 16 bytes ascii)<br/>
+&lt;thransaction_type: 'PRUNE'&gt; (6 bytes ascii)<BR>
+&lt;drive_id&gt; (32 bytes)<BR>
+  </td>
+    <td>any</td>
+  </tr>
+
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+</table>
 
 
 
@@ -149,7 +179,13 @@ blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a
 
 SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
 
-**DELETE Blockdrive Transaction**
+**REMOVE Blockdrive Transaction**
+
+blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
+
+SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
+
+**PRUNE Blockdrive Transaction**
 
 blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
 
