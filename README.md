@@ -20,7 +20,7 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
    &lt;metadata: &gt; (0 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
-    <td>  > 0 </td>
+    <td>>0</td>
   </tr>
   
   <tr>
