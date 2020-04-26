@@ -59,7 +59,7 @@ SLP++ operate on non-stand UTXOs,which can includes any state of your business.
 [slp++ token-type-1](./slppp-token-type-1.md) compared to original SLP, SLP++ has below advantages:
 ```
 1. Safety,avoid the chance of spent utxo which contain tokens.
-2. Simple,one transaction outputs attached one or more op_returns, <br>
+2. Simple,one transaction outputs attached one or more op_returns, 
    no addidtional rules compared to old op_return style.
 3. Free order of transaction outputs.
 ```
