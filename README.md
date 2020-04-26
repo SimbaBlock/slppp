@@ -1,5 +1,5 @@
 # SLP++ Layer II Protocol
-SLP++ Layer II protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
+Layer II protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
 SLP++ operate on non-stand UTXOs,which can includes any state of your business.      
 ## Transaction struture
 
