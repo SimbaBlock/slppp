@@ -61,7 +61,7 @@
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
-&lt;type: 'GROUP'&gt; (5 byte ascii)<BR>
+&lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
   </td>
@@ -75,7 +75,7 @@
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
-&lt;type: 'GROUP'&gt; (5 byte ascii)<BR>
+&lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
   </td>
@@ -102,6 +102,86 @@
 </table>
 
 
+### JGROUP - Join Group Message Transaction Outputs
+
+**Transaction outputs**:
+<table>
+<tr>
+  <td><b>v<sub>out</sub></b></td>
+  <td><b>OutputScript </b></td>
+  <td><b>BSV<br/>amount</b></td>
+</tr>
+  <tr>
+  <td>...</td>
+  <td>
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
+&lt;action: 'JGROUP'&gt; (6 byte ascii)<BR>
+  </td>
+    <td>>0</td>
+  </tr>
+
+  <tr>
+  <td>...</td>
+  <td>
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
+&lt;action: 'JGROUP'&gt; (5 byte ascii)<BR>
+  </td>
+    <td>>0</td>
+  </tr>
+
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+
+
+### LGROUP - Leave Group Message Transaction Outputs
+
+**Transaction outputs**:
+<table>
+<tr>
+  <td><b>v<sub>out</sub></b></td>
+  <td><b>OutputScript </b></td>
+  <td><b>BSV<br/>amount</b></td>
+</tr>
+  <tr>
+  <td>...</td>
+  <td>
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
+&lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
+  </td>
+    <td>>0</td>
+  </tr>
+
+  <tr>
+  <td>...</td>
+  <td>
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
+&lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
+  </td>
+    <td>>0</td>
+  </tr>
+
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+
+
 ### Examples
 
 **Create Peer to Peer Transaction**
@@ -111,6 +191,13 @@ bsv blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b
 **GROUP Message Transaction outputs**
 
 bsv blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
+
+**JGROUP Message Transaction outputs**
+todo  
+
+**LGROUP Message Transaction outputs**
+todo  
+
 
 # Copyright
 
