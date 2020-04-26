@@ -32,9 +32,9 @@ The message is identified by sha256 the transaction outputscript which is referr
    &lt;action: 'PEER' &gt; (4 to 5  bytes ascii)<br/>
    &lt;data:&gt; (0 to ∞ bytes)<br/>
    &lt;ref: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;ref_id:&gt; (32 bytes asscii,reference message_id)<br/>	  
-   &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
+   &lt;ref_id:&gt; (32 bytes asscii,reference message_id, if ref is true)<br/>	  
+   &lt;encrypt: '0' / '1'&gt; (1 byte integer, )<br/>
+   &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
    </td>
     <td> >0 </td>
   </tr>
@@ -67,9 +67,9 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
 &lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
 &lt;ref: '0' / '1'&gt; (1 byte integer)<br/>
-&lt;ref_id:&gt; (32 bytes asscii,reference message_id)<br/>	  
+&lt;ref_id:&gt; (32 bytes asscii,reference message_id, if ref is true)<br/>	  
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-&lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
+&lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
   </td>
     <td>>0</td>
   </tr>
@@ -83,9 +83,9 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
 &lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
 &lt;ref: '0' / '1'&gt; (1 byte integer)<br/>
-&lt;ref_id:&gt; (32 bytes asscii,reference message_id)<br/>	  
+&lt;ref_id:&gt; (32 bytes asscii,reference message_id,  if ref is true)<br/>	  
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-&lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
+&lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
   </td>
     <td>>0</td>
   </tr>
