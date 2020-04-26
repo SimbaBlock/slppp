@@ -140,7 +140,7 @@
     <td>Any</td>
     <td>any</td>
   </tr>
-
+</table>
 
 ### LGROUP - Leave Group Message Transaction Outputs
 
@@ -180,7 +180,7 @@
     <td>Any</td>
     <td>any</td>
   </tr>
-
+</table>
 
 ### Examples
 
