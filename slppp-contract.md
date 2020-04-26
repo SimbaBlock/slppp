@@ -33,10 +33,10 @@ The contract is identified by sha256 the create contract transaction outputscrip
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
-   &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
-   &lt;sign_date:&gt; (0 to 256 bytes, suggested utf-8)<br/>
-   &lt;sign_exp_date&gt; (0 to 256 bytes, suggested ascii)<br/>
-   &lt;exp_date&gt; (0 bytes or 256 bytes)<br/>
+   &lt;title: &gt; (4 to 256 bytes, suggested utf-8)<br/>
+   &lt;sign_date:&gt; (4 to 256 bytes, suggested utf-8)<br/>
+   &lt;sign_exp_date&gt; (4 to 256 bytes, suggested ascii)<br/>
+   &lt;exp_date&gt; (4 bytes or 256 bytes)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
