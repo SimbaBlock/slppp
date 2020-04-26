@@ -84,7 +84,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
 &lt;thransaction_type: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
 &lt;contract_id&gt; (32 bytes)<BR>
   </td>
-    <td>any</td>
+    <td>>0 </td>
   </tr>
 
   <tr>
