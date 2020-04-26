@@ -126,13 +126,13 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 &lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
 &lt;additional_token_quantity&gt; (8 byte integer)
   </td>
-    <td>any</td>
+    <td>>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Mint baton receiver<br/>(n=mint_baton_vout)</td>
-    <td>any</td>
+    <td>>0</td>
   </tr>
   <tr>
     <td>...</td>
@@ -166,8 +166,12 @@ OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;transaction_type: SEND&gt; (4 bytes, ascii)<BR/>   
 &lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
-  <td>any</td>
+  <td>>0</td>
   </tr>
+<tr><td>...</td>
+    <td>Any</td>
+    <td>any</td>
+</tr>
 </table>
 
 
