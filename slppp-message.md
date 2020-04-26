@@ -9,7 +9,7 @@
 
 ## Transaction Detail  
 ```
-The message is identified by sha256 the transaction outputscript which is referred as `seession_id(32 bytes)`.
+The message is identified by sha256 the transaction outputscript which is referred as `session_id(32 bytes)`.
 ```
 ### PEER - Peer to Peer Message Transaction Outputs
 
