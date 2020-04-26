@@ -74,20 +74,20 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    &lt;mint_baton_vout&gt; (0 bytes, or 1 byte in range 0x00-0xff)<br/>
    &lt;initial_token_mint_quantity&gt; (8 byte integer)
    </td>
-    <td>any<sup>2</sup></td>
+    <td>>0</td>
   </tr>
   
   <tr>
     <td>...</td>
     <td>(n=mint_baton_vout)  
      Mint baton receiver</td>
-    <td>any<sup>2</sup></td>
+    <td>>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any<sup>3</sup></td>
+    <td>any</td>
   </tr>
  
 </table>
