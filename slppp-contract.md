@@ -28,16 +28,16 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
     <td>...</td>
    <td>
-   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   Lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
-   &lt;title: &gt; (4 to 256 bytes, suggested utf-8)<br/>
-   &lt;sign_date:&gt; (4 to 256 bytes, suggested utf-8)<br/>
-   &lt;sign_exp_date&gt; (4 to 256 bytes, suggested ascii)<br/>
-   &lt;exp_date&gt; (4 bytes or 256 bytes)<br/>
-   &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
+   &lt;title: &gt; (4 to  ∞ bytes, suggested utf-8)<br/>
+   &lt;sign_date:&gt; (4 to ∞ bytes, suggested utf-8)<br/>
+   &lt;sign_exp_date&gt; (4 to ∞ bytes, suggested utf-8)<br/>
+   &lt;exp_date&gt; (4 bytes or ∞ bytes)<br/>
+   &lt;mark:&gt; (0 to ∞ bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
@@ -63,7 +63,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  UPDATE lockscript are the same means</sup>   
+<sup>1. The Lockingscript can be any valid script combination.  UPDATE Lockingscript is the same means</sup>   
 
 ### UPDATE - Update Contract Transaction Outputs
 
@@ -77,7 +77,7 @@ The contract is identified by sha256 the create contract transaction outputscrip
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   Lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
