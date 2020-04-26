@@ -7,8 +7,10 @@
 
 # PROTOCOL DESCRIPTION
 
-## Transaction Detail
-
+## Transaction Detail  
+```
+The message is identified by sha256 the transaction outputscript which is referred as `seession_id(32 bytes)`.
+```
 ### PEER - Peer to Peer Message Transaction Outputs
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
