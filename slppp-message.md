@@ -1,4 +1,4 @@
-# SLP++ onchain Message  Protocol Specification
+# SLP++ Onchain Message  Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 25, 2020
 
@@ -32,7 +32,7 @@
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
    </td>
-    <td>any</td>
+    <td> >0 </td>
   </tr>
   
   <tr>
@@ -65,7 +65,7 @@
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
   </td>
-    <td>any</td>
+    <td>>0</td>
   </tr>
 
   <tr>
@@ -79,7 +79,7 @@
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
   </td>
-    <td>any</td>
+    <td>>0</td>
   </tr>
 
   <tr>
@@ -94,7 +94,7 @@
    OP_FALSE <br>
    OP_RETURN: (0 to ∞ bytes, ascii, encrypt by aes)<br/>
   </td>
-    <td>any</td>
+    <td>0</td>
   </tr>
 
 
