@@ -20,7 +20,7 @@ SLP++ operate on non-stand UTXOs,which can includes any state of your business.
    &lt;metadata: &gt; (0 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
-    <td>any</td>
+    <td>  > 0 </td>
   </tr>
   
   <tr>
@@ -34,7 +34,7 @@ SLP++ operate on non-stand UTXOs,which can includes any state of your business.
     <td>
     OP_FALSE <br>
     OP_RETURN <sup>3</sup>: data (0 to  ∞ bytes)</td>
-    <td>any</td>
+    <td>0</td>
   </tr>
  
 </table>
