@@ -13,7 +13,7 @@
 
 This is the first transaction which defines the properties, metadata and contract self. 
 ```
-The contract is identified by sha256 the create contract transaction outputscript which is referred as `contract_id`.
+The contract is identified by sha256 the create contract transaction outputscript which is referred as `contract_id(32 bytes)`.
 ```
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
