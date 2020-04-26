@@ -44,7 +44,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
    &lt;pubkey1: &gt; (32 bytes ascii)<br/>
    &lt;pubkey2: &gt; (32 bytes ascii)<br/>
    </td>
-    <td> > 0 </td>
+    <td>>0</td>
   </tr>
   
   <tr>
