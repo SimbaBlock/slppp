@@ -133,7 +133,8 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 
 
 
-### PRUNE - Prune Blockdrive Transaction Outputs
+### PRUNE - Prune Blockdrive Transaction Outputs  
+PRUNE indacate that the data self correspnd to drive_id can be prune.  
 
 **Transaction outputs**:
 <table>
