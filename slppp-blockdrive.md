@@ -63,7 +63,8 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 <sup>1. The lockscript can be any valid script combination.  UPDATE & REMOVE's lockscript are the same means</sup>   
 
 ### UPDATE - Update Blockdrive Transaction Outputs
-
+  
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
 <table>
 <tr>
@@ -104,6 +105,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 
 ### REMOVE - Remove Blockdrive Transaction Outputs
 
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
 <table>
 <tr>
@@ -136,6 +138,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 ### PRUNE - Prune Blockdrive Transaction Outputs  
 PRUNE indacate that the data self correspnd to drive_id can be prune.  
 
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
 <table>
 <tr>
