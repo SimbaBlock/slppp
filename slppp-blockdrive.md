@@ -35,7 +35,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
-   &lt;data_hash:&gt; (32 bytes)<br/>
+   &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
    &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
@@ -53,8 +53,10 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE <br>
-    OP_RETURN: data (0 to  ∞ bytes)</td>
+    OP_FALSE: '\x00'  (1 bytes, ascii)<br>
+    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    data (0 to  ∞ bytes)
+    </td>
     <td>any</td>
   </tr>
  
@@ -81,6 +83,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 &lt;type: 'drive'&gt; (3 to 16 bytes ascii)<br/>
 &lt;thransaction_type: 'UPDATE'&gt; (5 to 16 byte ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
+&lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
@@ -95,8 +98,9 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE<br>
-    OP_RETURN: modified data (0 to  ∞ bytes)</td>
+    OP_FALSE: '\x00'  (1bytes, ascii)<br>
+    OP_RETURN: '\x6a' (1bytes, ascii)<br>
+    data: modified data (0 to  ∞ bytes)</td>
     <td>any</td>
   </tr>
 
