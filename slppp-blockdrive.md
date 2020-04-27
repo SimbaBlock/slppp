@@ -55,7 +55,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
     <td>
     OP_FALSE: '\x00'  (1 bytes, ascii)<br>
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
-    data (0 to  ∞ bytes)
+    data:(0 to  ∞ bytes)
     </td>
     <td>any</td>
   </tr>
