@@ -30,7 +30,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
    <td>
    Lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
+   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (4 to  ∞ bytes, suggested utf-8)<br/>
