@@ -37,9 +37,9 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii, by ecdh )<br/>
-   &lt;pubkey1: &gt; (32 bytes ascii)<br/>
-   &lt;pubkey2: &gt; (32 bytes ascii)<br/>
+   &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
+   &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
    </td>
     <td>any<sup>2</sup></td>
   </tr>
