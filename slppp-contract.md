@@ -66,7 +66,8 @@ The contract is identified by sha256 the transaction outputscript which is refer
 <sup>1. The Lockingscript can be any valid script combination.  UPDATE Lockingscript is the same means</sup>   
 
 ### UPDATE - Update Contract Transaction Outputs
-
+  
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
 <table>
 <tr>
