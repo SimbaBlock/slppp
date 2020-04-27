@@ -41,8 +41,8 @@ The contract is identified by sha256 the transaction outputscript which is refer
    &lt;data_hash:&gt; (32 bytes)<br/>
    &lt;encrypt: 'FALSE(0)' / 'TRUE(1)'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
-   &lt;pubkey1: &gt; (32 bytes ascii)<br/>
-   &lt;pubkey2: &gt; (32 bytes ascii)<br/>
+   &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
    </td>
     <td>>0</td>
   </tr>
