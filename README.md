@@ -35,7 +35,7 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
     <td>
     OP_FALSE : '\x00' (1 bytes, ascii)<br>
     OP_RETURN<sup>3</sup>: '\x6a' (1 bytes, ascii)<br> 
-    data: (0 to  ∞ bytes)
+   &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
   </tr>

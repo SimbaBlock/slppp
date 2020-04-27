@@ -58,7 +58,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
     <td>
     OP_FALSE : '\x00' (1 bytes, ascii)<br>
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
-    data: (0 to ∞ bytes, ascii)
+    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
   </tr>
