@@ -17,6 +17,7 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
    Lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN<sup>2</sup>: '\x6a' (1 bytes, ascii)<br/>
    &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;data_hash: &gt; (32 bytes,sha256(data))<br/>
    &lt;metadata: &gt; (1 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
@@ -32,8 +33,10 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE <br>
-    OP_RETURN <sup>3</sup>: data (0 to  ∞ bytes)</td>
+    OP_FALSE : '\x00' (1 bytes, ascii)<br>
+    OP_RETURN<sup>3</sup>: '\x6a' (1 bytes, ascii)<br> 
+    data: (0 to  ∞ bytes)
+    </td>
     <td>0</td>
   </tr>
  
