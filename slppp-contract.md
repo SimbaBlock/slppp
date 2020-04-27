@@ -254,11 +254,11 @@ e442946661a0931ce7181fab88ac68</td>
   <td>length of contract_id field(32 bytes)</td>
  </tr>
  <tr>
-  <td>d48830fa3a44a3228148dd46a9703eee
-0cef6d0039570c9d3a4aac6d28e00a3b
+  <td>6f7ec00797a365687069dd90476bb8c9
+7b5c4449a643b860223ca48e5ddf53c1
 </td>
-  <td>d48830fa3a44a3228148dd46a9703eee
-0cef6d0039570c9d3a4aac6d28e00a3b</td>
+  <td>6f7ec00797a365687069dd90476bb8c9
+7b5c4449a643b860223ca48e5ddf53c1</td>
  </tr>
 </table>
 
