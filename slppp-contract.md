@@ -38,7 +38,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
    &lt;sign_exp_date&gt; (4 to ∞ bytes, suggested utf-8)<br/>
    &lt;exp_date&gt; (4 bytes or ∞ bytes)<br/>
    &lt;mark:&gt; (0 to ∞ bytes, ascii)<br/>
-   &lt;data_hash:&gt; (32 bytes)<br/>
+   &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: 'FALSE(0)' / 'TRUE(1)'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
    &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
@@ -56,8 +56,10 @@ The contract is identified by sha256 the transaction outputscript which is refer
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE <br>
-    OP_RETURN: data (0 to  ∞ bytes)</td>
+    OP_FALSE : '\x00' (1 bytes, ascii)<br>
+    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    data: (0 to ∞ bytes, ascii)
+    </td>
     <td>0</td>
   </tr>
  
@@ -193,8 +195,7 @@ e442946661a0931ce7181fab88ac68</td>
   <td>c775e7b757ede630cd0aa1113bd10266
 1ab38829ca52a6422ab782862f268646
 </td>
-  <td>c775e7b757ede630cd0aa1113bd10266
-1ab38829ca52a6422ab782862f268646</td>
+  <td>sha256(data)</td>
  </tr>
   <tr>
   <td>01</td>
@@ -257,8 +258,7 @@ e442946661a0931ce7181fab88ac68</td>
   <td>6f7ec00797a365687069dd90476bb8c9
 7b5c4449a643b860223ca48e5ddf53c1
 </td>
-  <td>6f7ec00797a365687069dd90476bb8c9
-7b5c4449a643b860223ca48e5ddf53c1</td>
+  <td>contract_id, sha256(outputscript)</td>
  </tr>
 </table>
 
