@@ -82,7 +82,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
-&lt;thransaction_type: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
+&lt;action: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
 &lt;contract_id&gt; (32 bytes)<BR>
   </td>
     <td>>0 </td>
