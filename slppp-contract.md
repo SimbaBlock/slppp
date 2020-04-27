@@ -108,10 +108,12 @@ SCRIPT: ``6376a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac6776a9140e406c10d0
 OUTPUTSCRIPT BROKEN DOWN:
 <table>
 <tr>
-<td>6376a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac67
-  76a9140e406c10d0315942e442946661a0931ce7181fab88ac68</td>
-<td>OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG 
-  OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF</td>
+<td>6376a914c079c08dd91583a5a48786f3b9da08
+893b3687ca88ac6776a9140e406c10d0315942
+e442946661a0931ce7181fab88ac68</td>
+<td>OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca 
+  OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 
+  0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF</td>
 </tr>
  <tr>
   <td>6a</td>
@@ -127,7 +129,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>08</td>
-  <td>length of token field (8 byte)</td>
+  <td>length of type field (8 byte)</td>
  </tr>
  <tr>
   <td>636f6e7472616374</td>
@@ -188,9 +190,11 @@ OUTPUTSCRIPT BROKEN DOWN:
   <td>length of data_hash field(32 bytes)</td>
  </tr>
  <tr>
-  <td>c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646
+  <td>c775e7b757ede630cd0aa1113bd10266
+1ab38829ca52a6422ab782862f268646
 </td>
-  <td>c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646</td>
+  <td>c775e7b757ede630cd0aa1113bd10266
+1ab38829ca52a6422ab782862f268646</td>
  </tr>
   <tr>
   <td>01</td>
@@ -207,6 +211,56 @@ OUTPUTSCRIPT BROKEN DOWN:
 bsv blockchain transaction: 7b0529f8ba4da4bce6ab9cc74eaf3f135c991ca9bbfd9df07be56248ef7da8ff
 
 SCRIPT: ``6376a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac6776a9140e406c10d0315942e442946661a0931ce7181fab88ac686a06534c502b2b0008636f6e747261637407415050524f5645206f7ec00797a365687069dd90476bb8c97b5c4449a643b860223ca48e5ddf53c1``
+
+OUTPUTSCRIPT BROKEN DOWN:
+<table>
+<tr>
+<td>6376a914c079c08dd91583a5a48786f3b9da08
+893b3687ca88ac6776a9140e406c10d0315942
+e442946661a0931ce7181fab88ac68</td>
+<td>OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca 
+  OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 
+  0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF</td>
+</tr>
+ <tr>
+  <td>6a</td>
+  <td>OP_RETURN</td>
+ </tr>
+ <tr>
+  <td>06</td>
+  <td>Length of lokad_id field (6 bytes)</td>
+ </tr>
+ <tr>
+  <td>534c502b2b00</td>
+  <td>SLP++\x00</td>
+ </tr>
+ <tr>
+  <td>08</td>
+  <td>length of type field (8 byte)</td>
+ </tr>
+ <tr>
+  <td>636f6e7472616374</td>
+  <td>contract</td>
+ </tr>
+ <tr>
+  <td>07</td>
+  <td>length of thransaction_type field (7 bytes)</td>
+ </tr>
+ <tr>
+  <td>415050524f5645</td>
+  <td>'APPROVE'</td>
+ </tr>
+  <td>20</td>
+  <td>length of contract_id field(32 bytes)</td>
+ </tr>
+ <tr>
+  <td>d48830fa3a44a3228148dd46a9703eee
+0cef6d0039570c9d3a4aac6d28e00a3b
+</td>
+  <td>d48830fa3a44a3228148dd46a9703eee
+0cef6d0039570c9d3a4aac6d28e00a3b</td>
+ </tr>
+</table>
 
 # Copyright
 
