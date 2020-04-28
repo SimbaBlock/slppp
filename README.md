@@ -49,13 +49,13 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
 
 ## SLP++ Protocol
 
-### [Blockdrive Storage  Protocol](./slppp-blockdrive.md)  
+### [Blockdrive](./slppp-blockdrive.md)  
 
-### [Electronic Contract Protocol](./slppp-contract.md)  
+### [Contract](./slppp-contract.md)  
 
-### [Onchain Message Protocol](./slppp-message.md)  
+### [Message](./slppp-message.md)  
 
-### [Utility Token Protocol](./slppp-token-type-1.md)  
+### [Utility Token](./slppp-token-type-1.md)  
 
 
 ## Tools  
