@@ -34,7 +34,7 @@ the token_id is  sha256(outpuscript) = 7ee7a38340fd4fa5a14c9f5f3dc47f1e68a9534af
 
 ### GENESIS - Token Genesis Transaction Outputs
 
-This is the first transaction which defines the properties, metadata and initial mint quantity of the token. 
+This transaction defines the properties, metadata and initial mint quantity of the token. 
 
 `token_type` indicates the SLP++ sub-protocol:
 ```
