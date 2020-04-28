@@ -49,17 +49,14 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
 
 ## Protocol
 
-### SLP++ Blockdrive Storage  Protocol
-[slp++ blockdrive](./slppp-blockdrive.md)
+### SLP++ [Blockdrive Storage  Protocol](./slppp-blockdrive.md)  
 
-### SLP++ Electronic Contract Protocol
-[slp++ contract](./slppp-contract.md)
+### SLP++ [Electronic Contract Protocol](./slppp-contract.md)  
 
-### SLP++ Onchain Message Protocol
-[slp++ message](./slppp-message.md)
+### SLP++ [Onchain Message Protocol](./slppp-message.md)  
 
-### SLP++ Utility Token Protocol
-[slp++ token-type-1](./slppp-token-type-1.md) compared to original SLP, SLP++ has below advantages:
+### SLP++ [Utility Token Protocol](./slppp-token-type-1.md)  
+compared to original SLP, SLP++ has below advantages:  
 ```
 1. Safety,avoid the chance of spent utxo which contain tokens.
 2. Simple,one transaction outputs attached one or more op_returns, 
