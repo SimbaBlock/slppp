@@ -47,22 +47,15 @@ SLP++ operate on non-standard UTXOs,which can includes any state of your busines
 <sup>3. The OP_FALSE OP_RETURN vout should be common data for specific business. </sup>   
 
 
-## Protocol
+## SLP++ Protocol
 
-### SLP++ [Blockdrive Storage  Protocol](./slppp-blockdrive.md)  
+### [Blockdrive Storage  Protocol](./slppp-blockdrive.md)  
 
-### SLP++ [Electronic Contract Protocol](./slppp-contract.md)  
+### [Electronic Contract Protocol](./slppp-contract.md)  
 
-### SLP++ [Onchain Message Protocol](./slppp-message.md)  
+### [Onchain Message Protocol](./slppp-message.md)  
 
-### SLP++ [Utility Token Protocol](./slppp-token-type-1.md)  
-compared to original SLP, SLP++ has below advantages:  
-```
-1. Safety,avoid the chance of spent utxo which contain tokens.
-2. Simple,one transaction outputs attached one or more op_returns, 
-   no addidtional rules compared to old op_return style.
-3. Free order of transaction outputs.
-```
+### [Utility Token Protocol](./slppp-token-type-1.md)  
 
 
 ## Tools  

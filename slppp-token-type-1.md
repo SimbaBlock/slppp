@@ -15,6 +15,13 @@ A good solution for implementing **utility tokens** may have the following prope
 **7. Supported.** There should be an implementation plan for rapid ecosystem support.\
 
 # PROTOCOL DESCRIPTION
+compared to original SLP, SLP++ token has below advantages:  
+```
+1. Safety,avoid the chance of spent utxo which contain tokens.
+2. Simple,one transaction outputs attached one or more op_returns, 
+   no addidtional rules compared to old op_return style.
+3. Free order of transaction outputs.
+```
 
 ## Transaction Detail
 
