@@ -8,7 +8,7 @@
 
 ### Create - Create Blockdrive Transaction Outputs
 
-This is the first transaction which defines the properties, metadata and blockdrive self. 
+This transaction defines the properties, metadata and blockdrive self. 
 ```
 The blockdrive is identified by sha256 the create blockdrive transaction outputscript which is referred as `drive_id`.
 ```
