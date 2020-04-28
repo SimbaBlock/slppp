@@ -4,14 +4,16 @@
 
 # PROTOCOL DESCRIPTION
 
+## Drive ID
+```
+The blockdrive is identified by sha256 the create blockdrive transaction outputscript which is referred as `drive_id`.
+```
+
 ## Transaction Detail
 
 ### Create - Create Blockdrive Transaction Outputs
 
 This transaction defines the properties, metadata and blockdrive self. 
-```
-The blockdrive is identified by sha256 the create blockdrive transaction outputscript which is referred as `drive_id`.
-```
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
