@@ -191,11 +191,11 @@ The message is identified by sha256 the transaction outputscript which is referr
 
 **Create Peer to Peer Transaction**
 
-bsv blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
+blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
 
 **GROUP Message Transaction outputs**
 
-bsv blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
+blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
 
 **JGROUP Message Transaction outputs**  
 todo  
