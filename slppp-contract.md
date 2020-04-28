@@ -27,7 +27,7 @@ This transaction defines the properties, metadata and contract self.
    <td>
    Lockingscript<sup>1</sup>: 'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (4 to  ∞ bytes, suggested utf-8)<br/>
@@ -79,7 +79,7 @@ This transaction defines the properties, metadata and contract self.
   <td>
    Lockingscript: 'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'contract'&gt; (8 bytes ascii)<br/>
 &lt;action: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
 &lt;contract_id&gt; (32 bytes)<BR>
@@ -120,7 +120,7 @@ e442946661a0931ce7181fab88ac68</td>
  </tr>
  <tr>
   <td>06</td>
-  <td>Length of lokad_id field (6 bytes)</td>
+  <td>Length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>
@@ -226,7 +226,7 @@ e442946661a0931ce7181fab88ac68</td>
  </tr>
  <tr>
   <td>06</td>
-  <td>Length of lokad_id field (6 bytes)</td>
+  <td>Length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>

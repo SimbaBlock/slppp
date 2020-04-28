@@ -70,7 +70,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    <td>
    lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   &lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
+   &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
    &lt;transaction_type: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
@@ -126,7 +126,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 <td>
    lockscript:'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-&lt;lokad_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
 &lt;thransaction_type: 'MINT'&gt; (4 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR>
@@ -202,7 +202,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>  
  <tr>
   <td>06</td>
-  <td>length of lokad_id field (6 bytes)</td>
+  <td>length of protocol_id field (6 bytes)</td>
  <tr>
  <tr>
   <td>534c502b2b00</td>
@@ -310,7 +310,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>06</td>
-  <td>Length of lokad_id field (6 bytes)</td>
+  <td>Length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>
@@ -379,7 +379,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>06</td>
-  <td>Length of lokad_id field (6 bytes)</td>
+  <td>Length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>
