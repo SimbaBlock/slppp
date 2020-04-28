@@ -4,15 +4,15 @@
 
 # PROTOCOL DESCRIPTION
 
-## Transaction Detail
-
-### Create - Create Contract Transaction Outputs
-
-This transaction defines the properties, metadata and contract self. 
+## Contract ID  
 ```
 The contract is identified by sha256 the transaction outputscript which is referred as `contract_id(32 bytes)`.
 ```
 
+## Transaction Detail
+
+### Create - Create Contract Transaction Outputs
+This transaction defines the properties, metadata and contract self. 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
 **Transaction outputs**:

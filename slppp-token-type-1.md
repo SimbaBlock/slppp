@@ -20,19 +20,21 @@ compared to original SLP, SLP++ token has below advantages:
 1. Safety,avoid the chance of spent utxo which contain tokens.
 2. Simple,one transaction outputs attached one or more op_returns,no addidtional rules compared to old op_return style.  
 3. Free order of transaction outputs.
-```
+```  
 
-## Transaction Detail
-
-### GENESIS - Token Genesis Transaction Outputs
-
-This is the first transaction which defines the properties, metadata and initial mint quantity of the token. 
+## Token ID  
 ```
 The token is identified by sha256 the token genesis transaction outputscript which is referred as `token_id`.
 For example, with the outpuscript: 76a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac6a06534c502b2b0001010747454e45534953045553445423546574686572204c74642e20555320646f6c6c6172206261636b656420746f6b656e734168747470733a2f2f7465746865722e746f2f77702d636f6e74656e742f75706c6f6164732f323031362f30362f546574686572576869746550617065722e70646620db4451f11eda33950670aaf59e704da90117ff7057283b032cfaec77793139160108010108002386f26fc10000
 the token_id is  sha256(outpuscript) = 7ee7a38340fd4fa5a14c9f5f3dc47f1e68a9534af5b17d43ba92dc0cdadda2b2 
 
 ```
+
+## Transaction Detail  
+
+### GENESIS - Token Genesis Transaction Outputs
+
+This is the first transaction which defines the properties, metadata and initial mint quantity of the token. 
 
 `token_type` indicates the SLP++ sub-protocol:
 ```
