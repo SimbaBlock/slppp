@@ -101,7 +101,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 
 <sup>1. The lockscript can be any valid script combination.  MINT & SEND lockscript are the same means</sup>   
 
-<sup>2. The Lokad identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Lokad IDs, gives the ascii string 'SLP++\x00'). 
+<sup>2. The Protocol identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Protocol IDs, gives the ascii string 'SLP++\x00'). 
 
 <sup>3. SLP++ does not impose any restrictions on BSV output amounts. 
 
