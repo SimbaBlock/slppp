@@ -33,7 +33,7 @@ The message is identified by sha256 the transaction outputscript which is referr
    &lt;ref: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;message_id:&gt; (32 bytes asscii,quote the old message_id, if ref is true)<br/>	  
    &lt;encrypt: '0' / '1'&gt; (1 byte integer, )<br/>
-   &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
+   &lt;aes_pwd: &gt; (32 bytes ascii by ecdh, if encrypt is true )<br/>
    </td>
     <td> >0 </td>
   </tr>
@@ -68,7 +68,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;ref: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;message_id:&gt; (32 bytes asscii,quote the old message, if ref is true)<br/>	  
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-&lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
+&lt;aes_pwd:&gt; (32 bytes ascii by ecdh, if encrypt is true )<br/>
   </td>
     <td>>0</td>
   </tr>
