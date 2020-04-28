@@ -44,7 +44,7 @@ The message is identified by sha256 the transaction outputscript which is referr
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  GROUP,JGROUP & LGROUP lockingscript are the same means</sup>   
+<sup>1. The lockingscript can be any valid script combination.  GROUP,JGROUP & LGROUP lockingscript are the same means</sup>   
 
 ### GROUP - Group Message Transaction Outputs
 
