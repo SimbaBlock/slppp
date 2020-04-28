@@ -12,8 +12,8 @@ The contract is identified by sha256 the transaction outputscript which is refer
 ## Transaction Detail
 
 ### Create - Create Contract Transaction Outputs
-This transaction defines the properties, metadata and contract self. 
-**Transaction inputs**: Any number of inputs or content of inputs, in any order.
+This transaction defines the properties, metadata and contract self.        
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 
 **Transaction outputs**:
 <table>
