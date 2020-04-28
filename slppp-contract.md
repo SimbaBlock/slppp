@@ -2,9 +2,6 @@
 ### Specification version: 0.1
 ### Date published: April 24, 2020
 
-### Requirements
-**1. Need BSV genesis upgrade.**
-
 # PROTOCOL DESCRIPTION
 
 ## Transaction Detail
