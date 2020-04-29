@@ -27,7 +27,7 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
     <td>...</td>
    <td>
-   lockscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
+   lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
@@ -61,7 +61,7 @@ This transaction defines the properties, metadata and blockdrive itself.
  
 </table>
 
-<sup>1. The lockscript can be any valid script combination.  UPDATE & REMOVE's lockscript are the same means</sup>   
+<sup>1. The lockingscript can be any valid script combination.  UPDATE & REMOVE's lockingscript are the same means</sup>   
 
 ### UPDATE - Update Blockdrive Transaction Outputs
   
@@ -76,7 +76,7 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
@@ -119,7 +119,7 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
@@ -152,7 +152,7 @@ PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(out
   <tr>
   <td>...</td>
   <td>
-   lockscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
