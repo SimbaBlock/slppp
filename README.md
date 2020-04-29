@@ -18,7 +18,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
    Lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN<sup>2</sup>: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;data_hash: &gt; (32 bytes,sha256(data))<br/>
+   &lt;data_hash: &gt; (32 bytes, sha256(data))<br/>
    &lt;metadata: &gt; (1 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
