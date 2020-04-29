@@ -139,7 +139,7 @@ This transaction defines the properties, metadata and blockdrive self.
 
 
 ### PRUNE - Prune Blockdrive Transaction Outputs  
-PRUNE indacate that the data self correspnd to drive_id can be prune.  
+PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(outputscript) can be prune.  
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
