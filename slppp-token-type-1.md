@@ -128,7 +128,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
-&lt;thransaction_type: 'MINT'&gt; (4 bytes, ascii)<BR>
+&lt;transaction_type: 'MINT'&gt; (4 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR>
 &lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
 &lt;additional_token_quantity&gt; (8 byte integer)

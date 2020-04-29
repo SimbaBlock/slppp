@@ -80,7 +80,7 @@ This transaction defines the properties, metadata and blockdrive self.
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
-&lt;thransaction_type: 'UPDATE'&gt; (5 to 16 byte ascii)<BR>
+&lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
@@ -123,7 +123,7 @@ This transaction defines the properties, metadata and blockdrive self.
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
-&lt;thransaction_type: 'REMOVE'&gt; (6 bytes ascii)<BR>
+&lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
@@ -156,7 +156,7 @@ PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(out
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
-&lt;thransaction_type: 'PRUNE'&gt; (6 bytes ascii)<BR>
+&lt;action: 'PRUNE'&gt; (6 bytes ascii)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
