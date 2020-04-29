@@ -61,7 +61,7 @@ This transaction defines the properties, metadata and Template itself.
  
 </table>
 
-<sup>1. The lockingscript can be any valid script combination.  ACTION & REMOVE's lockingscript are the same means</sup>   
+<sup>1. The lockingscript can be any valid script combination.  ACTION & ACTION's lockingscript are the same means</sup>   
 
 ### ACTION - Action Blockdrive Transaction Outputs
   
