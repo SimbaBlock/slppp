@@ -6,7 +6,7 @@
 
 ## Template ID
 ```
-The Service is identified by sha256 the create blockdrive transaction outputscript which is referred as `template_id`.
+The Service is identified by sha256 the create blocktemplate transaction outputscript which is referred as `template_id`.
 ```
 
 ## Transaction Detail
@@ -30,7 +30,7 @@ This transaction defines the properties, metadata and Template itself.
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type: 'drive'&gt; (5 bytes ascii)<br/>
+   &lt;type: 'template'&gt; (5 bytes ascii)<br/>
    &lt;action: 'ACTION'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
@@ -79,11 +79,11 @@ This transaction defines the properties, metadata and Template itself.
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: 'drive'&gt; (5 bytes ascii)<br/>
+&lt;type: 'template'&gt; (5 bytes ascii)<br/>
 &lt;action: 'ACTION'&gt; (6 byte ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
+&lt;template_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
@@ -122,9 +122,9 @@ This transaction defines the properties, metadata and Template itself.
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: 'drive'&gt; (5 bytes ascii)<br/>
+&lt;type: 'template'&gt; (5 bytes ascii)<br/>
 &lt;action: 'ACTIOn'&gt; (6 bytes ascii)<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
+&lt;template_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
@@ -139,7 +139,7 @@ This transaction defines the properties, metadata and Template itself.
 
 
 ### ACTION - Action Template Transaction Outputs  
-ACTION indacate that the data(op_return) self correspnd to drive_id or sha256(outputscript) can be prune.  
+ACTION indacate that the data(op_return) self correspnd to template_id or sha256(outputscript) can be prune.  
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -155,9 +155,9 @@ ACTION indacate that the data(op_return) self correspnd to drive_id or sha256(ou
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: 'drive'&gt; (5 bytes ascii)<br/>
+&lt;type: 'template'&gt; (5 bytes ascii)<br/>
 &lt;action: 'ACTION'&gt; (6 bytes ascii)<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
+&lt;template_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
