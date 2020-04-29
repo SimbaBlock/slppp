@@ -72,7 +72,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
-   &lt;transaction_type: 'GENESIS'&gt; (7 bytes, ascii)<br/>
+   &lt;action: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
    &lt;token_name&gt; (0 to ∞ bytes, suggested utf-8)<br/>
    &lt;token_document_url&gt; (0 to ∞ bytes, suggested ascii)<br/>
@@ -128,7 +128,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
-&lt;transaction_type: 'MINT'&gt; (4 bytes, ascii)<BR>
+&lt;action: 'MINT'&gt; (4 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR>
 &lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
 &lt;additional_token_quantity&gt; (8 byte integer)
@@ -170,7 +170,7 @@ lockingscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQ
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;lokad id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
-&lt;transaction_type: SEND&gt; (4 bytes, ascii)<BR/>   
+&lt;action: SEND&gt; (4 bytes, ascii)<BR/>   
 &lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
   <td>>0</td>
@@ -218,7 +218,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>
  <tr>
   <td>07</td>
-  <td>number of bytes in transaction_type (7 bytes)</td>
+  <td>number of bytes in action (7 bytes)</td>
  <tr>
  <tr>
   <td>47454e45534953</td>
@@ -326,7 +326,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>04</td>
-  <td>length of transaction_type field (4 bytes)</td>
+  <td>length of action field (4 bytes)</td>
  </tr>
  <tr>
   <td>4d494e54</td>
@@ -395,7 +395,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>04</td>
-  <td>length of transaction_type field (4 bytes)</td>
+  <td>length of action field (4 bytes)</td>
  </tr>
  <tr>
   <td>53454e44</td>
