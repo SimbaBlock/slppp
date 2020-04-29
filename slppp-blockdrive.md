@@ -13,7 +13,7 @@ The blockdrive is identified by sha256 the create blockdrive transaction outputs
 
 ### Create - Create Blockdrive Transaction Outputs
 
-This transaction defines the properties, metadata and blockdrive self. 
+This transaction defines the properties, metadata and blockdrive itself. 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
