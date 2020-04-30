@@ -50,13 +50,17 @@ Layer II's service is identified by transaction outputscript, which convert to s
 
 ## SLP++ Protocol
 
-### [Blockdrive](./enterprise/slppp-blockdrive.md)  
+### [Token](./token/)
 
-### [Contract](./enterprise/slppp-contract.md)  
+### [Enterprise](./enterprise/)  
 
-### [Message](./enterprise/slppp-message.md)  
+### [Common](./common/)  
 
-### [Utility Token](./token/slppp-token-type-1.md)  
+### [Health](./health/)  
+
+### [Education](./education/)  
+
+
 
 
 ## Tools  
