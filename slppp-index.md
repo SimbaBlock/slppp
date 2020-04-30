@@ -1,10 +1,10 @@
 # SLP++ Layer II Protocol Specification
 
 `protocol_catalog` :   
-```
+
 * main_catalog: 1 byte ascii
 * sub_catalog:  1 byte ascii  
-
+```
 current catalog: 
   0x01, [token/payments](./token);
      0x01, utilty token
@@ -18,6 +18,4 @@ current catalog:
      0x02,mooc    
   0x04, [medical](./medical) 
      0x01, ehr
-
-
 ```
