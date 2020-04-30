@@ -50,11 +50,11 @@ Layer II's service is identified by transaction outputscript, which convert to s
 
 ## SLP++ Protocol
 
+### [Common](./common/)  
+
 ### [Token](./token/)
 
 ### [Enterprise](./enterprise/)  
-
-### [Common](./common/)  
 
 ### [Health](./health/)  
 
