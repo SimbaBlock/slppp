@@ -1,4 +1,4 @@
-# SLP++ Token Type 1 Protocol Specification
+# SLP++ Utility Token Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 23, 2020
 
@@ -38,10 +38,10 @@ This transaction defines the properties, metadata and initial mint quantity of t
 
 `token_type` indicates the SLP++ sub-protocol:
 ```
-* 1 - Utility Token Type(this spec)
-* 2 - Reserved for Security Token Type 
-* 3 - Reserved for Voting Token Type
-* 4 - Reserved for Ticketing Token Type
+* 0x0201 - Utility Token Type(this spec)
+* 0x0202 - Reserved for Security Token Type 
+* 0x0203 - Reserved for Voting Token Type
+* 0x0204 - Reserved for Ticketing Token Type
 * ...
 ```
 This document specifies the rules and operation of the Permissionless Token Type (1) only. Tokens of different types cannot be mixed, and so future specifications of other token types will not affect the consensus validity of type.
