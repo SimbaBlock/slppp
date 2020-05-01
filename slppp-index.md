@@ -17,6 +17,6 @@
   health: 0x05
      ehr: 0x01
 
-For example, message type is: 0x0101; contract type is 0x0301.
+For example, message type is: 0x0101, contract type is 0x0301 etc.
 
 ```
