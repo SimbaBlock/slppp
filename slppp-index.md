@@ -1,4 +1,4 @@
-# SLP++ Layer II Protocol Specification
+# SLP++ Layer II Protocol List
 
 `protocol_index`: 2 bytes integer. 
 
