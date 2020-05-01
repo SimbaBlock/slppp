@@ -30,7 +30,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
+   &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
@@ -62,6 +62,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 </table>
 
 <sup>1. The lockingscript can be any valid script combination.  UPDATE & REMOVE's lockingscript are the same means</sup>   
+<sup>2. See more [type](../slppp-index.md)</sup>  
 
 ### UPDATE - Update Blockdrive Transaction Outputs
   

@@ -71,7 +71,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
-   &lt;token_type: \0x01\0x01&gt; (2 byte integer)<br/>
+   &lt;token_type<sup>4</sup>: \0x01\0x01&gt; (2 byte integer)<br/>
    &lt;action: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
    &lt;token_name&gt; (0 to ∞ bytes, suggested utf-8)<br/>
@@ -102,6 +102,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 <sup>1. The lockingscript can be any valid script combination.  MINT & SEND lockingscript are the same means</sup>   
 <sup>2. The Protocol identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Protocol IDs, gives the ascii string 'SLP++\x00'). 
 <sup>3. SLP++ does not impose any restrictions on BSV output amounts. 
+<sup>4. See more [type](../slppp-index.md)</sup>
 
 ### MINT - Extended Minting Transaction Outputs
 #### (used with "baton" to increase supply)
