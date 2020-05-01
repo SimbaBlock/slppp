@@ -1,11 +1,9 @@
 # SLP++ Layer II Protocol Specification
 
-`protocol_catalog` :   
+`protocol_index` :   
 
-* main_catalog: 1 byte integer
-* sub_catalog:  1 byte integer  
 ```
-current catalog:
+index:
   0x01, common
      0x01, message
      0x02, blockdrive
