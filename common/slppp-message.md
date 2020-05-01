@@ -192,7 +192,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 
 ### Examples
 
-**Create Peer to Peer Transaction**
+**CREARE Message Peer to Peer Transaction outputs**
 
 blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
 
