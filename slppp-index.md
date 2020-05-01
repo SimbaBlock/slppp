@@ -14,7 +14,7 @@
   0x04, enduation
      0x01,training 
      0x02,mooc    
-  0x05, medical
+  0x05, health
      0x01, ehr
   	
 ```
