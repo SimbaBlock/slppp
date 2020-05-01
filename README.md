@@ -18,7 +18,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
    Lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN<sup>2</sup>: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type:\x00000 &gt; (2 bytes integer)<br/>
+   &lt;type<sup>3</sup>:\x00000 &gt; (2 bytes integer)<br/>
    &lt;data_hash: &gt; (32 bytes, sha256(data))<br/>
    &lt;metadata: &gt; (1 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
@@ -36,7 +36,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
     <td>...</td>
     <td>
     OP_FALSE : '\x00' (1 bytes, ascii)<br>
-    OP_RETURN<sup>3</sup>: '\x6a' (1 bytes, ascii)<br> 
+    OP_RETURN<sup>4</sup>: '\x6a' (1 bytes, ascii)<br> 
    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
@@ -46,7 +46,8 @@ Layer II's service is identified by transaction outputscript, which convert to s
 
 <sup>1. The Lockscript can be any valid script by combination op_codes.(more [spec](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md)). </sup>   
 <sup>2. The OP_RETURN should be metadata & key managment for specific business. </sup>   
-<sup>3. The OP_FALSE OP_RETURN vout should be common data for specific business. </sup>   
+<sup>3. see [type index](./slppp-index.md). </sup>   
+<sup>4. The OP_FALSE OP_RETURN vout should be common data for specific business. </sup>   
 
 
 ## SLP++ Protocol
