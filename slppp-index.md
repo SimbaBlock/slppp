@@ -7,7 +7,7 @@
      0x01, message
      0x02, blockdrive
   0x02, token/payments
-     0x01, utilty token
+     0x01, utility token
      0x02, nft token	   
   0x03, enterprise
      0x01, contract
