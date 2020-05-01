@@ -1,9 +1,8 @@
 # SLP++ Layer II Protocol Specification
 
-`protocol_index` :   
+`protocol_index`: 2 bytes integer. 
 
 ```
-index:
   0x01, common
      0x01, message
      0x02, blockdrive
