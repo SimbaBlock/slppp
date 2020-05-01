@@ -1,6 +1,6 @@
 # SLP++ Layer II Protocol List
 
-`protocol_index`: 2 bytes integer. 
+`protocol_type`: 2 bytes integer. 
 
 ```
   0x01, common
