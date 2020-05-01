@@ -87,7 +87,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd:&gt;(32 bytes ascii by ecdh, if encrypt is true )<br/>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
