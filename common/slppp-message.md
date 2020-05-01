@@ -35,13 +35,13 @@ The message is identified by sha256 the transaction outputscript which is referr
    &lt;encrypt: '0' / '1'&gt; (1 byte integer, )<br/>
    &lt;aes_pwd: &gt; (32 bytes ascii by ecdh, if encrypt is true )<br/>
    </td>
-    <td> >0 </td>
+    <td>...</td>
   </tr>
   
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any</td>
+    <td>...</td>
   </tr>
  
 </table>
@@ -56,7 +56,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Note</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -71,7 +71,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
 &lt;aes_pwd:&gt; (32 bytes ascii by ecdh, if encrypt is true )<br/>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
@@ -93,7 +93,7 @@ The message is identified by sha256 the transaction outputscript which is referr
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any</td>
+    <td>...</td>
   </tr>
 
   <tr>
@@ -103,7 +103,7 @@ The message is identified by sha256 the transaction outputscript which is referr
    OP_RETURN <br> 
    &lt;data: &gt;(0 to ∞ bytes, ascii, encrypt by aes)<br/>
   </td>
-    <td>0</td>
+    <td>...</td>
   </tr>
 
 
@@ -118,7 +118,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Note</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -129,7 +129,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'JGROUP'&gt; (6 byte ascii)<BR>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
@@ -141,13 +141,13 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: 'MESSAGE'&gt; (7 bytes ascii)<br/>
 &lt;action: 'JGROUP'&gt; (5 byte ascii)<BR>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any</td>
+    <td>...</td>
   </tr>
 </table>
 
@@ -158,7 +158,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Note</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -169,7 +169,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
@@ -181,13 +181,13 @@ The message is identified by sha256 the transaction outputscript which is referr
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
   </td>
-    <td>>0</td>
+    <td>...</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
-    <td>any</td>
+    <td>...</td>
   </tr>
 </table>
 
