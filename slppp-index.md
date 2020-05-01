@@ -2,8 +2,8 @@
 
 `protocol_catalog` :   
 
-* main_catalog: 1 byte ascii
-* sub_catalog:  1 byte ascii  
+* main_catalog: 1 byte integer
+* sub_catalog:  1 byte integer  
 ```
 current catalog:
   0x01, common
