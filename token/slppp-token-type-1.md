@@ -71,7 +71,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
-   &lt;token_type: 1&gt; (1 to 2 byte integer)<br/>
+   &lt;token_type: \0x01\0x01&gt; (2 byte integer)<br/>
    &lt;action: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
    &lt;token_name&gt; (0 to ∞ bytes, suggested utf-8)<br/>
