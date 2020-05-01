@@ -19,7 +19,7 @@ The message is identified by sha256 the transaction outputscript which is referr
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Note</b><br/></td>
 </tr>
   <tr>
     <td>...</td>
