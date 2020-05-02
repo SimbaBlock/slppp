@@ -32,8 +32,8 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
-   &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
-   &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
+   &lt;title: &gt; (1 to 1024 bytes, suggested utf-8)<br/>
+   &lt;mark:&gt; (1  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
