@@ -1,4 +1,4 @@
-# SLP++ Onchain Message  Protocol Specification
+# SLP++ Message  Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 25, 2020
 
