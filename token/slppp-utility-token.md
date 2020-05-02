@@ -48,7 +48,7 @@ This document specifies the rules and operation of the Permissionless Token Type
 
 `mint_baton_vout`: Future token supply increases are made possible if the genesis endows a specific transaction output with a "minting baton" that can be passed along and used for future minting (using 'MINT' transactions, see below). If `mint_baton_vout` is not present or refers to a nonexistent output, then the baton does not exist and the token provably has a one-time issuance.
 
-`decimals`: indicates that 1 token is divisible into 10^`decimals` base units. SLP++ messages store whole numbers indicating token amounts as measured in the base unit, analogous to how bitcoin transactions store BSV amounts measured in the base unit 'satoshis'. 
+`decimals`: indicates that 1 token is divisible into 10^`decimals` base units. SLP++ messages store whole numbers indicating token amounts as measured in the base unit, analogous to how bitcoin transactions store Coin amounts measured in the base unit 'satoshis'. 
 ```
 For example, with a token FOO having `decimals` of 6 indicated in the genesis, 
 the quantity 12.53 FOO (as displayed in wallet software) would 
@@ -63,7 +63,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -101,7 +101,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 
 <sup>1. The lockingscript can be any valid script combination.  MINT & SEND lockingscript are the same means</sup>   
 <sup>2. The Protocol identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Protocol IDs, gives the ascii string 'SLP++\x00').     
-<sup>3. SLP++ does not impose any restrictions on BSV output amounts.     
+<sup>3. SLP++ does not impose any restrictions on Coin output amounts.     
 <sup>4. See more [type](../slppp-index.md)</sup>
 
 ### MINT - Extended Minting Transaction Outputs
@@ -118,7 +118,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -151,7 +151,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 
 ### SEND - Spend Transaction Outputs
 #### (Send / Transfer)
-The following transaction format is used to transfer tokens from one or more token holding UTXO(s) to new token holding UTXO(s). The UTXOs associated with unspent tokens will be used within the transaction input and, just like the BSV attached to these UTXOs, will be considered totally spent after this transaction is accepted by the blockchain. Tokens will be assigned to new UTXOs .  Any number of additional BSV outputs will be allowed. the BSV outputs is freeorder .
+The following transaction format is used to transfer tokens from one or more token holding UTXO(s) to new token holding UTXO(s). The UTXOs associated with unspent tokens will be used within the transaction input and, just like the Coin attached to these UTXOs, will be considered totally spent after this transaction is accepted by the blockchain. Tokens will be assigned to new UTXOs .  Any number of additional Coin outputs will be allowed. the Coin outputs is freeorder .
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order, but must include sufficient tokens coming from valid token transactions of matching `token_id`, `token_type` .
 
@@ -160,7 +160,7 @@ The following transaction format is used to transfer tokens from one or more tok
   <tr>
     <td><b>v<sub>out</sub></b></td>
     <td><b>OutputScript</b></td>
-    <td><b>BSV<br/>amount</b></td>
+    <td><b>Coin<br/>amount</b></td>
   </tr>
   <tr>
     <td>...</td>

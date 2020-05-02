@@ -10,6 +10,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
+  <td><b>Coin<br>amount </b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -22,6 +23,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
    &lt;metadata: &gt; (1 to ∞ bytes)<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
+   <td>>0</td>
   </tr>
   
   <tr>
@@ -36,6 +38,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
     OP_RETURN<sup>4</sup>: '\x6a' (1 bytes, ascii)<br> 
    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
+    <td>any</td>
   </tr>
  
 </table>

@@ -20,7 +20,7 @@ This transaction defines the properties, metadata and contract itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -73,7 +73,7 @@ This transaction defines the properties, metadata and contract itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
