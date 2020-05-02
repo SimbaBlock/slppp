@@ -1,4 +1,4 @@
-# SLP++ Blockdrive Storage Protocol Specification
+# SLP++ Blockdrive Protocol Specification
 ### Specification version: 0.1
 ### Date published: April 26, 2020
 
@@ -6,12 +6,12 @@
 
 ## Drive ID
 ```
-The blockdrive is identified by sha256 the create blockdrive transaction outputscript which is referred as `drive_id`.
+The blockdrive is identified by sha256 the create blockdrive transaction outputscript which can be regarded as `drive_id`.
 ```
 
 ## Transaction Detail
 
-### Create - Create Blockdrive Transaction Outputs
+### Create - Create Blockdrive Transaction
 
 This transaction defines the properties, metadata and blockdrive itself. 
 
@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 <sup>1. The lockingscript can be any valid script combination.  UPDATE & REMOVE's lockingscript are the same means</sup>   
 <sup>2. See more [type](../slppp-index.md)</sup>  
 
-### UPDATE - Update Blockdrive Transaction Outputs
+### UPDATE - Update Blockdrive Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -106,7 +106,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 </table>
 
 
-### REMOVE - Remove Blockdrive Transaction Outputs
+### REMOVE - Remove Blockdrive Transaction
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -138,7 +138,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 
 
 
-### PRUNE - Prune Blockdrive Transaction Outputs  
+### PRUNE - Prune Blockdrive Transaction   
 PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(outputscript) can be prune.  
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
