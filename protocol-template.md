@@ -11,7 +11,7 @@ The Service is identified by sha256 the create blocktemplate transaction outputs
 
 ## Transaction Detail
 
-### Action - Action Template Transaction Outputs
+### Action - Action Template Transaction
 
 This transaction defines the properties, metadata and Template itself. 
 
@@ -22,7 +22,7 @@ This transaction defines the properties, metadata and Template itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and Template itself.
 
 <sup>1. The lockingscript can be any valid script combination.  ACTION & ACTION's lockingscript are the same means</sup>     
 <sup>2. See more [type](../slppp-index.md)</sup>   
-### ACTION - Action Template Transaction Outputs
+### ACTION - Action Template Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -71,7 +71,7 @@ This transaction defines the properties, metadata and Template itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -106,7 +106,7 @@ This transaction defines the properties, metadata and Template itself.
 </table>
 
 
-### ACTION - Action Template Transaction Outputs
+### ACTION - Action Template Transaction
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -114,7 +114,7 @@ This transaction defines the properties, metadata and Template itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -138,7 +138,7 @@ This transaction defines the properties, metadata and Template itself.
 
 
 
-### ACTION - Action Template Transaction Outputs  
+### ACTION - Action Template Transaction  
 ACTION indacate that the data(op_return) self correspnd to template_id or sha256(outputscript) can be prune.  
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
@@ -147,7 +147,7 @@ ACTION indacate that the data(op_return) self correspnd to template_id or sha256
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
-  <td><b>BSV<br/>amount</b></td>
+  <td><b>Coin<br/>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
