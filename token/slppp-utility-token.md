@@ -32,7 +32,7 @@ the token_id is  sha256(outpuscript) = 7ee7a38340fd4fa5a14c9f5f3dc47f1e68a9534af
 
 ## Transaction Detail  
 
-### GENESIS - Token Genesis Transaction Outputs
+### GENESIS - Token Genesis Transaction    
 
 This transaction defines the properties, metadata and initial mint quantity of the token. 
 
@@ -104,7 +104,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 <sup>3. SLP++ does not impose any restrictions on Coin output amounts.     
 <sup>4. See more [type](../slppp-index.md)</sup>
 
-### MINT - Extended Minting Transaction Outputs
+### MINT - Extended Minting Transaction 
 #### (used with "baton" to increase supply)
 
 Subsequent minting transactions of `additional_token_quantity` can be performed by spending the "minting baton" UTXO in a special MINT transaction, described here. Note that this could be done by someone other than the GENESIS issuer, if the baton minting authority had been passed to another address.
@@ -149,7 +149,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
 </table>
 
 
-### SEND - Spend Transaction Outputs
+### SEND - Spend Transaction 
 #### (Send / Transfer)
 The following transaction format is used to transfer tokens from one or more token holding UTXO(s) to new token holding UTXO(s). The UTXOs associated with unspent tokens will be used within the transaction input and, just like the Coin attached to these UTXOs, will be considered totally spent after this transaction is accepted by the blockchain. Tokens will be assigned to new UTXOs .  Any number of additional Coin outputs will be allowed. the Coin outputs is freeorder .
 
