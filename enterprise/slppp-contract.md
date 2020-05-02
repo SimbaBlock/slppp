@@ -11,7 +11,7 @@ The contract is identified by sha256 the transaction outputscript which is refer
 
 ## Transaction Detail
 
-### Create - Create Contract Transaction Outputs
+### Create - Create Contract Transaction 
 This transaction defines the properties, metadata and contract itself.        
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 
@@ -65,7 +65,7 @@ This transaction defines the properties, metadata and contract itself.
 <sup>1. The Lockingscript can be any valid script combination.  UPDATE Lockingscript is the same means</sup>   
 <sup>2. See more [type](../slppp-index.md)</sup>  
 
-### UPDATE - Update Contract Transaction Outputs
+### UPDATE - Update Contract Transaction 
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
