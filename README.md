@@ -1,6 +1,6 @@
 # SLP++ Layer II Protocol
 Layer II Protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
-SLP++ operate on non-standard UTXOs,which can includes any state of your service.      
+SLP++ operate on non-standard UTXOs,which can includes any state of your services.      
 Layer II's service is identified by transaction outputscript, which convert to script level from transaction level. 
 ## Transaction struture
 
