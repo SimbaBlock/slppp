@@ -138,7 +138,7 @@ The message is identified by sha256 the transaction outputscript which is referr
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x0101'&gt; (2 bytes integer)<br/>
+&lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'JGROUP'&gt; (5 byte ascii)<BR>
   </td>
     <td>...</td>
