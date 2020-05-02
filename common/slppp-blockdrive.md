@@ -22,6 +22,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
+  <td><b>Coin<br>amount </b></td>
 </tr>
   <tr>
     <td>...</td>
@@ -38,11 +39,13 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
    &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
    &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   <td>>0</td>
   </tr>
   
   <tr>
     <td>...</td>
     <td>Any</td>
+    <td>any</td>
   </tr>
   
   <tr>
@@ -52,6 +55,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
     &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
+    <td>0</td>
   </tr>
  
 </table>
@@ -67,6 +71,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
+  <td><b>Coin</br>amount </b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -80,11 +85,13 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
+  <td>>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
+    <td>any</td>
   </tr>
 
   <tr>
@@ -93,6 +100,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1bytes, ascii)<br>
     OP_RETURN: '\x6a' (1bytes, ascii)<br>
     &lt;data: modified data&gt; (0 to ∞ bytes)<br/>
+    <td>0</td>
   </tr>
 
 </table>
@@ -106,6 +114,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
+  <td><b>Coin</br>amount</b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -117,11 +126,13 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
+  <td>>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
+    <td>any</td>
   </tr>
 </table>
 
@@ -136,6 +147,7 @@ PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(out
 <tr>
   <td><b>v<sub>out</sub></b></td>
   <td><b>OutputScript </b></td>
+  <td><b>Coin</br>amount </b></td>
 </tr>
   <tr>
   <td>...</td>
@@ -147,11 +159,13 @@ PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(out
 &lt;action: 'PRUNE'&gt; (6 bytes ascii)<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
+  <td>>0</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
+    <td>any</td>
   </tr>
 </table>
 
