@@ -29,6 +29,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
   <tr>
     <td>...</td>
     <td>Any</td>
+   <td>>any</td>
   </tr>
   
   <tr>
@@ -38,7 +39,7 @@ Layer II's service is identified by transaction outputscript, which convert to s
     OP_RETURN<sup>4</sup>: '\x6a' (1 bytes, ascii)<br> 
    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
-    <td>any</td>
+    <td>0</td>
   </tr>
  
 </table>
