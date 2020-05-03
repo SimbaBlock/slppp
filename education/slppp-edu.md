@@ -1,4 +1,4 @@
-# SLP++ Edu Training Protocol Specification 
+# SLP++ Training Service Protocol Specification 
 ### Specification version: 0.1
 ### Date published: May 01, 2020
 
@@ -6,14 +6,14 @@
 
 ## Service ID
 ```
-The Service is identified by sha256 the create blocktemplate transaction outputscript which is referred as `service_id`.
+The Service is identified by sha256 the create service transaction outputscript which is referred as `service_id`.
 ```
 
 ## Transaction Detail
 
-### CREATE - Create service Transaction Outputs
+### CREATE - Create service Transaction 
 
-This transaction defines the properties, metadata and Training Service itself. 
+This transaction defines the properties, metadata and training service itself. 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and Training Service itself.
 
 <sup>1. The lockingscript can be any valid script combination.  CREATE ,SIGNUP & UPDATE's lockingscript are the same means</sup>   
 
-### SIGNUP - Signup Transaction Outputs
+### SIGNUP - Signup Transaction    
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -106,7 +106,7 @@ This transaction defines the properties, metadata and Training Service itself.
 </table>
 
 
-### UPDATE - Update Transaction Outputs
+### UPDATE - Update Transaction 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
