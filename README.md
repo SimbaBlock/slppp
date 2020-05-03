@@ -46,7 +46,7 @@ Layer II's services are identified by transaction outputscripts, which convert t
 
 <sup>1. The Lockscript can be any valid script by combination op_codes.(more [spec](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md)). </sup>   
 <sup>2. The OP_RETURN should be metadata & key managment for specific business. </sup>   
-<sup>3. see more [type](./slppp-index.md). </sup>   
+<sup>3. see more [type](./slppp-type-index.md). </sup>   
 <sup>4. The OP_FALSE OP_RETURN vout should be common data for specific business. </sup>   
 
 
