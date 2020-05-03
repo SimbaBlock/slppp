@@ -68,6 +68,6 @@ Layer II's services are identified by transaction outputscripts, which convert t
 ## Tools  
 coming soon
 ```
-1. non-standard UTXO management tools.  
+1. UTXO(includes non-standard) management tools.  
 2. write complex script for non-standard transaction outputscript.
 ```
