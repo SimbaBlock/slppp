@@ -31,7 +31,7 @@ This transaction defines the properties, metadata and Training Service itself.
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
-   &lt;action: 'ACTION'&gt; (6 bytes, ascii)<br/>
+   &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (1 to 1024 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (1 to 1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
