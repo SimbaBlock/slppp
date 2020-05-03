@@ -51,9 +51,7 @@ Layer II's services are identified by transaction outputscripts, which convert t
 
 
 ## SLP++ Protocol
-```
-The complete Protocol see [more](./slppp-type-index.md)   
-```
+The complete Protocol see [more](./slppp-type-index.md)      
 
 ### [Common](./common/)  
 
