@@ -11,7 +11,7 @@ The Service is identified by sha256 the create service transaction outputscript 
 
 ## Transaction Detail
 
-### CREATE - Create service Transaction 
+### CREATE - Create Training service Transaction 
 
 This transaction defines the properties, metadata and training service itself. 
 
@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and training service itself.
 
 <sup>1. The lockingscript can be any valid script combination.  CREATE ,SIGNUP & UPDATE's lockingscript are the same means</sup>   
 
-### SIGNUP - Signup Transaction    
+### SIGNUP - Signup Training Service Transaction    
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -106,7 +106,7 @@ This transaction defines the properties, metadata and training service itself.
 </table>
 
 
-### UPDATE - Update Transaction 
+### UPDATE - Update Training Service Transaction 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
