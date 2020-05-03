@@ -16,7 +16,5 @@
      mooc: 0x02    
   health: 0x05
      ehr: 0x01
-
-For example, message type is: 0x0101, contract type is 0x0301 etc.
-
-```
+```  
+For example, the type 0x0101 is message, the type 0x0301 is contract etc.  
