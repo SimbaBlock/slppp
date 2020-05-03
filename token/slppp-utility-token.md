@@ -102,7 +102,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
 <sup>1. The lockingscript can be any valid script combination.  MINT & SEND lockingscript are the same means</sup>   
 <sup>2. The Protocol identifier is registered as the number 0x504c532B2B (which, when encoded in the 6-byte little-endian format expected for Protocol IDs, gives the ascii string 'SLP++\x00').     
 <sup>3. SLP++ does not impose any restrictions on Coin output amounts.     
-<sup>4. See more [type](../slppp-index.md)</sup>
+<sup>4. See more [type](../slppp-type-index.md)</sup>
 
 ### MINT - Extended Minting Transaction 
 #### (used with "baton" to increase supply)

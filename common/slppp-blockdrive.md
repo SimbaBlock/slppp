@@ -61,7 +61,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 </table>
 
 <sup>1. The lockingscript can be any valid script combination.  UPDATE & REMOVE's lockingscript are the same means</sup>   
-<sup>2. See more [type](../slppp-index.md)</sup>  
+<sup>2. See more [type](../slppp-type-index.md)</sup>  
 
 ### UPDATE - Update Blockdrive Transaction
   
