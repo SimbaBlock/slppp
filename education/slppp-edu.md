@@ -1,10 +1,10 @@
-# SLP++ Protocol Specification Template
+# SLP++ Edu Training Protocol Specification 
 ### Specification version: 0.1
-### Date published: April 30, 2020
+### Date published: May 01, 2020
 
 # PROTOCOL DESCRIPTION
 
-## Template ID
+## Service ID
 ```
 The Service is identified by sha256 the create blocktemplate transaction outputscript which is referred as `service_id`.
 ```
