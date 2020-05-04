@@ -6,7 +6,7 @@
 
 ## Service ID
 ```
-The Service is identified by sha256 the create service transaction outputscript which is referred as `service_id`.
+The Service is identified by sha256 the create service transaction outputscript which is referred as `training_id`.
 ```
 
 ## Transaction Detail
@@ -36,9 +36,7 @@ This transaction defines the properties, metadata and training service itself.
    &lt;mark:&gt; (1 to 1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
-   &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
-   &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   &lt;encrypted_pwd: (4 to 32 bytes ascii,if encrypt is true)<br/>
    </td>
     <td>any<sup>2</sup></td>
   </tr>
@@ -83,7 +81,7 @@ This transaction defines the properties, metadata and training service itself.
 &lt;action: 'SIGNUP'&gt; (6 byte ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
-&lt;service_id&gt; (32 bytes)<BR>
+&lt;training_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
@@ -124,7 +122,7 @@ This transaction defines the properties, metadata and training service itself.
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 bytes ascii)<BR>
-&lt;service_id&gt; (32 bytes)<BR>
+&lt;training_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
