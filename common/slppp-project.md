@@ -32,13 +32,10 @@ This transaction defines the properties, metadata and project itself.
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x01\x03'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
-   &lt;title: &gt; (1 to 1024 bytes, suggested utf-8)<br/>
-   &lt;mark:&gt; (1  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
+   &lt;data_protocol: 'FOCP1V2'&gt; (7 bytes ascii, data protocol)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
-   &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
-   &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   &lt;encrypted_ passwd: &gt; (1-32 bytes, if encrypt is true )<br/>
    <td>>0</td>
   </tr>
   
@@ -81,8 +78,8 @@ This transaction defines the properties, metadata and project itself.
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
-&lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
+&lt;data_protocol: 'FOCP1V2'&gt; (7 bytes ascii, data protocol)<br/>
 &lt;project_id&gt; (32 bytes)<BR>
   </td>
   <td>>0</td>
