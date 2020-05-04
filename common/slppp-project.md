@@ -33,7 +33,7 @@ This transaction defines the properties, metadata and project itself.
    &lt;type<sup>2</sup>: '\x01\x03'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
-   &lt;data_protocol: 'FOCP1V2'&gt; (7 bytes ascii, data protocol)<br/>
+   &lt;data_spec: 'FOCP1V2'&gt; (7 bytes ascii, data specification)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;encrypted_ passwd: &gt; (1-32 bytes, if encrypt is true )<br/>
    <td>>0</td>
@@ -79,7 +79,7 @@ This transaction defines the properties, metadata and project itself.
 &lt;type: '\x01\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
-&lt;data_protocol: 'FOCP1V2'&gt; (7 bytes ascii, data protocol)<br/>
+&lt;data_spec: 'FOCP1V2'&gt; (7 bytes ascii, data specification)<br/>
 &lt;project_id&gt; (32 bytes)<BR>
   </td>
   <td>>0</td>
