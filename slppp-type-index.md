@@ -23,4 +23,4 @@
   health: 0x05
      ehr: 0x01
 ```  
-For example, the type 0x0101 is message, the type 0x0301 is contract etc.  
+For example, the type 0x0101 is [message](./common/slppp-message.md), the type 0x0301 is [contract](./common/slppp-contract.md) etc.  
