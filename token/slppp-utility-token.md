@@ -71,7 +71,7 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
-   &lt;token_type<sup>4</sup>: \0x01\0x01&gt; (2 byte integer)<br/>
+   &lt;token_type<sup>4</sup>: \x0201&gt; (2 bytes integer)<br/>
    &lt;action: 'GENESIS'&gt; (7 bytes, ascii)<br/>
    &lt;token_ticker&gt; (0 to ∞ bytes, suggested utf-8)<br/>
    &lt;token_name&gt; (0 to ∞ bytes, suggested utf-8)<br/>
@@ -126,7 +126,7 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
    lockingscript:'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;token_type: 1&gt; (1 to 2 byte integer)<BR>
+&lt;token_type: \x0201&gt; (2 bytes integer)<BR>
 &lt;action: 'MINT'&gt; (4 bytes, ascii)<BR>
 &lt;token_id&gt; (32 bytes)<BR>
 &lt;mint_baton_vout&gt; (0 bytes or 1 byte between 0x00-0xff)<BR>
@@ -168,7 +168,7 @@ The following transaction format is used to transfer tokens from one or more tok
 lockingscript: 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>      
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
-&lt;token_type: 1&gt; (1 to 2 byte integer)<BR/>
+&lt;token_type: \x0201&gt; (2 bytes integer)<BR/>
 &lt;action: SEND&gt; (4 bytes, ascii)<BR/>   
 &lt;token_id&gt; (32 bytes)<BR/>
 &lt;token_output_quantity&gt; (<b>required</b>, 8 byte integer)<BR/>
@@ -209,11 +209,11 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>
  <tr>
   <td>01</td>
-  <td>length of token_type (1 byte)</td>
+  <td>length of token_type (2 bytes)</td>
  <tr>
  <tr>
   <td>01</td>
-  <td>token_type (1)</td>
+  <td>token_type (0x0201)</td>
  <tr>
  <tr>
   <td>07</td>
@@ -317,11 +317,11 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>01</td>
-  <td>length of token_type (1 byte)</td>
+  <td>length of token_type (2 bytes)</td>
  </tr>
  <tr>
   <td>01</td>
-  <td>token_type (1)</td>
+  <td>token_type (\x0201)</td>
  </tr>
  <tr>
   <td>04</td>
@@ -386,11 +386,11 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>01</td>
-  <td>length of token_type (1 byte)</td>
+  <td>length of token_type (2 bytes)</td>
  </tr>
  <tr>
   <td>01</td>
-  <td>token_type (1)</td>
+  <td>token_type (0x0201)</td>
  </tr>
  <tr>
   <td>04</td>
