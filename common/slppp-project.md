@@ -13,7 +13,7 @@ The Project is identified by sha256 the create Project transaction outputscript 
 
 ### Create - Create Project Transaction
 
-This transaction defines the properties, metadata and build itself. 
+This transaction defines the properties, metadata and project itself. 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and build itself.
 <sup>1. The lockingscript can be any valid script combination.  UPDATE&REMOVE lockingscript are the same means</sup>   
 <sup>2. See more [type](../slppp-type-index.md)</sup>  
 
-### UPDATE - Update Build Transaction
+### UPDATE - Update Project Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -99,7 +99,7 @@ This transaction defines the properties, metadata and build itself.
     <td>
     OP_FALSE: '\x00'  (1bytes, ascii)<br>
     OP_RETURN: '\x6a' (1bytes, ascii)<br>
-    &lt;data: modified build data&gt; (0 to ∞ bytes)<br/>
+    &lt;data: modified project data&gt; (0 to ∞ bytes)<br/>
     <td>0</td>
   </tr>
 
