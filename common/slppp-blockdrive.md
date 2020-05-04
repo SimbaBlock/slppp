@@ -36,9 +36,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;mark:&gt; (1  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;aes_pwd: (32 bytes ascii,if encrypt is true)<br/>
-   &lt;pubkey1: &gt; (32 bytes ascii, if encrypt is true)<br/>
-   &lt;pubkey2: &gt; (32 bytes ascii, if encrypt is true)<br/>
+   &lt;encrypted_pwd: (4 to 32 bytes ascii,if encrypt is true)<br/>
    <td>>0</td>
   </tr>
   
