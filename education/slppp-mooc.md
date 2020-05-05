@@ -1,6 +1,6 @@
 # SLP++ Massive Open Online Courses Protocol Specification 
 ### Specification version: 0.1
-### Date published: April 30, 2020
+### Date published: May 05, 2020
 
 # PROTOCOL DESCRIPTION
 
@@ -32,8 +32,8 @@ This transaction defines the properties, metadata and MOOC itself.
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x0402'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
-   &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
-   &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
+   &lt;title: &gt; (1 to 256 bytes, suggested utf-8)<br/>
+   &lt;mark:&gt; (1 to 1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;data_spec:&gt; (4 to 32 bytes ascii)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
@@ -61,7 +61,8 @@ This transaction defines the properties, metadata and MOOC itself.
 </table>
 
 <sup>1. The lockingscript can be any valid script combination.  CREATE,UPDATE & REMOVE's lockingscript are the same means</sup>     
-<sup>2. See more [type](../slppp-index.md)</sup>   
+<sup>2. See more [type](../slppp-index.md)</sup>
+
 ### UPDATE - Update MOOC Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
