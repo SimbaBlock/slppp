@@ -34,8 +34,8 @@ This transaction defines the properties, metadata and MOOC itself.
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (1 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (1 to 1024 bytes, ascii)<br/>
-   &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
-   &lt;data_spec:&gt; (4 to 32 bytes ascii)<br/>
+   &lt;data_hash: 'datahash'&gt; (32 bytes, sha256(data))<br/>
+   &lt;data_spec: 'xxxx'&gt; (4 to 32 bytes ascii)<br/>
    &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
    &lt;encrypted_pwd: (32 bytes ascii,if encrypt is true)<br/>
    </td>
