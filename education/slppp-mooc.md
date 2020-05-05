@@ -60,7 +60,7 @@ This transaction defines the properties, metadata and MOOC itself.
  
 </table>
 
-<sup>1. The lockingscript can be any valid script combination.  ACTION & ACTION's lockingscript are the same means</sup>     
+<sup>1. The lockingscript can be any valid script combination.  CREATE,UPDATE & REMOVE's lockingscript are the same means</sup>     
 <sup>2. See more [type](../slppp-index.md)</sup>   
 ### UPDATE - Update MOOC Transaction
   
