@@ -53,15 +53,15 @@ Layer II's services are identified by transaction outputscripts, which convert t
 ## SLP++ Protocol
 The complete Protocol see [more](./slppp-type-index.md)      
 
-### [Common](./common/)  
+### [01-Common](./common/)  
 
-### [Token](./token/)
+### [02-Token](./token/)
 
-### [Enterprise](./enterprise/)  
+### [03-Enterprise](./enterprise/)  
 
-### [Health](./health/)  
+### [04-Health](./health/)  
 
-### [Education](./education/)  
+### [05-Education](./education/)  
 
 
 
