@@ -61,10 +61,9 @@ The complete Protocol see [more](./slppp-type-index.md)
 
 ### [03-Enterprise](./enterprise/)  
 
-### [04-Health](./health/)  
+### [04-Education](./education/)  
 
-### [05-Education](./education/)  
-
+### [05-Health](./health/)  
 
 
 
