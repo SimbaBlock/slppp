@@ -15,7 +15,7 @@ Layer II's services are identified by transaction outputscripts, which convert t
   <tr>
     <td>...</td>
    <td>
-   <b>Lockingscript<sup>1</sup></b></br>:
+   <b>Lockingscript<sup>1</sup></b>:</br>
    'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    <b>metadata</b>: <br/>
    OP_RETURN<sup>2</sup>: '\x6a' (1 bytes, ascii)<br/>
