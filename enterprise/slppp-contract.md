@@ -63,7 +63,7 @@ This transaction defines the properties, metadata and contract itself.
 </table>
 
 <sup>1. The Lockingscript can be any valid script combination.  UPDATE Lockingscript is the same means</sup>   
-<sup>2. See more [type](../slppp-type-index.md)</sup>  
+<sup>2. See more [type](../index.md)</sup>  
 
 ### UPDATE - Update Contract Transaction 
   

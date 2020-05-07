@@ -59,7 +59,7 @@ This transaction defines the properties, metadata and blog itself.
 </table>
 
 <sup>1. The lockingscript can be any valid script combination.  UPDATE&REMOVE lockingscript are the same means</sup>   
-<sup>2. See more [type](../slppp-type-index.md)</sup>  
+<sup>2. See more [type](../index.md)</sup>  
 
 ### UPDATE - Update Blog Transaction
   
