@@ -28,7 +28,7 @@ This transaction defines the properties, metadata and Template itself.
     <td>...</td>
    <td>
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\xffff'&gt; (2 bytes integer)<br/>
    &lt;action: 'ACTION'&gt; (6 bytes, ascii)<br/>
@@ -52,8 +52,8 @@ This transaction defines the properties, metadata and Template itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1 bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>any</td>
@@ -77,7 +77,7 @@ This transaction defines the properties, metadata and Template itself.
   <td>...</td>
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\xffff'&gt; (2 bytes integer)<br/>
 &lt;action: 'ACTION'&gt; (6 byte ascii)<BR>
@@ -120,7 +120,7 @@ This transaction defines the properties, metadata and Template itself.
   <td>...</td>
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\xffff'&gt; (2 bytes integer)<br/>
 &lt;action: 'ACTIOn'&gt; (6 bytes ascii)<BR>
@@ -153,7 +153,7 @@ ACTION indacate that the data(op_return) self correspnd to template_id or sha256
   <td>...</td>
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\xffff'&gt; (2 bytes integer)<br/>
 &lt;action: 'ACTION'&gt; (6 bytes ascii)<BR>
