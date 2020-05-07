@@ -6,7 +6,6 @@
   common: 0x01
      message: 0x01
      blockdrive: 0x02
-     project: 0x03
      blog: 0x04
 
   token/payments: 0x02
@@ -15,7 +14,7 @@
 
   enterprise: 0x03
      contract: 0x01
-
+     project: 02
   enduation: 0x04
      training: 0x01 
      mooc: 0x02    

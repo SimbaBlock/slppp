@@ -30,7 +30,7 @@ This transaction defines the properties, metadata and project itself.
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>2</sup>: '\x03\x01'&gt; (2 bytes integer)<br/>
+   &lt;type<sup>2</sup>: '\x03\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;data_spec: 'FOCP1V2'&gt; (4 to 32 bytes ascii, data specification)<br/>
@@ -76,7 +76,7 @@ This transaction defines the properties, metadata and project itself.
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
+&lt;type: '\x03\x02'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;data_spec: 'FOCP1V2'&gt; (4 to 32 bytes ascii, data specification)<br/>
@@ -119,7 +119,7 @@ This transaction defines the properties, metadata and project itself.
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
+&lt;type: '\x03\x02'&gt; (2 bytes integer)<br/>
 &lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;project_id&gt; (32 bytes)<BR>
   </td>
