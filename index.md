@@ -30,7 +30,7 @@
      training: 0x01 
      mooc: 0x02    
 ```
-### [health](./healeth)
+### [health](./health)
 ```
   health: 0x05
      ehr: 0x01
