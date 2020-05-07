@@ -9,20 +9,23 @@
      blockdrive: 0x02
      blog: 0x04
 ```
-```
+
 ### [token](./token)
+```
   token/payments: 0x02
      utility token: 0x01
      nft token: 0x02 	   
 ```
-```
+
 ### [enterprise](./enterprise)
+```
   enterprise: 0x03
      contract: 0x01
      project: 02
 ```
-```
+
 ### [edu](./education)
+```
   eduation: 0x04
      training: 0x01 
      mooc: 0x02    
