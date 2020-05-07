@@ -61,7 +61,7 @@ This transaction defines the properties, metadata and Template itself.
  
 </table>
 
-<sup>1. The lockingscript can be any valid script combination.  ACTION & ACTION's lockingscript are the same means</sup>     
+<sup>1. The lockingscript can be any valid script combination, which controls who can operate the data, by spent the utxo.  ACTION & ACTION's lockingscript are the same means</sup>     
 <sup>2. See more [type](../slppp-index.md)</sup>   
 ### ACTION - Action Template Transaction
   
