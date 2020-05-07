@@ -213,7 +213,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>
  <tr>
   <td>0201</td>
-  <td>token_type (0x0201)</td>
+  <td>token_type (\x0201)</td>
  <tr>
  <tr>
   <td>07</td>
@@ -390,7 +390,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>0201</td>
-  <td>token_type (0x0201)</td>
+  <td>token_type (\x0201)</td>
  </tr>
  <tr>
   <td>04</td>
