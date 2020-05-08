@@ -7,7 +7,7 @@
   common: 0x01
      message: 0x01
      blockdrive: 0x02
-     blog: 0x04
+     blog: 0x03
 ```
 
 ### [token](./token)
@@ -21,7 +21,7 @@
 ```
   enterprise: 0x03
      contract: 0x01
-     project: 02
+     project: 0x02
 ```
 
 ### [edu](./education)
