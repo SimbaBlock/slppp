@@ -47,9 +47,9 @@ Layer II's services are identified by transaction outputscripts, which convert t
 </table>
 
 <sup>1. The <b>Lockingscript</b> can be any valid script by combination op_codes(more [spec](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md)), which controls who can spend the utxo. </sup>   
-<sup>2. The OP_RETURN should be <b>metadata</b> for specific business. </sup>   
+<sup>2. The OP_RETURN should be <b>metadata</b> for specific services. </sup>   
 <sup>3. see more [type](./index.md). </sup>   
-<sup>4. The OP_FALSE OP_RETURN vout should be common <b>data</b> for specific business. </sup>   
+<sup>4. The OP_FALSE OP_RETURN vout should be common <b>data</b> for specific services. </sup>   
 
 
 ## SLP++ Protocol
