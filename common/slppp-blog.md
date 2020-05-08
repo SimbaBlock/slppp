@@ -30,7 +30,7 @@ This transaction defines the properties, metadata and blog itself.
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>2</sup>: '\x01\x04'&gt; (2 bytes integer)<br/>
+   &lt;type<sup>2</sup>: '\x01\x03'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (1 to 1024 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (1  to  1024 bytes, ascii)<br/>
@@ -120,7 +120,7 @@ This transaction defines the properties, metadata and blog itself.
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x01\x04'&gt; (2 bytes integer)<br/>
+&lt;type: '\x01\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;blog_id&gt; (32 bytes)<BR>
   </td>
