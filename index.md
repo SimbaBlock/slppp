@@ -1,6 +1,6 @@
 # SLP++ Layer II Protocol List
 
- protocol `type`: 2 bytes integer, one byte primary category, and one byte sub category field. 
+ protocol `type`: 2 bytes integer, one byte for primary category, one byte for sub category field. 
 
 ### [common](./common)
 ```
