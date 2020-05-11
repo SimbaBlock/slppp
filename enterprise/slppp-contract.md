@@ -25,8 +25,10 @@ This transaction defines the properties, metadata and contract itself.
   <tr>
     <td>...</td>
    <td>
-   Lockingscript<sup>1</sup>: 'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF' (0 to ∞ bytes)<br/>   
+   <b>Lockingscript<sup>1</sup>:</b><br/> 
+   'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x03\x01'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
@@ -55,6 +57,7 @@ This transaction defines the properties, metadata and contract itself.
     <td>
     OP_FALSE : '\x00' (1 bytes, ascii)<br>
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    <b>data:</b><br/>
     &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
@@ -78,8 +81,10 @@ This transaction defines the properties, metadata and contract itself.
   <tr>
   <td>...</td>
   <td>
-   Lockingscript: 'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF'(0 to ∞ bytes)<br/>   
+   <b>Lockingscript:</b><br/>
+   'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
