@@ -136,11 +136,13 @@ This transaction defines the properties, metadata and Wiki itself.
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;school_id&gt; (32 bytes)<BR>
   </td>
+  <td>any</td>
   </tr>
 
   <tr>
     <td>...</td>
     <td>Any</td>
+    <td>any</td>
   </tr>
 </table>
 
