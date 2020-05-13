@@ -103,8 +103,8 @@ This transaction defines the properties, metadata and Wiki itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     <b>data:</b><br/>
     &lt;data: modified data&gt; (0 to ∞ bytes)<br/>
     <td>any</td>
@@ -161,7 +161,7 @@ blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a
 
 SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
 
-**UPDATE Wiki Transaction**
+**REMOVE Wiki Transaction**
 
 blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
 

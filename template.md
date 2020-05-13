@@ -102,8 +102,8 @@ This transaction defines the properties, metadata and Template itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     <b>data:</b><br/>
     &lt;data: modified data&gt; (0 to ∞ bytes)<br/>
     <td>any</td>
