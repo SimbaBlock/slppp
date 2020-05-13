@@ -27,7 +27,7 @@ This transaction defines the properties, metadata and contract itself.
    <td>
    <b>Lockingscript<sup>1</sup>:</b><br/> 
    'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF' (0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x03\x01'&gt; (2 bytes integer)<br/>
@@ -55,8 +55,8 @@ This transaction defines the properties, metadata and contract itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE : '\x00' (1 bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    OP_FALSE : '\x00' (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     <b>data:</b><br/>
     &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
@@ -83,11 +83,11 @@ This transaction defines the properties, metadata and contract itself.
   <td>
    <b>Lockingscript:</b><br/>
    'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
-&lt;action: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 byte ascii)<BR>
+&lt;action: 'REVOKE/REJECT/APPROVE'&gt; (5 to 16 bytes ascii)<BR>
 &lt;contract_id&gt; (32 bytes)<BR>
   </td>
     <td>>0 </td>
@@ -134,7 +134,7 @@ a5a48786f3b9da08893b3687ca88ac68</td>
  </tr>
  <tr>
   <td>02</td>
-  <td>length of type field (2 byte)</td>
+  <td>length of type field (2 bytes)</td>
  </tr>
  <tr>
   <td>0301</td>
@@ -202,7 +202,7 @@ d074a61bd9e6ab7c48d244eacd0c99e0
  </tr>
   <tr>
   <td>01</td>
-  <td>length of encrypt field(1 bytes)</td>
+  <td>length of encrypt field(1 byte)</td>
  </tr>
  <tr>
   <td>00</td>
@@ -240,7 +240,7 @@ a5a48786f3b9da08893b3687ca88ac68</td>
  </tr>
  <tr>
   <td>02</td>
-  <td>length of type field (2 byte)</td>
+  <td>length of type field (2 bytes)</td>
  </tr>
  <tr>
   <td>0301</td>
