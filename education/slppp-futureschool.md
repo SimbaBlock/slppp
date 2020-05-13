@@ -65,7 +65,7 @@ This transaction defines the properties, metadata and Future School itself.
  
 </table>
 
-<sup>1. The lockingscript can be any valid script combination, which controls who can operate the data, by spent the utxo.  ACTION & ACTION's lockingscript are the same means</sup>     
+<sup>1. The lockingscript can be any valid script combination, which controls who can operate the data, by spent the utxo.  CREATE & UPDATE's lockingscript are the same means</sup>     
 <sup>2. See more [type](../slppp-index.md)</sup>   
 ### UPDATE - Update Future School Transaction
   
