@@ -29,6 +29,7 @@
   eduation: 0x04
      training: 0x01 
      mooc: 0x02    
+     futureschool: 0x03
 ```
 ### [health](./health)
 ```
