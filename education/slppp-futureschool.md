@@ -6,7 +6,7 @@
 
 ## School ID
 ```
-The Service is identified by sha256 the create FutureSchool transaction outputscript which is referred as `school_id`.
+The Future School is identified by sha256 the create FutureSchool transaction outputscript which is referred as `school_id`.
 ```
 
 
@@ -89,7 +89,7 @@ This transaction defines the properties, metadata and Future School itself.
 &lt;action: 'UPDATE'&gt; (6 bytes ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
-&lt;template_id&gt; (32 bytes)<BR>
+&lt;school_id&gt; (32 bytes)<BR>
   </td>
     <td>any</td>
   </tr>
