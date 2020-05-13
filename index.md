@@ -8,6 +8,7 @@
      message: 0x01
      blockdrive: 0x02
      blog: 0x03
+     wiki: 0x04
 ```
 
 ### [token](./token)
@@ -30,6 +31,7 @@
      training: 0x01 
      mooc: 0x02    
      futureschool: 0x03
+     book: 0x04
 ```
 ### [health](./health)
 ```

@@ -33,7 +33,7 @@ This transaction defines the properties, metadata and Wiki itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>2</sup>: '\x0403'&gt; (2 bytes integer)<br/>
+   &lt;type<sup>2</sup>: '\x0104'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
@@ -66,7 +66,7 @@ This transaction defines the properties, metadata and Wiki itself.
 </table>
 
 <sup>1. The lockingscript can be any valid script combination, which controls who can operate the data, by spent the utxo.  CREATE & UPDATE's lockingscript are the same means</sup>     
-<sup>2. See more [type](../slppp-index.md)</sup>   
+<sup>2. See more [type](../index.md)</sup>   
 ### UPDATE - Update Wiki Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
@@ -85,7 +85,7 @@ This transaction defines the properties, metadata and Wiki itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x0403'&gt; (2 bytes integer)<br/>
+&lt;type: '\x0104'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 bytes ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
@@ -130,7 +130,7 @@ This transaction defines the properties, metadata and Wiki itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x0403'&gt; (2 bytes integer)<br/>
+&lt;type: '\x0104'&gt; (2 bytes integer)<br/>
 &lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
