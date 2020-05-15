@@ -258,8 +258,8 @@ a5a48786f3b9da08893b3687ca88ac68</td>
   <td>length of contract_id field(32 bytes)</td>
  </tr>
  <tr>
-  <td>7680f76247b281ac78a4c33c5b463d9dc
-333892721855d87976b9233a2d71d9a
+  <td>d3fc9c2489910f7f9d8ec1be468516945
+cdb0f9068726a4503395c8393364589
 </td>
   <td>contract_id, sha256(outputscript)</td>
  </tr>
