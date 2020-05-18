@@ -29,16 +29,15 @@ This transaction defines the properties, metadata and blockdrive itself.
    <td>
    <b>lockingscript<sup>1</sup>:</b><br/>
    'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
-   &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
-   &lt;data_spec:&gt; (0 to 32 bytes ascii)<br/>
-   &lt;encrypt: '0' / '1'&gt; (1 byte integer)<br/>
-   &lt;encrypted_pwd: (4 to 32 bytes ascii,if encrypt is true)<br/>
+   &lt;data_hash:&gt; (32 bytes, sha256(rawtx))<br/>
+   &lt;data_spec: '0' or '1'&gt; (1 byte integer, '0' is txid, '1' is block)<br/>
+   &lt;height:&gt; (1 to 4 bytes integer)<br/>
    <td>>0</td>
   </tr>
   
@@ -54,7 +53,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 bytes, ascii)<br>
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: &gt; (0 to ∞ bytes)<br/>
+    &lt;data: rawtx or block&gt; (0 to ∞ bytes, if data_spec is '0' means rawtx. if '1' means block)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -110,75 +109,6 @@ This transaction defines the properties, metadata and blockdrive itself.
 </table>
 
 
-### REMOVE - Remove Blockdrive Transaction
-
-**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
-**Transaction outputs**:
-<table>
-<tr>
-  <td><b>v<sub>out</sub></b></td>
-  <td><b>OutputScript </b></td>
-  <td><b>Coin</br>amount</b></td>
-</tr>
-  <tr>
-  <td>...</td>
-  <td>
-   <b>lockingscript:</b><br/> 
-   'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
-&lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
-  </td>
-  <td>>0</td>
-  </tr>
-
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
-</table>
-
-
-
-### PRUNE - Prune Blockdrive Transaction   
-PRUNE indacate that the data(op_return) self correspnd to drive_id or sha256(outputscript) can be prune.  
-
-**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
-**Transaction outputs**:
-<table>
-<tr>
-  <td><b>v<sub>out</sub></b></td>
-  <td><b>OutputScript </b></td>
-  <td><b>Coin</br>amount </b></td>
-</tr>
-  <tr>
-  <td>...</td>
-  <td>
-   <b>lockingscript:</b><br/> 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
-   <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
-&lt;action: 'PRUNE'&gt; (6 bytes ascii)<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
-  </td>
-  <td>>0</td>
-  </tr>
-
-  <tr>
-    <td>...</td>
-    <td>Any</td>
-    <td>any</td>
-  </tr>
-</table>
-
-
-
-
 ### Examples
 
 **CREATE Blockdrive Transaction**
@@ -192,19 +122,6 @@ SCRIPT: ``006a04534c500001010747454e45534953045553445423546574686572204c74642e20
 blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
 
 SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
-
-**REMOVE Blockdrive Transaction**
-
-blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
-
-SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
-
-**PRUNE Blockdrive Transaction**
-
-blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
-
-SCRIPT: ``006a04534c50000101044d494e5420a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647010208002386f26fc10000``
-
 
 # Copyright
 
