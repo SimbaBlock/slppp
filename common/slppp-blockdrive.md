@@ -50,8 +50,8 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1 bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
     &lt;data: rawtx or block&gt; (0 to ∞ bytes, if data_spec is '0' means rawtx. if '1' means block)<br/>
     </td>
@@ -78,11 +78,11 @@ This transaction defines the properties, metadata and blockdrive itself.
   <td>
    <b>lockingscript:</b><br/>
    'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
-&lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
+&lt;action: 'UPDATE'&gt; (6 bytes ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
@@ -99,8 +99,8 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1byte, ascii)<br>
+    OP_RETURN: '\x6a' (1byte, ascii)<br>
    <b>data:</b><br/>
     &lt;data: modified data&gt; (0 to ∞ bytes)<br/>
     <td>0</td>
