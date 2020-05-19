@@ -35,7 +35,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
-   &lt;data_hash:&gt; (32 bytes, sha256(rawtx))<br/>
+   &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;data_spec: '0' or '1'&gt; (1 byte integer, '0' is txid, '1' is block)<br/>
    &lt;height:&gt; (1 to 4 bytes integer)<br/>
    <td>>0</td>
