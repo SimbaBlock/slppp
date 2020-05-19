@@ -33,10 +33,10 @@ This transaction defines the properties, metadata and blockdrive itself.
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
-   &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
+   &lt;action: '\x00' or '\x01'&gt; (1 byte integer, 0x00 is CREATE op, 0x01 is UPDATE op)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
-   &lt;data_spec: '0' or '1'&gt; (1 byte integer, '0' is txid, '1' is block)<br/>
+   &lt;data_spec: '0x00' or '0x01'&gt; (1 byte integer, '0x00' is txid, '0x01' is block)<br/>
    &lt;height:&gt; (1 to 4 bytes integer)<br/>
    <td>>0</td>
   </tr>
@@ -53,7 +53,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: rawtx or rawblock&gt; (0 to ∞ bytes, if data_spec is '0' means rawtx. if '1' means block)<br/>
+    &lt;data: rawtx or  array of drive_ids  block  &gt; (0 to ∞ bytes, if data_spec is '0x00' means rawtx. if '0x01' means drive_id block)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -82,7 +82,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
-&lt;action: 'UPDATE'&gt; (6 bytes ascii)<BR>
+&lt;action: '\x00' or '\x01'&gt; (1 byte integer, 0x00 is CREATE op, 0x01 is UPDATE op)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
@@ -103,7 +103,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: rawtx or rawblock &gt; (0 to ∞ bytes)<br/>
+    &lt;data: rawtx or  array of drive_ids block &gt; (0 to ∞ bytes)<br/>
     <td>0</td>
   </tr>
 
