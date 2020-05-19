@@ -100,8 +100,8 @@ This transaction defines the properties, metadata and blockdrive itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1byte, ascii)<br>
-    OP_RETURN: '\x6a' (1byte, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
     &lt;data: rawtx or parts of block &gt; (0 to ∞ bytes)<br/>
     <td>0</td>
