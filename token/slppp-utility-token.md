@@ -25,8 +25,8 @@ compared to original SLP, SLP++ token has below advantages:
 ## Token ID  
 ```
 The token is identified by sha256 the token genesis transaction output(txid + n) which is referred as `token_id`.
-For example, with the txid and n, n is 1 byte integer:    
-the token_id is  sha256(f7c51bd4ccde8561a2052683e0374c60c1213505c4f3cd1d7a4750a65cfdd3aa + '01') = 
+For example, with the txid : c3d2c60be64c1503076798a5ae77730f2655942ad479843f2f3c0e2edaf82120,  and n: 00, n is 1 byte integer,    
+the token_id is  sha256(c3d2c60be64c1503076798a5ae77730f2655942ad479843f2f3c0e2edaf82120 + '00') = 533f15bfe3237d272c153484b0e80dee956c590f94eb2e2d568b1cf4ea420776
 
 ```
 
