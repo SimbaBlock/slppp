@@ -18,6 +18,7 @@ Layer II's services are identified by transaction output: sha256(txid + 1 byte i
    <b>Lockingscript<sup>1</sup></b>:</br>
    'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
+   &lt;len: length of metadata&gt; (0 to ∞ bytes)<br/>
    <b>metadata<sup>2</sup></b>: <br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>3</sup>:\x0000 &gt; (2 bytes integer)<br/>
@@ -38,7 +39,8 @@ Layer II's services are identified by transaction output: sha256(txid + 1 byte i
     <td>
     OP_FALSE : '\x00' (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br> 
-<b>data<sup>4</sup></b>:<br/>
+   &lt;len: length of data&gt; (0 to ∞ bytes)<br/>
+   <b>data<sup>4</sup></b>:<br/>
    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
