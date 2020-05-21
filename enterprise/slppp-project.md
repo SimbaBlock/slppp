@@ -6,7 +6,7 @@
 
 ## Project ID
 ```
-The Project is identified by sha256 the create Project transaction outputscript which can be regarded as `project_id`.
+The Project is identified by sha256 the create Project transaction output(txid + n) which can be regarded as `project_id`.
 ```
 
 ## Transaction Detail

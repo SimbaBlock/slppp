@@ -6,7 +6,7 @@
 
 ## Service ID
 ```
-The Service is identified by sha256 the create service transaction outputscript which is referred as `training_id`.
+The Service is identified by sha256 the create service transaction output(txid + n) which is referred as `training_id`.
 ```
 
 ## Transaction Detail

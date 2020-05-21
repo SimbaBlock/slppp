@@ -6,7 +6,7 @@
 
 ## BLOG ID
 ```
-The Blog is identified by sha256 the create blog transaction outputscript which can be regarded as `blog_id`.
+The Blog is identified by sha256 the create blog transaction output(txid + n) which can be regarded as `blog_id`.
 ```
 
 ## Transaction Detail

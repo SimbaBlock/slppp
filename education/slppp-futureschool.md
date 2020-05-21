@@ -6,7 +6,7 @@
 
 ## School ID
 ```
-The Future School is identified by sha256 the create FutureSchool transaction outputscript which is referred as `school_id`.
+The Future School is identified by sha256 the create FutureSchool transaction output(txid + n) which is referred as `school_id`.
 ```
 
 

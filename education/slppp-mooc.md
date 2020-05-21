@@ -6,7 +6,7 @@
 
 ## MOOC ID
 ```
-The MOOC is identified by sha256 the create mooc transaction outputscript which is referred as `mooc_id`.
+The MOOC is identified by sha256 the create mooc transaction output(txid+n) which is referred as `mooc_id`.
 ```
 
 ## Transaction Detail

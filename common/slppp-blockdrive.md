@@ -6,7 +6,7 @@
 
 ## Drive ID
 ```
-The blockdrive is identified by sha256 the create blockdrive transaction outputscript which can be regarded as `drive_id`.
+The blockdrive is identified by sha256 the create blockdrive transaction output (txid + n) which can be regarded as `drive_id`.
 ```
 
 ## Transaction Detail

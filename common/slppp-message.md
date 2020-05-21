@@ -6,7 +6,7 @@
 
 ## Message ID
 ```
-The message is identified by sha256 the transaction outputscript which is referred as `message_id(32 bytes)`.
+The message is identified by sha256 the transaction output(txid + n) which is referred as `message_id(32 bytes)`.
 ```
 
 ## Transaction Detail    

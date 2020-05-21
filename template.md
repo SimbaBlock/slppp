@@ -6,7 +6,7 @@
 
 ## Template ID
 ```
-The Service is identified by sha256 the create blocktemplate transaction outputscript which is referred as `template_id`.
+The Service is identified by sha256 the create blocktemplate transaction output(txid + n) which is referred as `template_id`.
 ```
 
 ## Transaction Detail

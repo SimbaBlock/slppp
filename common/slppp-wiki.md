@@ -6,7 +6,7 @@
 
 ## Wiki ID
 ```
-The Wiki is identified by sha256 the create Wiki transaction outputscript which is referred as `wiki_id`.
+The Wiki is identified by sha256 the create Wiki transaction output(txid+n) which is referred as `wiki_id`.
 ```
 
 

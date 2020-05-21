@@ -6,7 +6,7 @@
 
 ## Contract ID  
 ```
-The contract is identified by sha256 the transaction outputscript which is referred as `contract_id(32 bytes)`.
+The contract is identified by sha256 the transaction output(txid + n) which is referred as `contract_id(32 bytes)`.
 ```
 
 ## Transaction Detail
