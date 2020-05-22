@@ -122,9 +122,9 @@ This transaction defines the properties, metadata and contract itself.
 
 **Create Contract Transaction**
 
-blockchain transaction: 7cd6f04e82cb5927ff7382e13d21ddc25649819c81c922a2c2f4b16bb06476c3
+blockchain transaction: 4617f5e4d859d281cc7fc3fd02fe9230d9cd37a2665f3e9a5201603017f9c93c
 
-SCRIPT: ``6376a914602c8763be74d22f96c43d3f3f965171892df64188ac6776a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac686a06534c502b2b0002030106435245415445057469746c650a323032302d30352d30310a323032302d30352d30310a323032302d30352d3031046d61726b2007334386287751ba02a4588c1a0875dbd074a61bd9e6ab7c48d244eacd0c99e00100``
+SCRIPT: ``6376a914602c8763be74d22f96c43d3f3f965171892df64188ac6776a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac686a4c6006534c502b2b0002030106435245415445057469746c650a323032302d30352d30310a323032302d30352d30310a323032302d30352d3031046d61726b2007334386287751ba02a4588c1a0875dbd074a61bd9e6ab7c48d244eacd0c99e00100``
 
 OUTPUTSCRIPT BROKEN DOWN:
 <table>
@@ -141,8 +141,12 @@ a5a48786f3b9da08893b3687ca88ac68</td>
   <td>OP_RETURN</td>
  </tr>
  <tr>
+  <td>4c60</td>
+  <td>OP_PUSHDATA1 + 60 (length of metadata) (2 bytes)</td>
+ </tr>
+ <tr>
   <td>06</td>
-  <td>Length of protocol_id field (6 bytes)</td>
+  <td>length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>
@@ -228,9 +232,9 @@ d074a61bd9e6ab7c48d244eacd0c99e0
 
 **Update Contract Transaction**
 
-blockchain transaction: 13faa617675afeecf05fe36f8b059413841619807f072717dd3ecd33007b37d1
+blockchain transaction: 459ff9525975e4ef51222440458a4c14e428e6e74f8dbfd7ed6cd096745083cf
 
-SCRIPT: ``6376a914602c8763be74d22f96c43d3f3f965171892df64188ac6776a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac686a06534c502b2b0002030107415050524f564520e22f8cebc49562b81d964a5921cdc01117d7d827856082b788a0ee078c0043ef``
+SCRIPT: ``6376a914602c8763be74d22f96c43d3f3f965171892df64188ac6776a914c079c08dd91583a5a48786f3b9da08893b3687ca88ac686a3306534c502b2b0002030107415050524f564520259dea63aec87659725e390a137c0c04996a2fdd340bfec7edc5559b7e03fecb``
 
 OUTPUTSCRIPT BROKEN DOWN:
 <table>
@@ -247,8 +251,12 @@ a5a48786f3b9da08893b3687ca88ac68</td>
   <td>OP_RETURN</td>
  </tr>
  <tr>
+  <td>33</td>
+  <td>length of metadata (1 bytes)</td>
+ </tr>
+ <tr>
   <td>06</td>
-  <td>Length of protocol_id field (6 bytes)</td>
+  <td>length of protocol_id field (6 bytes)</td>
  </tr>
  <tr>
   <td>534c502b2b00</td>
@@ -274,8 +282,8 @@ a5a48786f3b9da08893b3687ca88ac68</td>
   <td>length of contract_id field(32 bytes)</td>
  </tr>
  <tr>
-  <td>e22f8cebc49562b81d964a5921cdc0111
-7d7d827856082b788a0ee078c0043ef
+  <td>259dea63aec87659725e390a137c0c04996a2fdd
+    340bfec7edc5559b7e03fecb
 </td>
   <td>contract_id, sha256(outputscript)</td>
  </tr>
