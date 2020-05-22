@@ -19,10 +19,10 @@ Layer II's services are identified by transaction output: service id = sha256(tx
    'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    &lt;len: &gt; (length of metadata)<br/>
-   len < 0x4c,  1 byte integer <br/> 
-   len <= 0xff, '4c + 1 byte integer' <br/> 
-   len <= 0xffff,'4d + 2 bytes integer' <br/> 
-   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata<sup>2</sup></b>: <br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>3</sup>:\x0000 &gt; (2 bytes integer)<br/>
@@ -44,10 +44,10 @@ Layer II's services are identified by transaction output: service id = sha256(tx
     OP_FALSE : '\x00' (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br> 
    &lt;len: &gt; (length of data)<br/>
-   len < 0x4c,  1 byte integer <br/> 
-   len <= 0xff, '4c + 1 byte integer' <br/> 
-   len <= 0xffff,'4d + 2 bytes integer' <br/> 
-   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer) <br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>data<sup>4</sup></b>:<br/>
    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
