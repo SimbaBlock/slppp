@@ -72,10 +72,10 @@ A `decimals` of 8 would give the same divisibility as bitcoin, whereas 0 would g
    'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;len: &gt; (length of metadata)<br/>
-   len < 0x4c,  1 byte integer <br/> 
-   len <= 0xff, '4c + 1 byte integer' <br/> 
-   len <= 0xffff,'4d + 2 bytes integer' <br/> 
-   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<sup>2</sup><br/>
    &lt;token_type<sup>4</sup>: \x0201&gt; (2 bytes integer)<br/>
@@ -134,10 +134,10 @@ As with GENESIS, the MINT allows to end the baton, or further pass on the baton 
    'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
    &lt;len: &gt; (length of metadata)<br/>
-   len < 0x4c,  1 byte integer <br/> 
-   len <= 0xff, '4c + 1 byte integer' <br/> 
-   len <= 0xffff,'4d + 2 bytes integer' <br/> 
-   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;token_type: \x0201&gt; (2 bytes integer)<BR>
@@ -183,10 +183,10 @@ The following transaction format is used to transfer tokens from one or more tok
 'OP_DUP OP_HASH160 986b5779484a19fd99e1ea26ff0081d4b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>      
 OP_RETURN: '\x6a' (1 bytes, ascii)<BR>
    &lt;len: &gt; (length of metadata)<br/>
-   len < 0x4c,  1 byte integer <br/> 
-   len <= 0xff, '4c + 1 byte integer' <br/> 
-   len <= 0xffff,'4d + 2 bytes integer' <br/> 
-   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
 <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR/>
 &lt;token_type: \x0201&gt; (2 bytes integer)<BR/>
