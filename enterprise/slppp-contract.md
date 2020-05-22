@@ -28,6 +28,11 @@ This transaction defines the properties, metadata and contract itself.
    <b>Lockingscript<sup>1</sup>:</b><br/> 
    'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c,  1 byte integer <br/> 
+   len <= 0xff, '4c + 1 byte integer' <br/> 
+   len <= 0xffff,'4d + 2 bytes integer' <br/> 
+   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
    <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x03\x01'&gt; (2 bytes integer)<br/>
@@ -57,6 +62,11 @@ This transaction defines the properties, metadata and contract itself.
     <td>
     OP_FALSE : '\x00' (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
+   &lt;len: &gt; (length of data)<br/>
+   len < 0x4c,  1 byte integer <br/> 
+   len <= 0xff, '4c + 1 byte integer' <br/> 
+   len <= 0xffff,'4d + 2 bytes integer' <br/> 
+   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
     <b>data:</b><br/>
     &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
@@ -84,6 +94,12 @@ This transaction defines the properties, metadata and contract itself.
    <b>Lockingscript:</b><br/>
    'OP_IF OP_DUP OP_HASH160 c079c08dd91583a5a48786f3b9da08893b3687ca OP_EQUALVERIFY OP_CHECKSIG OP_ELSE OP_DUP OP_HASH160 0e406c10d0315942e442946661a0931ce7181fab OP_EQUALVERIFY OP_CHECKSIG OP_ENDIF'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c,  1 byte integer <br/> 
+   len <= 0xff, '4c + 1 byte integer' <br/> 
+   len <= 0xffff,'4d + 2 bytes integer' <br/> 
+   len <= 0xffffffff, '4e + 4 bytes integer' <br/> 
+
    <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x03\x01'&gt; (2 bytes integer)<br/>
