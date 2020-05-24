@@ -222,7 +222,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>
   <tr>
   <td>4cab</td>
-  <td>OP_PUSHDATA1 + ab (length of metadata) (2 bytes)</td>
+  <td>OP_PUSHDATA1 + ab (length of metadata)</td>
  <tr>  
  <tr>
   <td>06</td>
@@ -334,7 +334,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>3b</td>
-  <td>length of metadata (1 bytes)</td>
+  <td>length of metadata </td>
  <tr>
  <tr>
   <td>06</td>
@@ -407,7 +407,7 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>39</td>
-  <td>length of metadata (1 bytes)</td>
+  <td>length of metadata</td>
  <tr>
  <tr>
   <td>06</td>
