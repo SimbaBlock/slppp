@@ -219,15 +219,15 @@ OUTPUTSCRIPT BROKEN DOWN:
  <tr>
   <td>6a</td>
   <td>OP_RETURN</td>
+ <tr>
+  <tr>
+  <td>4cab</td>
+  <td>OP_PUSHDATA1 + ab (length of metadata) (2 bytes)</td>
  <tr>  
  <tr>
   <td>06</td>
   <td>length of protocol_id field (6 bytes)</td>
  <tr>
- <tr>
-  <td>4cab</td>
-  <td>OP_PUSHDATA1 + ab (length of metadata) (2 bytes)</td>
- <tr>  
  <tr>
   <td>534c502b2b00</td>
   <td>SLP++\x00</td>
