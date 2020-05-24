@@ -362,7 +362,9 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>20</td>
-  <td>length of token_id (32 bytes)</td>
+  <td>length of token_id (32 bytes)<br/>
+      = sha256(a31d0618469927b69483c08df52de73937d1cfc7e79797e5a4dea1abc80c40d7+00)
+  </td>
  </tr>
  <tr>
   <td>
@@ -435,7 +437,9 @@ OUTPUTSCRIPT BROKEN DOWN:
  </tr>
  <tr>
   <td>20</td>
-  <td>length of token_id (32 bytes)</td>
+  <td>length of token_id (32 bytes)<br/>
+      = sha256(a31d0618469927b69483c08df52de73937d1cfc7e79797e5a4dea1abc80c40d7+00)
+</td>
  </tr>
  <tr>
   <td>
