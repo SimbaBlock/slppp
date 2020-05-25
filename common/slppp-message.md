@@ -26,6 +26,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
    <td>
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
    &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;type<sup>2</sup>: '\x01\x01'&gt; (2 bytes integer)<br/>
    &lt;action: 'PEER' &gt; (4 to 5  bytes ascii)<br/>
@@ -63,6 +69,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
@@ -79,6 +91,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of data)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>   
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'GROUP'&gt; (5 byte ascii)<BR>
@@ -101,6 +119,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    OP_FALSE <br>
    OP_RETURN <br> 
+   &lt;len: &gt; (length of data)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
    &lt;data: &gt;(0 to ∞ bytes, ascii, encrypt by aes)<br/>
   </td>
     <td>...</td>
@@ -125,6 +149,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'JGROUP'&gt; (6 byte ascii)<BR>
@@ -137,6 +167,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of data)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'JGROUP'&gt; (5 byte ascii)<BR>
@@ -165,6 +201,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of metadata)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
@@ -177,6 +219,12 @@ The message is identified by sha256 the transaction output(txid + n) which is re
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   &lt;len: &gt; (length of data)<br/>
+   len < 0x4c : (1 byte integer) <br/> 
+   len <= 0xff : ('4c' + 1 byte integer) <br/> 
+   len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
+   len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
+   <b>metadata:</b><br/>
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x01'&gt; (2 bytes integer)<br/>
 &lt;action: 'LGROUP'&gt; (5 byte ascii)<BR>
@@ -195,11 +243,11 @@ The message is identified by sha256 the transaction output(txid + n) which is re
 
 **CREARE Message Peer to Peer Transaction**
 
-blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
+blockchain transaction:  
 
 **GROUP Message Transaction**
 
-blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
+blockchain transaction: 
 
 **JGROUP Message Transaction**  
 todo  
