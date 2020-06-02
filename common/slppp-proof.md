@@ -1,6 +1,6 @@
 # SLP++ Blockdrive Protocol Specification
 ### Specification version: 0.1
-### Date published: April 26, 2020
+### Date published: June 02, 2020
 
 # PROTOCOL DESCRIPTION
 
