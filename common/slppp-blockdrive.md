@@ -51,7 +51,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: rawtx or  array of drive_ids  block  &gt; (0 to ∞ bytes, if data_spec is '0x00' means rawtx. if '0x01' means drive_id block)<br/>
+    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -100,7 +100,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: rawtx or  array of drive_ids block &gt; (0 to ∞ bytes)<br/>
+    &lt;data: &gt; (0 to ∞ bytes)<br/>
     <td>0</td>
   </tr>
 
