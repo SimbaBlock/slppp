@@ -36,8 +36,6 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;action: '\x00' or '\x01'&gt; (1 byte integer, 0x00 is CREATE op, 0x01 is UPDATE op)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
-   &lt;data_spec: '0x00' or '0x01'&gt; (1 byte integer, '0x00' is txid, '0x01' is block)<br/>
-   &lt;height:&gt; (1 to 4 bytes integer)<br/>
    <td>>0</td>
   </tr>
   
@@ -86,7 +84,6 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
-&lt;height:&gt; (1 to 4 bytes integer, '\x00' means not update)<br/>
   </td>
   <td>>0</td>
   </tr>
