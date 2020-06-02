@@ -9,6 +9,7 @@
      blockdrive: 0x02
      blog: 0x03
      wiki: 0x04
+     proof: 0x05
 ```
 
 ### [token](./token)

@@ -35,7 +35,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;type<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE' &gt; (5 bytes ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
-   &lt;file type: 'txt/pdf/png/jpg' &gt; (3 byte ascii)<br/>
+   &lt;file type: 'txt/pdf/png/jpg' &gt; (3 bytes ascii)<br/>
    &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    <td>>0</td>
@@ -83,7 +83,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;type: '\x01\x02'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
-&lt;file type: 'txt/pdf/png/jpg' &gt; (3 byte ascii)<br/>
+&lt;file type: 'txt/pdf/png/jpg' &gt; (3 bytes ascii)<br/>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
