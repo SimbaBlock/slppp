@@ -42,6 +42,7 @@ This transaction defines the properties, metadata and contract itself.
    &lt;sign_exp_date&gt; (4 to ∞ bytes, suggested utf-8)<br/>
    &lt;exp_date&gt; (4 bytes or ∞ bytes)<br/>
    &lt;mark:&gt; (0 to ∞ bytes, ascii)<br/>
+   &lt;file type: 'txt/pdf/png/jpg' &gt; (3 bytes ascii)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    &lt;encrypt: 'FALSE(0)' / 'TRUE(1)'&gt; (1 byte integer)<br/>
    &lt;aes_pwd: (32 bytes ascii by ecdh, if encrypt is true )<br/>
