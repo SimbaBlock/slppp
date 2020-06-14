@@ -24,8 +24,8 @@ Layer II's services are identified by transaction output: service id = sha256(tx
    len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
    len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata<sup>2</sup></b>: <br/>
-   &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>3</sup>:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id<sup>3</sup>:\x0000 &gt; (2 bytes integer)<br/>
    &lt;data_hash: &gt; (32 bytes, sha256(data))<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
@@ -58,7 +58,7 @@ Layer II's services are identified by transaction output: service id = sha256(tx
 
 <sup>1. The <b>Lockingscript</b> can be any valid script by combination op_codes(more [spec](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md)), which controls who can spend the utxo. </sup>   
 <sup>2. The OP_RETURN should be <b>metadata</b> for specific services. </sup>   
-<sup>3. see more [type](./index.md). </sup>   
+<sup>3. see more [protocol](./index.md). </sup>   
 <sup>4. The OP_FALSE OP_RETURN vout should be common <b>data</b> for specific services. </sup>   
 
 
