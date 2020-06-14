@@ -24,6 +24,7 @@
   enterprise: 0x03
      contract: 0x01
      project: 0x02
+     check: 0x03
 ```
 
 ### [edu](./education)
