@@ -1,6 +1,6 @@
 # SLP++ Layer II Protocol List
 
- protocol `type`: 2 bytes integer, one byte for primary category, one byte for sub category field. 
+` protocol id`: 2 bytes integer, one byte for primary category, one byte for sub category field. 
 
 ### [common](./common)
 ```
@@ -40,4 +40,4 @@
   health: 0x05
      ehr: 0x01
 ```  
-For example, the type 0x0101 is [message](./common/slppp-message.md), the type 0x0301 is [contract](./enterprise/slppp-contract.md) etc.  
+For example, the protocol id 0x0101 is [message](./common/slppp-message.md), the id 0x0301 is [contract](./enterprise/slppp-contract.md) etc.  
