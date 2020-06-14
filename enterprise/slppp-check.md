@@ -1,4 +1,4 @@
-# SLP++ Project Protocol Specification
+# SLP++ Check Protocol Specification
 ### Specification version: 0.1
 ### Date published: June 14, 2020
 
