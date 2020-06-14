@@ -4,16 +4,16 @@
 
 # PROTOCOL DESCRIPTION
 
-## Project ID
+## Check ID
 ```
-The Check is identified by sha256 the create Project transaction output(txid + n) which can be regarded as `check_id`.
+The Check is identified by sha256 the create Check transaction output(txid + n) which can be regarded as `check_id`.
 ```
 
 ## Transaction Detail
 
 ### Create - Create Check Transaction
 
-This transaction defines the properties, metadata and project itself. 
+This transaction defines the properties, metadata and check itself. 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
@@ -94,14 +94,14 @@ This transaction defines the properties, metadata and project itself.
     <td>
     OP_FALSE: '\x00'  (1bytes, ascii)<br>
     OP_RETURN: '\x6a' (1bytes, ascii)<br>
-    &lt;data: modified project data&gt; (0 to ∞ bytes)<br/>
+    &lt;data: modified check data&gt; (0 to ∞ bytes)<br/>
     <td>0</td>
   </tr>
 
 </table>
 
 
-### REMOVE - Remove Project Transaction
+### REMOVE - Remove Check Transaction
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
