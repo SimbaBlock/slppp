@@ -49,7 +49,8 @@ This transaction defines the properties, metadata and check itself.
     <td>
     OP_FALSE: '\x00'  (1 bytes, ascii)<br>
     OP_RETURN: '\x6a' (1 bytes, ascii)<br>
-    &lt;data: &gt; (0 to ∞ bytes)<br/>
+    &lt;type: 'CHECKIN'&gt; (7 bytes ascii)<br/>
+    &lt;desc: &gt; (0 to ∞ bytes ascii)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -94,7 +95,8 @@ This transaction defines the properties, metadata and check itself.
     <td>
     OP_FALSE: '\x00'  (1bytes, ascii)<br>
     OP_RETURN: '\x6a' (1bytes, ascii)<br>
-    &lt;data: modified check data&gt; (0 to ∞ bytes)<br/>
+    &lt;type: 'CHECKOUT/COMMENT'&gt; (8 bytes ascii)<br/>
+    &lt;desc: &gt; (0 to ∞ bytes ascii)<br/>
     <td>0</td>
   </tr>
 
