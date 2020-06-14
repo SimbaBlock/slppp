@@ -28,7 +28,7 @@ This transaction defines the properties, metadata and check itself.
     <td>...</td>
    <td>
    lockingscript<sup>1</sup>: 'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;protocol_id<sup>2</sup>: '\x03\x03'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE'&gt; (6 bytes, ascii)<br/>
@@ -47,8 +47,8 @@ This transaction defines the properties, metadata and check itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1 bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1 bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     &lt;type: 'CHECKIN'&gt; (7 bytes ascii)<br/>
     &lt;desc: &gt; (0 to ∞ bytes ascii)<br/>
     </td>
@@ -74,7 +74,7 @@ This transaction defines the properties, metadata and check itself.
   <td>...</td>
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;protocol_id: '\x03\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
@@ -93,8 +93,8 @@ This transaction defines the properties, metadata and check itself.
   <tr>
     <td>...</td>
     <td>
-    OP_FALSE: '\x00'  (1bytes, ascii)<br>
-    OP_RETURN: '\x6a' (1bytes, ascii)<br>
+    OP_FALSE: '\x00'  (1 byte, ascii)<br>
+    OP_RETURN: '\x6a' (1 byte, ascii)<br>
     &lt;type: 'CHECKOUT/COMMENT'&gt; (8 bytes ascii)<br/>
     &lt;desc: &gt; (0 to ∞ bytes ascii)<br/>
     <td>0</td>
@@ -117,7 +117,7 @@ This transaction defines the properties, metadata and check itself.
   <td>...</td>
   <td>
    lockingscript: 'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
-   OP_RETURN: '\x6a' (1 bytes, ascii)<br/>
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;protocol_id: '\x03\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'REMOVE'&gt; (6 bytes ascii)<BR>
