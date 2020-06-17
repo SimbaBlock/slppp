@@ -37,6 +37,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
    &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
+   &lt;<encrypted_pwd &gt; (4 to 32 bytes ascii,if encrypt is true)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
    <td>>0</td>
   </tr>
@@ -86,6 +87,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
+&lt;<encrypted_pwd &gt; (4 to 32 bytes ascii,if encrypt is true)<br/>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;drive_id&gt; (32 bytes)<BR>
   </td>
