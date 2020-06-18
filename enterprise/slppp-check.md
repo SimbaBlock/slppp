@@ -78,6 +78,7 @@ This transaction defines the properties, metadata and check itself.
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;protocol_id: '\x03\x03'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE'&gt; (6 byte ascii)<BR>
+&lt;encrypted_ passwd: &gt; (1-32 bytes, if encrypt is true )<br/>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
 &lt;check_id&gt; (32 bytes)<BR>
   </td>
