@@ -4,16 +4,16 @@
 
 # PROTOCOL DESCRIPTION
 
-## Drive ID
+## Directory ID
 ```
-The directory is identified by sha256 the create directory transaction output (txid + n) which can be regarded as `d_id`.
+The directory is identified by sha256 the create directory transaction output (txid + n) which can be regarded as `directory_id`.
 ```
 
 ## Transaction Detail
 
-### Create - Create Blockdrive Transaction
+### Create - Create Directory Transaction
 
-This transaction defines the properties, metadata and blockdrive itself. 
+This transaction defines the properties, metadata and directory itself. 
 
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.
 
@@ -64,7 +64,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 <sup>1. The lockingscript can be any valid script combination.  UPDATE's lockingscript are the same means</sup>   
 <sup>2. See more [type](../index.md)</sup>  
 
-### UPDATE - Update Blockdrive Transaction
+### UPDATE - Update Directory Transaction
   
 **Transaction inputs**: Any number of inputs or content of inputs, in any order.  
 **Transaction outputs**:
@@ -117,13 +117,13 @@ This transaction defines the properties, metadata and blockdrive itself.
 
 ### Examples
 
-**CREATE Blockdrive Transaction**
+**CREATE Directory Transaction**
 
 blockchain transaction:  a26d3191f2be3dc7fffdfa95ad7dc1bc3614079ebd626e0d87b20d2502682647
 
 SCRIPT: ``006a04534c500001010747454e45534953045553445423546574686572204c74642e20555320646f6c6c6172206261636b656420746f6b656e734168747470733a2f2f7465746865722e746f2f77702d636f6e74656e742f75706c6f6164732f323031362f30362f546574686572576869746550617065722e70646620db4451f11eda33950670aaf59e704da90117ff7057283b032cfaec77793139160108010208002386f26fc10000``
 
-**UPDATE Blockdrive Transaction**
+**UPDATE Directory Transaction**
 
 blockchain transaction: 6b73adfbe7e5688c53ea4b09bf37de85dfd6dd4e3d38d1c0b4a5b38a9c0ca613
 
