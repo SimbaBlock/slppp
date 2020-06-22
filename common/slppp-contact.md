@@ -49,8 +49,8 @@ This transaction defines the properties, metadata and addressbook itself.
     <td>
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
-    &lt;name: &gt; (0 to ∞ bytes ascii)<br/>
-    &lt;contact: &gt; (0 to ∞ bytes ascii)<br/>
+    &lt;name: &gt; (1 to ∞ bytes ascii)<br/>
+    &lt;contact: &gt; (1 to ∞ bytes ascii)<br/>
     &lt;tags: &gt; (0 to ∞ bytes ascii)<br/>
     &lt;mark: &gt; (0 to ∞ bytes ascii)<br/>
     </td>
@@ -99,8 +99,8 @@ This transaction defines the properties, metadata and addressbook itself.
     <td>
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
-    &lt;name: &gt; (0 to ∞ bytes ascii)<br/>
-    &lt;contact: &gt; (0 to ∞ bytes ascii)<br/>
+    &lt;name: &gt; (1 to ∞ bytes ascii)<br/>
+    &lt;contact: &gt; (1 to ∞ bytes ascii)<br/>
     &lt;tags: &gt; (0 to ∞ bytes ascii)<br/>
     &lt;mark: &gt; (0 to ∞ bytes ascii)<br/>
     <td>0</td>
