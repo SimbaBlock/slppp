@@ -116,6 +116,7 @@ This transaction defines the properties, metadata and addressbook itself.
     &lt;name: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
     &lt;contact: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
     &lt;tags: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
+    &lt;mark: &gt; (0 to ∞ bytes ascii)<br/>
     <td>0</td>
   </tr>
 
