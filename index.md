@@ -10,6 +10,8 @@
      blog: 0x03
      wiki: 0x04
      proof: 0x05
+     contact: 0x06
+     directory: 0x07
 ```
 
 ### [token](./token)

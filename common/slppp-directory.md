@@ -32,7 +32,7 @@ This transaction defines the properties, metadata and directory itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
    &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;protocol_id<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
+   &lt;protocol_id<sup>2</sup>: '\x01\x07'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE' &gt; (5 bytes ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
@@ -82,7 +82,7 @@ This transaction defines the properties, metadata and directory itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;protocol_id: '\x01\x02'&gt; (2 bytes integer)<br/>
+&lt;protocol_id: '\x01\x07'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
