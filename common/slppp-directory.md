@@ -114,6 +114,38 @@ This transaction defines the properties, metadata and directory itself.
 
 </table>
 
+### Remove - Remove Directory Transaction
+  
+**Transaction inputs**: Any number of inputs or content of inputs, in any order.  
+**Transaction outputs**:
+<table>
+<tr>
+  <td><b>v<sub>out</sub></b></td>
+  <td><b>OutputScript </b></td>
+  <td><b>Coin</br>amount </b></td>
+</tr>
+  <tr>
+  <td>...</td>
+  <td>
+   <b>lockingscript:</b><br/>
+   'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
+   OP_RETURN: '\x6a' (1 byte, ascii)<br/>
+   <b>metadata:</b><br/>
+&lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;protocol_id: '\x01\x07'&gt; (2 bytes integer)<br/>
+&lt;action: 'REMOVE' &gt; (6 bytes ascii)<br/>
+&lt;directory_id&gt; (32 bytes)<BR>
+  </td>
+  <td>>0</td>
+  </tr>
+
+  <tr>
+    <td>...</td>
+    <td>Any</td>
+    <td>any</td>
+  </tr>
+</table>
+
 
 ### Examples
 
