@@ -1,4 +1,4 @@
-# SLP++ Addressbook Protocol Specification
+# SLP++ Contact Protocol Specification
 ### Specification version: 0.1
 ### Date published: June 22, 2020
 
