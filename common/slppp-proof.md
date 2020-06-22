@@ -4,7 +4,7 @@
 
 # PROTOCOL DESCRIPTION
 
-## Drive ID
+## File ID
 ```
 The file proof is identified by sha256 the create blockdrive transaction output (txid + n) which can be regarded as `file_id`.
 ```
@@ -31,9 +31,10 @@ This transaction defines the properties, metadata and blockdrive itself.
    'OP_DUP OP_HASH160 986b57ea26555d28c OP_EQUALVERIFY OP_CHECKSIG' (0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
-   &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>2</sup>: '\x01\x05'&gt; (2 bytes integer)<br/>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id<sup>2</sup>: '\x01\x05'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE' &gt; (5 bytes ascii)<br/>
+   &lt;type: 'FILE/DIRECTORY' &gt; (4 or 9 bytes ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
    &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
@@ -54,7 +55,9 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: &gt; (0 to ∞ bytes)<br/>
+    &lt;data: &gt; (0 to ∞ bytes, if type is 'FILE')<br/>
+    &lt;bunsinese_action: '+'&gt; (1 byte, if type is "DIRECTORY")<br/>
+    &lt;drive_ids: &gt; (32 * n bytes ascii, if type is 'DIRECTORY')<br/>
     </td>
     <td>0</td>
   </tr>
@@ -81,10 +84,11 @@ This transaction defines the properties, metadata and blockdrive itself.
    'OP_DUP OP_HASH160 986b59fd99b555d28c OP_EQUALVERIFY OP_CHECKSIG'(0 to ∞ bytes)<br/>   
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\x01\x05'&gt; (2 bytes integer)<br/>
+&lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+&lt;protocol_id: '\x01\x05'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
-&lt;mark&gt; (0 to ∞ bytes)<BR>
+&lt;type: 'FILE/DIRECTORY' &gt; (4 or 9 bytes ascii)<br/>
+&lt;mark&gt; (0 to ∞ bytes)<br/>
 &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
 &lt;encrypted_pwd &gt; (4 to 32 bytes ascii,if encrypt is true)<br/>
@@ -106,7 +110,11 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: &gt; (0 to ∞ bytes)<br/>
+    &lt;data: &gt; (0 to ∞ bytes, if type is 'FILE')<br/>
+    &lt;bunsineses_action: '+'&gt; (1 byte, if type is 'DIRECTORY')<br/>
+    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')<br/>
+    &lt;bunsineses_action: '-'&gt; (1 byte, if type is 'DIRECTORY')<br/>
+    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')
     <td>0</td>
   </tr>
 
