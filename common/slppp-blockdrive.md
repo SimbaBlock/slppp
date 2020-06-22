@@ -112,7 +112,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    <b>data:</b><br/>
     &lt;data: &gt; (0 to ∞ bytes, if type is 'FILE')<br/>
     &lt;bunsineses_action: '+'&gt; (1 byte, if type is 'DIRECTORY')<br/>
-    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')
+    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')<br/>
     &lt;bunsineses_action: '-'&gt; (1 byte, if type is 'DIRECTORY')<br/>
     &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')
     <td>0</td>
