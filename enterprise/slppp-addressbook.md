@@ -56,11 +56,10 @@ This transaction defines the properties, metadata and addressbook itself.
     <td>
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
-    &lt;bunsinese_action: +&gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
+    &lt;bunsinese_action: '+'&gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
     &lt;contact_ids: &gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
-    &lt;bunsinese_action: -&gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
+    &lt;bunsinese_action: '-'&gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
     &lt;contact_ids: &gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
-
     &lt;name: &gt; (0 to ∞ bytes ascii, if type is 'CONTACT')<br/>
     &lt;contact: &gt; (0 to ∞ bytes ascii, if type is 'CONTACT')<br/>
     &lt;tags: &gt; (0 to ∞ bytes ascii, if type is 'CONTACT')<br/>
@@ -116,7 +115,6 @@ This transaction defines the properties, metadata and addressbook itself.
     &lt;contact_ids: &gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
     &lt;bunsinese_action: -&gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
     &lt;contact_ids: &gt; (32 * n bytes ascii, if type is 'ADDRESSBOOK')<br/>
-    
     &lt;name: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
     &lt;contact: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
     &lt;tags: &gt; (0 to ∞ bytes ascii, if type is contact)<br/>
