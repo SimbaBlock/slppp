@@ -88,7 +88,7 @@ This transaction defines the properties, metadata and directory itself.
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
 &lt;encrypted_pwd &gt; (4 to 32 bytes ascii,if encrypt is true)<br/>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
-&lt;drive_id&gt; (32 bytes)<BR>
+&lt;directory_id&gt; (32 bytes)<BR>
   </td>
   <td>>0</td>
   </tr>
