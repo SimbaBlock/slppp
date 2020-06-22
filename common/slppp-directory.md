@@ -53,8 +53,8 @@ This transaction defines the properties, metadata and directory itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;bunsinese_action: '+'&gt; (1 byte, if type is "DIRECTORY")<br/>
-    &lt;drive_ids: &gt; (32 * n bytes ascii, if type is 'DIRECTORY')<br/>
+    &lt;bunsinese_action: '+'&gt; (1 byte ascii)<br/>
+    &lt;drive_ids: &gt; (32 * n bytes ascii)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -105,10 +105,10 @@ This transaction defines the properties, metadata and directory itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;bunsineses_action: '+'&gt; (1 byte, if type is 'DIRECTORY')<br/>
-    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')<br/>
-    &lt;bunsineses_action: '-'&gt; (1 byte, if type is 'DIRECTORY')<br/>
-    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')
+    &lt;bunsineses_action: '+'&gt; (1 byte)<br/>
+    &lt; drive_ids: &gt; (32 * n  bytes ascii)<br/>
+    &lt;bunsineses_action: '-'&gt; (1 byte)<br/>
+    &lt; drive_ids: &gt; (32 * n  bytes ascii)<br/>
     <td>0</td>
   </tr>
 
