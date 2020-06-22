@@ -87,6 +87,7 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;protocol_id: '\x01\x02'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
+&lt;type: 'FILE/DIRECTORY' &gt; (4 or 9 bytes ascii)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
