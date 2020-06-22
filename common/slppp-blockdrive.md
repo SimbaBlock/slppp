@@ -34,9 +34,8 @@ This transaction defines the properties, metadata and blockdrive itself.
    &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;protocol_id<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE' &gt; (5 bytes ascii)<br/>
-   &lt;type: 'FILE/DIRECTORY' &gt; (4 or 9 bytes ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
-   &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii, if type is 'FILE')<br/>
+   &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
    &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
    &lt;encrypted_pwd &gt; (4 to 32 bytes ascii,if encrypt is true)<br/>
    &lt;data_hash:&gt; (32 bytes, sha256(data))<br/>
@@ -55,9 +54,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: &gt; (0 to ∞ bytes, if type is "FILE")<br/>
-    &lt;bunsinese_action: '+'&gt; (1 byte, if type is "DIRECTORY")<br/>
-    &lt;drive_ids: &gt; (32 * n bytes ascii, if type is 'DIRECTORY')<br/>
+    &lt;data: &gt; (0 to ∞ bytes)<br/>
     </td>
     <td>0</td>
   </tr>
@@ -87,7 +84,6 @@ This transaction defines the properties, metadata and blockdrive itself.
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
 &lt;protocol_id: '\x01\x02'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
-&lt;type: 'FILE/DIRECTORY' &gt; (4 or 9 bytes ascii)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
 &lt;encrypt: '0x00/0x01' &gt; (1 byte integer)<br/>
@@ -110,11 +106,7 @@ This transaction defines the properties, metadata and blockdrive itself.
     OP_FALSE: '\x00'  (1 byte, ascii)<br>
     OP_RETURN: '\x6a' (1 byte, ascii)<br>
    <b>data:</b><br/>
-    &lt;data: &gt; (0 to ∞ bytes, if type is 'FILE')<br/>
-    &lt;bunsineses_action: '+'&gt; (1 byte, if type is 'DIRECTORY')<br/>
-    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')<br/>
-    &lt;bunsineses_action: '-'&gt; (1 byte, if type is 'DIRECTORY')<br/>
-    &lt; drive_ids: &gt; (32 * n  bytes ascii, if type is 'DIRECTORY')
+    &lt;data: &gt; (0 to ∞ bytes)<br/>
     <td>0</td>
   </tr>
 
