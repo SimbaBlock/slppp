@@ -36,8 +36,9 @@ This transaction defines the properties, metadata and Template itself.
    len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
    len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
-   &lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;type<sup>2</sup>: '\xffff'&gt; (2 bytes integer)<br/>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol_version:\x00 &gt; (1 byte integer)<br/>
    &lt;action: 'ACTION'&gt; (6 bytes, ascii)<br/>
    &lt;title: &gt; (0 to 256 bytes, suggested utf-8)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
@@ -98,8 +99,9 @@ This transaction defines the properties, metadata and Template itself.
    len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
    len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\xffff'&gt; (2 bytes integer)<br/>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol_version:\x00 &gt; (1 byte integer)<br/>
 &lt;action: 'ACTION'&gt; (6 byte ascii)<BR>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;data_hash&gt; (32 bytes, sha256(data))<BR>
@@ -154,7 +156,9 @@ This transaction defines the properties, metadata and Template itself.
    len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
    len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol_version:\x00 &gt; (1 byte integer)<br/>
 &lt;type: '\xffff'&gt; (2 bytes integer)<br/>
 &lt;action: 'ACTIOn'&gt; (6 bytes ascii)<BR>
 &lt;template_id&gt; (32 bytes)<BR>
@@ -194,8 +198,9 @@ ACTION indacate that the data(op_return) self correspnd to template_id or sha256
    len <= 0xffff : ('4d' + 2 bytes integer)<br/> 
    len <= 0xffffffff : ('4e' + 4 bytes integer) <br/> 
    <b>metadata:</b><br/>
-&lt;protocol_id: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;type: '\xffff'&gt; (2 bytes integer)<br/>
+   &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
+   &lt;protocol_id:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol_version:\x00 &gt; (1 byte integer)<br/>   
 &lt;action: 'ACTION'&gt; (6 bytes ascii)<BR>
 &lt;template_id&gt; (32 bytes)<BR>
   </td>
