@@ -32,7 +32,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
    &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
-   &lt;protocol_id<sup>2</sup>: '\x01\x02'&gt; (2 bytes integer)<br/>
+   &lt;protocol_id<sup>2</sup>: '\x01\x08'&gt; (2 bytes integer)<br/>
    &lt;action: 'CREATE' &gt; (5 bytes ascii)<br/>
    &lt;mark:&gt; (0  to  1024 bytes, ascii)<br/>
    &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>
@@ -82,7 +82,7 @@ This transaction defines the properties, metadata and blockdrive itself.
    OP_RETURN: '\x6a' (1 byte, ascii)<br/>
    <b>metadata:</b><br/>
 &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<BR>
-&lt;protocol_id: '\x01\x02'&gt; (2 bytes integer)<br/>
+&lt;protocol_id: '\x01\x08'&gt; (2 bytes integer)<br/>
 &lt;action: 'UPDATE' &gt; (6 bytes ascii)<br/>
 &lt;mark&gt; (0 to ∞ bytes)<BR>
 &lt;file type: 'txt/pdf/png/jpg/docx/doc' &gt; (3-4 bytes ascii)<br/>

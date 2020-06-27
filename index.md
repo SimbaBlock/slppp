@@ -6,13 +6,13 @@
 ```
   common: 0x01
      message: 0x01
-     blockdrive: 0x02
+     document: 0x02
      blog: 0x03
      wiki: 0x04
      proof: 0x05
      contact: 0x06
      directory: 0x07
-     document: 0x08
+     blockdrive: 0x08
 ```
 
 ### [token](./token)
