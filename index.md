@@ -12,6 +12,7 @@
      proof: 0x05
      contact: 0x06
      directory: 0x07
+     document: 0x08
 ```
 
 ### [token](./token)
