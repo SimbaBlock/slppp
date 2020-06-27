@@ -26,6 +26,7 @@ Layer II's services are identified by transaction output: service id = sha256(32
    <b>metadata<sup>2</sup></b>: <br/>
    &lt;protocol: 'SLP++\x00'&gt; (6 bytes, ascii)<br/>
    &lt;protocol_id<sup>3</sup>:\x0000 &gt; (2 bytes integer)<br/>
+   &lt;protocol_version:\x00 &gt; (1 byte integer)<br/>
    &lt;data_hash: &gt; (32 bytes, sha256(data))<br/>
    &lt;key: &gt; (0 to ∞ bytes)<br/>
    </td>
