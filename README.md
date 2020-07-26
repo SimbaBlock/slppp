@@ -1,5 +1,5 @@
 # SLP++ UTXO Protocol
-Layer II Protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
+UTXO based Protocol, Safety & Simple base on original  [SLP.](https://github.com/simpleledger/slp-specifications)  
 SLP++ operate on non-standard UTXOs,which can include any state of your services.      
 Layer II's services are identified by transaction output: service id = sha256(32 bytes txid + 1 byte integer of n), which convert service from transaction scope to script scope. so we can write any complex scripts to implement our services. 
 ## Transaction struture
